@@ -5,6 +5,7 @@ To start developing, make sure you have Cocoapods installed on your Mac.
 2. CD into the working directory for this project
 3. Run `pod install`
 > The podfile I've created has everything you need for the project to work with the most recent master branch. Do not push changes to the Podfile without consulting the rest of us first. 
+4. Open the "Capp.xcworkspace" file. If you open the project file, the pods will not load properly.
 
 # Commits, Branching, etc.
 - ALWAYS run `git pull` before starting any work! Failure to do so may cause marge conflicts and prevent the push. 
