@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4422D0C51F871AC100498248 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4422D0C41F871AC100498248 /* LoginViewController.swift */; };
 		4440DC891F86F8FE00751678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440DC881F86F8FE00751678 /* AppDelegate.swift */; };
 		4440DC8B1F86F8FE00751678 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440DC8A1F86F8FE00751678 /* FirstViewController.swift */; };
 		4440DC8D1F86F8FE00751678 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440DC8C1F86F8FE00751678 /* SecondViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4422D0C41F871AC100498248 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4440DC851F86F8FE00751678 /* Capp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4440DC881F86F8FE00751678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4440DC8A1F86F8FE00751678 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				4440DC911F86F8FE00751678 /* Assets.xcassets */,
 				4440DC931F86F8FE00751678 /* LaunchScreen.storyboard */,
 				4440DC961F86F8FE00751678 /* Info.plist */,
+				4422D0C41F871AC100498248 /* LoginViewController.swift */,
 			);
 			path = Capp;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4422D0C51F871AC100498248 /* LoginViewController.swift in Sources */,
 				4440DC8D1F86F8FE00751678 /* SecondViewController.swift in Sources */,
 				4440DC891F86F8FE00751678 /* AppDelegate.swift in Sources */,
 				4440DC8B1F86F8FE00751678 /* FirstViewController.swift in Sources */,
