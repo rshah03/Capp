@@ -7,11 +7,20 @@
 //
 
 import UIKit
+import ChameleonFramework
 
 class RegisterViewController: UIViewController {
 
+    var gradientLayer: CAGradientLayer!
+
+    @IBAction func backToLogin(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        createGradient()
 
     }
 
@@ -19,6 +28,12 @@ class RegisterViewController: UIViewController {
         super.didReceiveMemoryWarning()
 
     }
-
+    
+    func createGradient() {
+        gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        gradientLayer.colors = [UIColor.flatBlue.cgColor, UIColor.flatSkyBlue.cgColor]
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
+    }
 
 }

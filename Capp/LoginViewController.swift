@@ -7,16 +7,19 @@
 //
 
 import UIKit
-import SnapKit
 import ChameleonFramework
 
 class LoginViewController: UIViewController {
     
     var gradientLayer: CAGradientLayer!
     
+    @IBAction func registerButton(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segueToRegister", sender: sender)
+    }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
     }
     
     override func viewDidLoad() {
@@ -34,7 +37,6 @@ class LoginViewController: UIViewController {
     func createGradient() {
         gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.view.bounds
-//        gradientLayer.colors = [FlatCoffee().cgColor, FlatWhite().cgColor]
         gradientLayer.colors = [UIColor.flatBlue.cgColor, UIColor.flatSkyBlue.cgColor]
         self.view.layer.insertSublayer(gradientLayer, at: 0)
     }
