@@ -32,7 +32,7 @@ class RegisterViewController: UIViewController {
     func createGradient() {
         gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.view.bounds
-        gradientLayer.colors = [UIColor.flatSkyBlue.cgColor, UIColor.flat   Blue.cgColor]
+        gradientLayer.colors = [UIColor.flatSkyBlue.cgColor, UIColor.flatBlue.cgColor]
         self.view.layer.insertSublayer(gradientLayer, at: 0)
     }
 
