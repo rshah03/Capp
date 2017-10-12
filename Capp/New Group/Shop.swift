@@ -19,21 +19,18 @@ class Shop {
     var shopID: Int
     var shopName: String
     //var shopReviews is an arrar of type Reviews -- create a class called Reviews to store ther ratings and user reviews
-    var businessHours: String
+    var openTime: String
+    var closeTime: String
     
     
-    init(shopTypeInit: String, shopID: Int, shopName: String, businessHours: String) {
+    init(shopTypeInit: String, shopID: Int, shopName: String, openTime: String, closeTime: String) {
         self.shopID = shopID
         self.shopName = shopName
-        self.businessHours = businessHours //call parseBusinessHours(businessHours) here once function is complete
+        self.openTime = openTime
+        self.closeTime = closeTime
         self.shopTypeInit = shopTypeInit
     }
-    
-    //input will be in format: "xxxx-yyyy
-//    func parseBusinessHours(rawHours: String) -> String {
-//
-//    }
-    
+
     func getCategory() -> Category {
         return shopType!
     }
@@ -57,8 +54,23 @@ class Shop {
     func getShopName() -> String {
         return shopName
     }
-    
-    func getBusinessHours() -> String {
-        return businessHours
+
+    //    input will be in format: "xx:xx-yy:yy
+    func getBusinessHours(open: String, close: String) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        
+        let openTimeArr = open.components(separatedBy: ":")
+        let open_hour = openTimeArr[0]
+        let open_mins = openTimeArr[1]
+        
+        let closeTimeArr = close.components(separatedBy: ":")
+        let close_hour = closeTimeArr[0]
+        let close_mins = closeTimeArr[1]
+        
+        let shopOpenTime = formatter.date(from: "\(open_hour):\(open_mins)")!
+        let shopCloseTime = formatter.date(from: "\(close_hour):\(close_mins)")!
+        
+        return formatter.string(from: shopOpenTime) + " - " + formatter.string(from: shopCloseTime)
     }
 }
