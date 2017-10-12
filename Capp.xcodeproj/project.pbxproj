@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440D7FEF1F8FD8B100C65B7E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7FEE1F8FD8B100C65B7E /* Review.swift */; };
 		4422D0C51F871AC100498248 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4422D0C41F871AC100498248 /* LoginViewController.swift */; };
 		442A96381F8D75700046D778 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A96371F8D75700046D778 /* User.swift */; };
 		4440DC891F86F8FE00751678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440DC881F86F8FE00751678 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440D7FEE1F8FD8B100C65B7E /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		4422D0C41F871AC100498248 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		442A96371F8D75700046D778 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4440DC851F86F8FE00751678 /* Capp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +81,7 @@
 		4440DC871F86F8FE00751678 /* Capp */ = {
 			isa = PBXGroup;
 			children = (
-				44D8273F1F8F0CE500540178 /* New Group */,
+				44D8273F1F8F0CE500540178 /* Shop */,
 				442A96361F8D75500046D778 /* User */,
 				4440DC881F86F8FE00751678 /* AppDelegate.swift */,
 				4440DC8A1F86F8FE00751678 /* FirstViewController.swift */,
@@ -94,12 +96,13 @@
 			path = Capp;
 			sourceTree = "<group>";
 		};
-		44D8273F1F8F0CE500540178 /* New Group */ = {
+		44D8273F1F8F0CE500540178 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
 				44D827401F8F0D0C00540178 /* Shop.swift */,
+				440D7FEE1F8FD8B100C65B7E /* Review.swift */,
 			);
-			path = "New Group";
+			path = Shop;
 			sourceTree = "<group>";
 		};
 		C19B4B5D3A46409A653259E0 /* Frameworks */ = {
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4422D0C51F871AC100498248 /* LoginViewController.swift in Sources */,
+				440D7FEF1F8FD8B100C65B7E /* Review.swift in Sources */,
 				444E63171F896CB100579B2F /* RegisterViewController.swift in Sources */,
 				442A96381F8D75700046D778 /* User.swift in Sources */,
 				4440DC8D1F86F8FE00751678 /* SecondViewController.swift in Sources */,
