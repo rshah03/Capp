@@ -18,7 +18,7 @@ class Shop {
     var shopTypeInit: String
     var shopID: Int
     var shopName: String
-    //var shopReviews is an arrar of type Reviews -- create a class called Reviews to store ther ratings and user reviews
+    var shopReviews: [Review]!
     var openTime: String
     var closeTime: String
     
@@ -73,4 +73,12 @@ class Shop {
         
         return formatter.string(from: shopOpenTime) + " - " + formatter.string(from: shopCloseTime)
     }
+    
+    func addReview(review: Review) {
+        shopReviews.append(review)
+        //Maybe associate a reviwe with a unique user ID to prevent duplicates
+    }
+    
+    //Delete review function may not be necessary. Cna be removed arbitrarily by admins.
+    
 }
