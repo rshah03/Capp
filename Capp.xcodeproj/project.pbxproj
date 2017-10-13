@@ -34,6 +34,7 @@
 		4440DC941F86F8FE00751678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4440DC961F86F8FE00751678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		444E63161F896CB100579B2F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		446655051F91229200FB1C52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		44D827401F8F0D0C00540178 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		4A26194D970E3E124D14926E /* Pods_Capp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		600B63D047858AAE10CA37B6 /* Pods-Capp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capp/Pods-Capp.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 				4440DC961F86F8FE00751678 /* Info.plist */,
 				4422D0C41F871AC100498248 /* LoginViewController.swift */,
 				444E63161F896CB100579B2F /* RegisterViewController.swift */,
+				446655051F91229200FB1C52 /* GoogleService-Info.plist */,
 			);
 			path = Capp;
 			sourceTree = "<group>";
@@ -201,12 +203,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Capp/Pods-Capp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
