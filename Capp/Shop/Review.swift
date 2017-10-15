@@ -8,12 +8,17 @@
 
 import Foundation
 
-struct Review {
+class Review {
     
     var starRating: Int
     var reviewSummary: String
     
-    mutating func setRating(rating: Int) {
+    init() {
+        starRating = 0
+        reviewSummary = ""
+    }
+    
+    func setRating(rating: Int) {
          starRating = rating
     }
     
@@ -21,7 +26,7 @@ struct Review {
         return starRating
     }
     
-    mutating func setReviewSummary(summary: String) {
+    func setReviewSummary(summary: String) {
         reviewSummary = summary
     }
 }
