@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		440D7FEF1F8FD8B100C65B7E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7FEE1F8FD8B100C65B7E /* Review.swift */; };
 		440DACBD1F9411E900013872 /* CappTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440DACBC1F9411E900013872 /* CappTest.swift */; };
-		440DACC41F94129100013872 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7FEE1F8FD8B100C65B7E /* Review.swift */; };
 		4416ADF61F940239003B58CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4416ADF51F940239003B58CA /* GoogleService-Info.plist */; };
 		4422D0C51F871AC100498248 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4422D0C41F871AC100498248 /* LoginViewController.swift */; };
 		442A96381F8D75700046D778 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A96371F8D75700046D778 /* User.swift */; };
@@ -375,7 +374,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				440DACBD1F9411E900013872 /* CappTest.swift in Sources */,
-				440DACC41F94129100013872 /* Review.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
