@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		440D7FEF1F8FD8B100C65B7E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7FEE1F8FD8B100C65B7E /* Review.swift */; };
+		440DACBD1F9411E900013872 /* CappTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440DACBC1F9411E900013872 /* CappTest.swift */; };
+		440DACC41F94129100013872 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7FEE1F8FD8B100C65B7E /* Review.swift */; };
 		4416ADF61F940239003B58CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4416ADF51F940239003B58CA /* GoogleService-Info.plist */; };
 		4422D0C51F871AC100498248 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4422D0C41F871AC100498248 /* LoginViewController.swift */; };
 		442A96381F8D75700046D778 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A96371F8D75700046D778 /* User.swift */; };
@@ -22,9 +24,30 @@
 		993D90B1D1ACDDF097037B1C /* Pods_Capp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A26194D970E3E124D14926E /* Pods_Capp.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		440DACBF1F9411E900013872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4440DC7D1F86F8FE00751678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4440DC841F86F8FE00751678;
+			remoteInfo = Capp;
+		};
+		4416AE001F940424003B58CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4440DC7D1F86F8FE00751678 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4440DC841F86F8FE00751678;
+			remoteInfo = Capp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		440D7FEE1F8FD8B100C65B7E /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		440DACBA1F9411E900013872 /* CappTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CappTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		440DACBC1F9411E900013872 /* CappTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CappTest.swift; sourceTree = "<group>"; };
+		440DACBE1F9411E900013872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4416ADF51F940239003B58CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4416ADFB1F940424003B58CA /* CappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4422D0C41F871AC100498248 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		442A96371F8D75700046D778 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4440DC851F86F8FE00751678 /* Capp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +67,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		440DACB71F9411E900013872 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4416ADF81F940423003B58CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4440DC821F86F8FE00751678 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		440DACBB1F9411E900013872 /* CappTest */ = {
+			isa = PBXGroup;
+			children = (
+				440DACBC1F9411E900013872 /* CappTest.swift */,
+				440DACBE1F9411E900013872 /* Info.plist */,
+			);
+			path = CappTest;
+			sourceTree = "<group>";
+		};
 		442A96361F8D75500046D778 /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +114,7 @@
 			children = (
 				4416ADF51F940239003B58CA /* GoogleService-Info.plist */,
 				4440DC871F86F8FE00751678 /* Capp */,
+				440DACBB1F9411E900013872 /* CappTest */,
 				4440DC861F86F8FE00751678 /* Products */,
 				FEB0C65D001CE2E07F2B8552 /* Pods */,
 				C19B4B5D3A46409A653259E0 /* Frameworks */,
@@ -78,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				4440DC851F86F8FE00751678 /* Capp.app */,
+				4416ADFB1F940424003B58CA /* CappTests.xctest */,
+				440DACBA1F9411E900013872 /* CappTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +179,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		440DACB91F9411E900013872 /* CappTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 440DACC31F9411E900013872 /* Build configuration list for PBXNativeTarget "CappTest" */;
+			buildPhases = (
+				440DACB61F9411E900013872 /* Sources */,
+				440DACB71F9411E900013872 /* Frameworks */,
+				440DACB81F9411E900013872 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				440DACC01F9411E900013872 /* PBXTargetDependency */,
+			);
+			name = CappTest;
+			productName = CappTest;
+			productReference = 440DACBA1F9411E900013872 /* CappTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4416ADFA1F940423003B58CA /* CappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4416AE021F940424003B58CA /* Build configuration list for PBXNativeTarget "CappTests" */;
+			buildPhases = (
+				4416ADF71F940423003B58CA /* Sources */,
+				4416ADF81F940423003B58CA /* Frameworks */,
+				4416ADF91F940423003B58CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4416AE011F940424003B58CA /* PBXTargetDependency */,
+			);
+			name = CappTests;
+			productName = CappTests;
+			productReference = 4416ADFB1F940424003B58CA /* CappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4440DC841F86F8FE00751678 /* Capp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4440DC991F86F8FE00751678 /* Build configuration list for PBXNativeTarget "Capp" */;
@@ -160,6 +245,16 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Team6;
 				TargetAttributes = {
+					440DACB91F9411E900013872 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4440DC841F86F8FE00751678;
+					};
+					4416ADFA1F940423003B58CA = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4440DC841F86F8FE00751678;
+					};
 					4440DC841F86F8FE00751678 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -180,11 +275,27 @@
 			projectRoot = "";
 			targets = (
 				4440DC841F86F8FE00751678 /* Capp */,
+				4416ADFA1F940423003B58CA /* CappTests */,
+				440DACB91F9411E900013872 /* CappTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		440DACB81F9411E900013872 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4416ADF91F940423003B58CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4440DC831F86F8FE00751678 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +370,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		440DACB61F9411E900013872 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440DACBD1F9411E900013872 /* CappTest.swift in Sources */,
+				440DACC41F94129100013872 /* Review.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4416ADF71F940423003B58CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4440DC811F86F8FE00751678 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +402,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		440DACC01F9411E900013872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4440DC841F86F8FE00751678 /* Capp */;
+			targetProxy = 440DACBF1F9411E900013872 /* PBXContainerItemProxy */;
+		};
+		4416AE011F940424003B58CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4440DC841F86F8FE00751678 /* Capp */;
+			targetProxy = 4416AE001F940424003B58CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4440DC8E1F86F8FE00751678 /* Main.storyboard */ = {
@@ -296,6 +436,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		440DACC11F9411E900013872 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CappTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.projects.CappTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capp.app/Capp";
+			};
+			name = Debug;
+		};
+		440DACC21F9411E900013872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CappTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.projects.CappTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capp.app/Capp";
+			};
+			name = Release;
+		};
+		4416AE031F940424003B58CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.projects.CappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capp.app/Capp";
+			};
+			name = Debug;
+		};
+		4416AE041F940424003B58CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.projects.CappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Capp.app/Capp";
+			};
+			name = Release;
+		};
 		4440DC971F86F8FE00751678 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -409,7 +609,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4S58772B2E;
 				INFOPLIST_FILE = Capp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.projects.Capp;
@@ -425,7 +625,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 4S58772B2E;
 				INFOPLIST_FILE = Capp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.projects.Capp;
@@ -438,6 +638,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		440DACC31F9411E900013872 /* Build configuration list for PBXNativeTarget "CappTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				440DACC11F9411E900013872 /* Debug */,
+				440DACC21F9411E900013872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4416AE021F940424003B58CA /* Build configuration list for PBXNativeTarget "CappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4416AE031F940424003B58CA /* Debug */,
+				4416AE041F940424003B58CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4440DC801F86F8FE00751678 /* Build configuration list for PBXProject "Capp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
