@@ -19,7 +19,12 @@ class Review {
     }
     
     func setRating(rating: Int) {
-         starRating = rating
+        if rating == 0 {
+            starRating = 1
+        }
+        else {
+            starRating = rating
+        }
     }
     
     func getRating() -> Int {
@@ -28,5 +33,9 @@ class Review {
     
     func setReviewSummary(summary: String) {
         reviewSummary = summary
+    }
+    
+    func getReviewSummary() -> String {
+        return reviewSummary
     }
 }

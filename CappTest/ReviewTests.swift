@@ -1,5 +1,5 @@
 //
-//  CappTest.swift
+//  ReviewTests.swift
 //  CappTest
 //
 //  Created by Ronak Shah on 10/15/17.
@@ -8,11 +8,12 @@
 
 import XCTest
 
-class CappTest: XCTestCase {
+class ReviewTests: XCTestCase {
+    
+    var review = Review()
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
@@ -20,14 +21,23 @@ class CappTest: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSetRatingWhenRatingIsZero() {
+        review.setRating(rating: 0)
+        XCTAssertEqual(review.getRating(), 1)
     }
     
-    func testCanary() {
-        assert(true)
+    func testSetRating() {
+        review.setRating(rating: 5)
+        XCTAssertEqual(review.getRating(), 5)
     }
+    
+    func testSetReviewSummary() {
+        let text = "Lorem Ipsum"
+        review.setReviewSummary(summary: "Lorem Ipsum")
+        XCTAssertEqual(review.getReviewSummary(), text)
+    }
+    
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
