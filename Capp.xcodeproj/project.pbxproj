@@ -12,6 +12,8 @@
 		4416ADF61F940239003B58CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4416ADF51F940239003B58CA /* GoogleService-Info.plist */; };
 		4422D0C51F871AC100498248 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4422D0C41F871AC100498248 /* LoginViewController.swift */; };
 		442A96381F8D75700046D778 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A96371F8D75700046D778 /* User.swift */; };
+		4432A2F91F9420FD00263E82 /* ReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4432A2F81F9420FD00263E82 /* ReviewTests.swift */; };
+		4432A2FA1F94214C00263E82 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7FEE1F8FD8B100C65B7E /* Review.swift */; };
 		4440DC891F86F8FE00751678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440DC881F86F8FE00751678 /* AppDelegate.swift */; };
 		4440DC8B1F86F8FE00751678 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440DC8A1F86F8FE00751678 /* FirstViewController.swift */; };
 		4440DC8D1F86F8FE00751678 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440DC8C1F86F8FE00751678 /* SecondViewController.swift */; };
@@ -49,6 +51,7 @@
 		4416ADFB1F940424003B58CA /* CappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4422D0C41F871AC100498248 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		442A96371F8D75700046D778 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4432A2F81F9420FD00263E82 /* ReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTests.swift; sourceTree = "<group>"; };
 		4440DC851F86F8FE00751678 /* Capp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4440DC881F86F8FE00751678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4440DC8A1F86F8FE00751678 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 		440DACBB1F9411E900013872 /* CappTest */ = {
 			isa = PBXGroup;
 			children = (
+				4432A2F81F9420FD00263E82 /* ReviewTests.swift */,
 				440DACBC1F9411E900013872 /* CappTest.swift */,
 				440DACBE1F9411E900013872 /* Info.plist */,
 			);
@@ -374,6 +378,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				440DACBD1F9411E900013872 /* CappTest.swift in Sources */,
+				4432A2F91F9420FD00263E82 /* ReviewTests.swift in Sources */,
+				4432A2FA1F94214C00263E82 /* Review.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
