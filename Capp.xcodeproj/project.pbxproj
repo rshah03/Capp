@@ -21,6 +21,8 @@
 		4440DC921F86F8FE00751678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4440DC911F86F8FE00751678 /* Assets.xcassets */; };
 		4440DC951F86F8FE00751678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4440DC931F86F8FE00751678 /* LaunchScreen.storyboard */; };
 		444E63171F896CB100579B2F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E63161F896CB100579B2F /* RegisterViewController.swift */; };
+		44BB61881F9508E800319AF6 /* ShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB61871F9508E800319AF6 /* ShopTests.swift */; };
+		44BB61891F95092C00319AF6 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D827401F8F0D0C00540178 /* Shop.swift */; };
 		44D827411F8F0D0C00540178 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D827401F8F0D0C00540178 /* Shop.swift */; };
 		993D90B1D1ACDDF097037B1C /* Pods_Capp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A26194D970E3E124D14926E /* Pods_Capp.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,7 @@
 		4440DC961F86F8FE00751678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		444E63161F896CB100579B2F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		446655051F91229200FB1C52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		44BB61871F9508E800319AF6 /* ShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTests.swift; sourceTree = "<group>"; };
 		44D827401F8F0D0C00540178 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		4A26194D970E3E124D14926E /* Pods_Capp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		600B63D047858AAE10CA37B6 /* Pods-Capp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capp/Pods-Capp.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +100,7 @@
 		440DACBB1F9411E900013872 /* CappTest */ = {
 			isa = PBXGroup;
 			children = (
+				44BB61871F9508E800319AF6 /* ShopTests.swift */,
 				4432A2F81F9420FD00263E82 /* ReviewTests.swift */,
 				440DACBC1F9411E900013872 /* CappTest.swift */,
 				440DACBE1F9411E900013872 /* Info.plist */,
@@ -380,6 +384,8 @@
 				440DACBD1F9411E900013872 /* CappTest.swift in Sources */,
 				4432A2F91F9420FD00263E82 /* ReviewTests.swift in Sources */,
 				4432A2FA1F94214C00263E82 /* Review.swift in Sources */,
+				44BB61891F95092C00319AF6 /* Shop.swift in Sources */,
+				44BB61881F9508E800319AF6 /* ShopTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

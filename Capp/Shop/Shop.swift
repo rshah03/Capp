@@ -29,24 +29,20 @@ class Shop {
         self.openTime = openTime
         self.closeTime = closeTime
         self.shopTypeInit = shopTypeInit
+        switch shopTypeInit.lowercased() {
+        case "coffee":
+            shopType = Category.coffeeShop
+        case "tea":
+            shopType = Category.teaShop
+        default:
+            shopType = Category.coffeeAndTeaShop
+        }
     }
 
     func getCategory() -> Category {
         return shopType!
     }
-    
-    func setCategory() {
-        if shopTypeInit.lowercased() == "coffee" {
-            shopType = Category.coffeeShop
-        }
-        else if shopTypeInit.lowercased() == "tea" {
-            shopType = Category.teaShop
-        }
-        else if shopTypeInit.lowercased() == "teaAndCoffee" {
-            shopType = Category.coffeeAndTeaShop
-        }
-    }
-    
+
     func getShopID() -> Int {
         return shopID
     }
