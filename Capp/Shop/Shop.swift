@@ -18,7 +18,7 @@ class Shop {
     var shopTypeInit: String
     var shopID: Int
     var shopName: String
-    var shopReviews: [Review]!
+    var shopReviews: [Review]
     var openTime: String
     var closeTime: String
     
@@ -29,6 +29,7 @@ class Shop {
         self.openTime = openTime
         self.closeTime = closeTime
         self.shopTypeInit = shopTypeInit
+        self.shopReviews = [Review]()
         switch shopTypeInit.lowercased() {
         case "coffee":
             shopType = Category.coffeeShop
@@ -38,6 +39,8 @@ class Shop {
             shopType = Category.coffeeAndTeaShop
         }
     }
+    
+    
 
     func getCategory() -> Category {
         return shopType!
@@ -71,8 +74,18 @@ class Shop {
     }
     
     func addReview(review: Review) {
-        shopReviews.append(review)
+//        shopReviews.append(review)
+        shopReviews.insert(review, at: shopReviews.startIndex)
         //Maybe associate a reviwe with a unique user ID to prevent duplicates
+    }
+    
+    func getReviews() -> [Review] {
+        var reviewAggregate = [Review]()
+        for review in shopReviews {
+            reviewAggregate.append(review)
+        }
+        
+        return reviewAggregate
     }
     
     //Delete review function may not be necessary. Cna be removed arbitrarily by admins.
