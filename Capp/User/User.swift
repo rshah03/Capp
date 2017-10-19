@@ -31,14 +31,23 @@ class User {
         return favoriteShops
     }
     
-    func addToFavorites(shop: Shop) {
+    func addToFavorites(shopToAdd: Shop) {
         //when calling this function, add via shopID
-        favoriteShops.append(shop)
+        var isRepeated = false
+        for shop in favoriteShops {
+            if shopToAdd.getShopID() == shop.getShopID() {
+                isRepeated = true
+                break;
+            }
+        }
+        if !isRepeated {
+            favoriteShops.append(shopToAdd)
+        }
     }
     
-    func removeFromFavorites(shopToDelete: Shop) {
+    func removeFromFavorites(shopID: Int) {
         for (index,shop) in favoriteShops.enumerated() {
-            if shop.shopID == shopToDelete.shopID {
+            if shop.shopID == shopID {
                 favoriteShops.remove(at: index)
             }
         }
