@@ -221,6 +221,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButton:" destination="FGH-4N-shM" eventType="touchUpInside" id="C0v-gv-eSb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ko7-5H-D8g">
                                         <rect key="frame" x="147" y="183" width="80" height="32"/>
@@ -283,7 +286,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="B94-CQ-dnM"/>
                     <connections>
-                        <segue destination="49e-Tb-3d3" kind="presentation" id="aBv-ly-akS"/>
+                        <outlet property="emailField" destination="Jv2-vO-GLd" id="THr-Uq-Kjt"/>
+                        <outlet property="passwordField" destination="TP0-Rk-I5k" id="us3-QE-2V6"/>
+                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="loginToMain" id="o0L-ni-SK2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jd-sY-v7S" userLabel="First Responder" sceneMemberID="firstResponder"/>

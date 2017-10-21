@@ -8,11 +8,27 @@
 
 import UIKit
 import ChameleonFramework
+import Firebase
 
 class LoginViewController: UIViewController {
     
     var gradientLayer: CAGradientLayer!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
+    @IBAction func loginButton(_ sender: UIButton) {
+        Auth.auth().signIn(withEmail: emailField.text!, password: passwordField.text!) { (user, error) in
+            if error == nil {
+                self.performSegue(withIdentifier: "loginToMain", sender: self)
+            } else {
+                let alertController = UIAlertController(title: "Login Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+                
+                self.present(alertController, animated: true, completion: nil)
+            }
+            
+        }
+    }
     @IBAction func registerButton(_ sender: UIButton) {
         self.performSegue(withIdentifier: "segueToRegister", sender: sender)
     }
