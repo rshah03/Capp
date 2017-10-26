@@ -22,22 +22,22 @@ class ShopTests: XCTestCase {
     }
     
     func testToSetShopCategoryToTeaShop() {
-        shop = Shop(shopTypeInit: "TEA", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00")
+        shop = Shop(shopTypeInit: "TEA", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
         XCTAssertEqual(String(describing: shop.getCategory()), "teaShop")
     }
     
     func testToSetShopCategoryToCoffeeShop() {
-        shop = Shop(shopTypeInit: "COFFEE", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00")
+        shop = Shop(shopTypeInit: "COFFEE", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
         XCTAssertEqual(String(describing: shop.getCategory()), "coffeeShop")
     }
     
     func testToSetShopCategoryToDefault() {
-        shop = Shop(shopTypeInit: "", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00")
+        shop = Shop(shopTypeInit: "", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
         XCTAssertEqual(String(describing: shop.getCategory()), "coffeeAndTeaShop")
     }
     
     func testAddReviewAddsOneReview() {
-        shop = Shop(shopTypeInit: "", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00")
+        shop = Shop(shopTypeInit: "", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
         let review_1 = Review()
         review_1.setRating(rating: 4)
         review_1.setReviewSummary(summary: "It was good!")
@@ -49,7 +49,7 @@ class ShopTests: XCTestCase {
     }
     
     func testAddReviewAddsTwoReviews() {
-        shop = Shop(shopTypeInit: "", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00")
+        shop = Shop(shopTypeInit: "", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
         let review_1 = Review()
         review_1.setRating(rating: 3)
         review_1.setReviewSummary(summary: "It was okay")
