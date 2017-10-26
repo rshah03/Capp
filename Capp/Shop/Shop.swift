@@ -21,9 +21,10 @@ class Shop {
     var shopReviews: [Review]
     var openTime: String
     var closeTime: String
+    var tags: [String]
     
     
-    init(shopTypeInit: String, shopID: Int, shopName: String, openTime: String, closeTime: String) {
+    init(shopTypeInit: String, shopID: Int, shopName: String, openTime: String, closeTime: String, tags: [String]) {
         self.shopID = shopID
         self.shopName = shopName
         self.openTime = openTime
@@ -38,9 +39,8 @@ class Shop {
         default:
             shopType = Category.coffeeAndTeaShop
         }
+        self.tags = tags
     }
-    
-    
 
     func getCategory() -> Category {
         return shopType!
@@ -72,6 +72,20 @@ class Shop {
         
         return formatter.string(from: shopOpenTime) + " - " + formatter.string(from: shopCloseTime)
     }
+    
+    func getTags() -> [String] {
+        return tags
+    }
+    
+    func searchTags(searchTag: String) -> Bool {
+        for tag in tags {
+            if tag == searchTag {
+                return true
+            }
+        }
+        return false
+    }
+    
     
     func addReview(review: Review) {
 //        shopReviews.append(review)
