@@ -21,10 +21,10 @@ class Shop {
     var shopReviews: [Review]
     var openTime: String
     var closeTime: String
-    var tags: [String]
+    var tags: [String]?
     
     
-    init(shopTypeInit: String, shopID: Int, shopName: String, openTime: String, closeTime: String, tags: [String]) {
+    init(shopTypeInit: String, shopID: Int, shopName: String, openTime: String, closeTime: String, tags: [String]?) {
         self.shopID = shopID
         self.shopName = shopName
         self.openTime = openTime
@@ -39,7 +39,9 @@ class Shop {
         default:
             shopType = Category.coffeeAndTeaShop
         }
-        self.tags = tags
+        if (tags != nil) {
+            self.tags = tags
+        }
     }
 
     func getCategory() -> Category {
@@ -74,11 +76,11 @@ class Shop {
     }
     
     func getTags() -> [String] {
-        return tags
+        return tags!
     }
     
     func searchTags(searchTag: String) -> Bool {
-        for tag in tags {
+        for tag in tags! {
             if tag == searchTag {
                 return true
             }
