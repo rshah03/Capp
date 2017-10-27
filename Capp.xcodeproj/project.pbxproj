@@ -20,6 +20,7 @@
 		4440DC921F86F8FE00751678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4440DC911F86F8FE00751678 /* Assets.xcassets */; };
 		4440DC951F86F8FE00751678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4440DC931F86F8FE00751678 /* LaunchScreen.storyboard */; };
 		444E63171F896CB100579B2F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E63161F896CB100579B2F /* RegisterViewController.swift */; };
+		447271331FA3F5F600ECD924 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447271321FA3F5F600ECD924 /* MapViewController.swift */; };
 		44BB61881F9508E800319AF6 /* ShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB61871F9508E800319AF6 /* ShopTests.swift */; };
 		44BB61891F95092C00319AF6 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D827401F8F0D0C00540178 /* Shop.swift */; };
 		44D827411F8F0D0C00540178 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D827401F8F0D0C00540178 /* Shop.swift */; };
@@ -64,6 +65,7 @@
 		4440DC961F86F8FE00751678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		444E63161F896CB100579B2F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		446655051F91229200FB1C52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		447271321FA3F5F600ECD924 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		44BB61871F9508E800319AF6 /* ShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTests.swift; sourceTree = "<group>"; };
 		44D827401F8F0D0C00540178 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		44DA18EF1F96E8C2001F230E /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				4440DC961F86F8FE00751678 /* Info.plist */,
 				4422D0C41F871AC100498248 /* LoginViewController.swift */,
 				444E63161F896CB100579B2F /* RegisterViewController.swift */,
+				447271321FA3F5F600ECD924 /* MapViewController.swift */,
 				446655051F91229200FB1C52 /* GoogleService-Info.plist */,
 			);
 			path = Capp;
@@ -414,6 +417,7 @@
 				44D827411F8F0D0C00540178 /* Shop.swift in Sources */,
 				4440DC891F86F8FE00751678 /* AppDelegate.swift in Sources */,
 				4440DC8B1F86F8FE00751678 /* HomeViewController.swift in Sources */,
+				447271331FA3F5F600ECD924 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
