@@ -151,7 +151,7 @@
                                             <color key="titleColor" red="0.564653933" green="0.45339596269999999" blue="0.35711643100000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="KB9-I6-djp" kind="show" id="bXA-8Q-tZY"/>
+                                            <segue destination="KB9-I6-djp" kind="show" identifier="ToMapView" id="bXA-8Q-tZY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRW-SG-kFq">
@@ -265,6 +265,9 @@
                                                                 <integer key="value" value="10"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="Search:" destination="9pv-A4-QxB" eventType="touchUpInside" id="59g-Qu-zJG"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -328,18 +331,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tMq-46-7jj">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                             </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ip-12-lVi">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Nearby" style="plain" id="DMu-3H-JCp"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="N04-g2-2ol"/>
+                                    <barButtonItem title="Search" style="plain" id="RSk-7W-apj"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Rdn-zM-ncH" firstAttribute="trailing" secondItem="tMq-46-7jj" secondAttribute="trailing" id="OjX-pF-aCL"/>
-                            <constraint firstItem="tMq-46-7jj" firstAttribute="leading" secondItem="Rdn-zM-ncH" secondAttribute="leading" id="UDG-5I-lYI"/>
-                            <constraint firstItem="Rdn-zM-ncH" firstAttribute="bottom" secondItem="tMq-46-7jj" secondAttribute="bottom" id="Z5j-Ks-58h"/>
-                            <constraint firstItem="tMq-46-7jj" firstAttribute="top" secondItem="Rdn-zM-ncH" secondAttribute="top" id="d0f-37-6WG"/>
+                            <constraint firstItem="1Ip-12-lVi" firstAttribute="trailing" secondItem="Rdn-zM-ncH" secondAttribute="trailing" id="5MO-9t-lWZ"/>
+                            <constraint firstItem="1Ip-12-lVi" firstAttribute="bottom" secondItem="Rdn-zM-ncH" secondAttribute="bottom" id="EMb-E7-efk"/>
+                            <constraint firstItem="tMq-46-7jj" firstAttribute="leading" secondItem="Rdn-zM-ncH" secondAttribute="leading" id="TkV-Te-JsV"/>
+                            <constraint firstItem="tMq-46-7jj" firstAttribute="bottom" secondItem="1Ip-12-lVi" secondAttribute="top" id="c0j-N8-RC8"/>
+                            <constraint firstItem="tMq-46-7jj" firstAttribute="top" secondItem="Rdn-zM-ncH" secondAttribute="top" id="cDb-PY-SmY"/>
+                            <constraint firstItem="tMq-46-7jj" firstAttribute="trailing" secondItem="Rdn-zM-ncH" secondAttribute="trailing" id="gbf-pn-xWm"/>
+                            <constraint firstItem="1Ip-12-lVi" firstAttribute="leading" secondItem="Rdn-zM-ncH" secondAttribute="leading" id="vaf-dd-BpM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rdn-zM-ncH"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="tMq-46-7jj" id="CzR-oB-aXB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y2H-Sg-ZJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
