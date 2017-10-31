@@ -41,7 +41,8 @@ class MapViewController: UIViewController {
         searchInMap()
         self.mapView.delegate = self
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "List View", style: .done, target: self, action: #selector (listView))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "List View", style: .plain, target: self, action: #selector (listView))
+        
     }
     @objc func listView(){
         self.performSegue(withIdentifier: "ToTableView", sender: self)
@@ -51,6 +52,13 @@ class MapViewController: UIViewController {
         mapView.removeAnnotations(mapView.annotations)
         searchInMap()
     }
+    
+    @IBAction func searchNearyby(_ sender: Any) {
+        locationManager.startUpdatingLocation()
+        mapView.removeAnnotations(mapView.annotations)
+        searchInMap()
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -78,7 +86,13 @@ class MapViewController: UIViewController {
 }
 extension MapViewController : CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        self.location = locations.first!
+        self.location = locations.last!
+        
+        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: (location.coordinate.latitude), longitude: (location.coordinate.longitude))
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(myLocation, searchRadius * 2.0, searchRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true)
+        manager.stopUpdatingLocation()
+        //self.map.showsUserLocation = true
     }
     private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse {

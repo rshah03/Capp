@@ -336,9 +336,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ip-12-lVi">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Nearby" style="plain" id="DMu-3H-JCp"/>
+                                    <barButtonItem title="Nearby" style="plain" id="DMu-3H-JCp">
+                                        <connections>
+                                            <action selector="searchNearyby:" destination="KB9-I6-djp" id="bAa-Va-rld"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="N04-g2-2ol"/>
-                                    <barButtonItem title="Search" style="plain" id="RSk-7W-apj"/>
+                                    <barButtonItem title="Search" style="plain" id="RSk-7W-apj">
+                                        <connections>
+                                            <action selector="search:" destination="KB9-I6-djp" id="5GY-Im-XaC"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
