@@ -25,23 +25,26 @@ class MapViewController: UIViewController {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
+        self.mapView.showsUserLocation = true
+        
+        /*
+         let coordinateRegion = MKCoordinateRegionMakeWithDistance((locationManager.location?.coordinate)!, searchRadius * 2.0, searchRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true) */
    
         
-        if let usrloc = mapView.userLocation.location {
-          let coordinateRegion = MKCoordinateRegionMakeWithDistance(usrloc.coordinate, searchRadius * 2.0, searchRadius * 2.0)
+        if let usrloc = locationManager.location {
+            let coordinateRegion = MKCoordinateRegionMakeWithDistance((usrloc.coordinate), searchRadius * 2.0, searchRadius * 2.0)
             mapView.setRegion(coordinateRegion, animated: true)
         }
+        
+        
         searchInMap()
-        self.mapView.showsUserLocation = true
         self.mapView.delegate = self
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "List View", style: .done, target: self, action: #selector (listView))
     }
-    func checkLocationAuthorizationStatus() {
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-            mapView.showsUserLocation = true
-            locationManager.startUpdatingLocation()
-        } else {
-            locationManager.requestWhenInUseAuthorization()
-        }
+    @objc func listView(){
+        self.performSegue(withIdentifier: "ToTableView", sender: self)
     }
     
     @IBAction func search(_ sender: UIBarButtonItem) {
@@ -151,5 +154,13 @@ extension MapViewController : MKMapViewDelegate {
             selectedItem.postalCode ?? ""
         )
         return addressLine
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if (segue.identifier == "ToTableView"){
+            let dvc = segue.destination as! TableViewController
+            dvc.matchingItems=self.matchingItems
+        }
     }
 }
