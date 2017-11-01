@@ -21,11 +21,15 @@
 		4440DC951F86F8FE00751678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4440DC931F86F8FE00751678 /* LaunchScreen.storyboard */; };
 		444E63171F896CB100579B2F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E63161F896CB100579B2F /* RegisterViewController.swift */; };
 		447271331FA3F5F600ECD924 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447271321FA3F5F600ECD924 /* MapViewController.swift */; };
+		44756B4F1FA9575400DC54E2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44756B4E1FA9575400DC54E2 /* TableViewController.swift */; };
+		44756B511FA9579A00DC54E2 /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44756B501FA9579A00DC54E2 /* MapSearchViewController.swift */; };
 		44BB61881F9508E800319AF6 /* ShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB61871F9508E800319AF6 /* ShopTests.swift */; };
 		44BB61891F95092C00319AF6 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D827401F8F0D0C00540178 /* Shop.swift */; };
 		44D827411F8F0D0C00540178 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D827401F8F0D0C00540178 /* Shop.swift */; };
 		44DA18F01F96E8C2001F230E /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DA18EF1F96E8C2001F230E /* UserTests.swift */; };
 		44DA18F11F96E8EE001F230E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A96371F8D75700046D778 /* User.swift */; };
+		643C94DB1FA83922005F279E /* MyAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C94DA1FA83922005F279E /* MyAnnotations.swift */; };
+		643C94DD1FA83E1D005F279E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643C94DC1FA83E16005F279E /* CoreLocation.framework */; };
 		993D90B1D1ACDDF097037B1C /* Pods_Capp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A26194D970E3E124D14926E /* Pods_Capp.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,11 +70,15 @@
 		444E63161F896CB100579B2F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		446655051F91229200FB1C52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		447271321FA3F5F600ECD924 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		44756B4E1FA9575400DC54E2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		44756B501FA9579A00DC54E2 /* MapSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
 		44BB61871F9508E800319AF6 /* ShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTests.swift; sourceTree = "<group>"; };
 		44D827401F8F0D0C00540178 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		44DA18EF1F96E8C2001F230E /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		4A26194D970E3E124D14926E /* Pods_Capp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		600B63D047858AAE10CA37B6 /* Pods-Capp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capp/Pods-Capp.release.xcconfig"; sourceTree = "<group>"; };
+		643C94DA1FA83922005F279E /* MyAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnnotations.swift; sourceTree = "<group>"; };
+		643C94DC1FA83E16005F279E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		AFD0706F1210A18331B37625 /* Pods-Capp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Capp/Pods-Capp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643C94DD1FA83E1D005F279E /* CoreLocation.framework in Frameworks */,
 				993D90B1D1ACDDF097037B1C /* Pods_Capp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,7 +165,10 @@
 				4422D0C41F871AC100498248 /* LoginViewController.swift */,
 				444E63161F896CB100579B2F /* RegisterViewController.swift */,
 				447271321FA3F5F600ECD924 /* MapViewController.swift */,
+				44756B501FA9579A00DC54E2 /* MapSearchViewController.swift */,
+				643C94DA1FA83922005F279E /* MyAnnotations.swift */,
 				446655051F91229200FB1C52 /* GoogleService-Info.plist */,
+				44756B4E1FA9575400DC54E2 /* TableViewController.swift */,
 			);
 			path = Capp;
 			sourceTree = "<group>";
@@ -173,6 +185,7 @@
 		C19B4B5D3A46409A653259E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				643C94DC1FA83E16005F279E /* CoreLocation.framework */,
 				4A26194D970E3E124D14926E /* Pods_Capp.framework */,
 			);
 			name = Frameworks;
@@ -413,10 +426,13 @@
 				4422D0C51F871AC100498248 /* LoginViewController.swift in Sources */,
 				440D7FEF1F8FD8B100C65B7E /* Review.swift in Sources */,
 				444E63171F896CB100579B2F /* RegisterViewController.swift in Sources */,
+				44756B511FA9579A00DC54E2 /* MapSearchViewController.swift in Sources */,
+				44756B4F1FA9575400DC54E2 /* TableViewController.swift in Sources */,
 				442A96381F8D75700046D778 /* User.swift in Sources */,
 				44D827411F8F0D0C00540178 /* Shop.swift in Sources */,
 				4440DC891F86F8FE00751678 /* AppDelegate.swift in Sources */,
 				4440DC8B1F86F8FE00751678 /* HomeViewController.swift in Sources */,
+				643C94DB1FA83922005F279E /* MyAnnotations.swift in Sources */,
 				447271331FA3F5F600ECD924 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

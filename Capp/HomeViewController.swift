@@ -16,8 +16,15 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var trailingC: NSLayoutConstraint!
     @IBOutlet weak var slidingView: UIView!
     
+    
     var menuIsVisible = false
-
+    var searchQuery : String?
+    
+    @IBAction func Search(_ sender: UIButton) {
+        self.searchQuery = "coffee and tea"
+        self.performSegue(withIdentifier: "ToMapView", sender: self)
+        
+    }
     @IBAction func menuToggler(_ sender: Any) {
         if !menuIsVisible {
             leadingC.constant = 150
@@ -53,7 +60,15 @@ class FirstViewController: UIViewController {
         gradientLayer.colors = [UIColor.flatBlue.cgColor, UIColor.flatSkyBlue.cgColor]
         slidingView.layer.insertSublayer(gradientLayer, at: 0)
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if (segue.identifier == "ToMapView"){
+            let dvc = segue.destination as! MapViewController
+            dvc.searchQuery = self.searchQuery!
+        }
+    }
 
 }
 
