@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352DD2C91FA975EF0092BFD1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD2C81FA975EF0092BFD1 /* Settings.swift */; };
 		440D7FEF1F8FD8B100C65B7E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7FEE1F8FD8B100C65B7E /* Review.swift */; };
 		440DACBD1F9411E900013872 /* CappTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440DACBC1F9411E900013872 /* CappTest.swift */; };
 		4416ADF61F940239003B58CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4416ADF51F940239003B58CA /* GoogleService-Info.plist */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		352DD2C81FA975EF0092BFD1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		440D7FEE1F8FD8B100C65B7E /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		440DACBA1F9411E900013872 /* CappTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CappTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		440DACBC1F9411E900013872 /* CappTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CappTest.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				643C94DA1FA83922005F279E /* MyAnnotations.swift */,
 				446655051F91229200FB1C52 /* GoogleService-Info.plist */,
 				44756B4E1FA9575400DC54E2 /* TableViewController.swift */,
+				352DD2C81FA975EF0092BFD1 /* Settings.swift */,
 			);
 			path = Capp;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				44756B511FA9579A00DC54E2 /* MapSearchViewController.swift in Sources */,
 				44756B4F1FA9575400DC54E2 /* TableViewController.swift in Sources */,
 				442A96381F8D75700046D778 /* User.swift in Sources */,
+				352DD2C91FA975EF0092BFD1 /* Settings.swift in Sources */,
 				44D827411F8F0D0C00540178 /* Shop.swift in Sources */,
 				4440DC891F86F8FE00751678 /* AppDelegate.swift in Sources */,
 				4440DC8B1F86F8FE00751678 /* HomeViewController.swift in Sources */,
