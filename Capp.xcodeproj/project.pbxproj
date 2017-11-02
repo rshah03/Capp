@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		352DD2C91FA975EF0092BFD1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD2C81FA975EF0092BFD1 /* Settings.swift */; };
+		352DD2D01FAAA7390092BFD1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 352DD2CF1FAAA7390092BFD1 /* Settings.bundle */; };
 		440D7FEF1F8FD8B100C65B7E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7FEE1F8FD8B100C65B7E /* Review.swift */; };
 		440DACBD1F9411E900013872 /* CappTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440DACBC1F9411E900013872 /* CappTest.swift */; };
 		4416ADF61F940239003B58CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4416ADF51F940239003B58CA /* GoogleService-Info.plist */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		352DD2C81FA975EF0092BFD1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		352DD2CF1FAAA7390092BFD1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		440D7FEE1F8FD8B100C65B7E /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		440DACBA1F9411E900013872 /* CappTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CappTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		440DACBC1F9411E900013872 /* CappTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CappTest.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				446655051F91229200FB1C52 /* GoogleService-Info.plist */,
 				44756B4E1FA9575400DC54E2 /* TableViewController.swift */,
 				352DD2C81FA975EF0092BFD1 /* Settings.swift */,
+				352DD2CF1FAAA7390092BFD1 /* Settings.bundle */,
 			);
 			path = Capp;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			files = (
 				4440DC951F86F8FE00751678 /* LaunchScreen.storyboard in Resources */,
 				4416ADF61F940239003B58CA /* GoogleService-Info.plist in Resources */,
+				352DD2D01FAAA7390092BFD1 /* Settings.bundle in Resources */,
 				4440DC921F86F8FE00751678 /* Assets.xcassets in Resources */,
 				4440DC901F86F8FE00751678 /* Main.storyboard in Resources */,
 			);
