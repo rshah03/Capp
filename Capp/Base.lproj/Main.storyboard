@@ -171,7 +171,7 @@
                                             <color key="titleColor" red="0.564653933" green="0.45339596269999999" blue="0.35711643100000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="4EL-wK-di3" kind="show" id="erQ-DC-puo"/>
+                                            <segue destination="4EL-wK-di3" kind="show" animates="NO" id="erQ-DC-puo"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -443,7 +443,7 @@
         <!--Settings-->
         <scene sceneID="3XW-Iw-CP8">
             <objects>
-                <tableViewController title="Settings" id="4EL-wK-di3" sceneMemberID="viewController">
+                <tableViewController title="Settings" id="4EL-wK-di3" customClass="SettingsViewController" customModule="Capp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="B25-03-8uS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
