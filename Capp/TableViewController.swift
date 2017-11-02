@@ -44,6 +44,9 @@ class TableViewController: UITableViewController {
         // Configure the cell...
         return cell
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "ToDetailView", sender: self)
+    }
     
     func parseAddress(selectedItem:MKPlacemark) -> String {
         // put a space between "4" and "Melrose Place"

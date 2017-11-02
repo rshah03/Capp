@@ -54,8 +54,8 @@ class MapViewController: UIViewController {
     }
     
     @IBAction func searchNearyby(_ sender: Any) {
-        locationManager.startUpdatingLocation()
         mapView.removeAnnotations(mapView.annotations)
+        locationManager.startUpdatingLocation()
         searchInMap()
     }
     
@@ -133,6 +133,12 @@ extension MapViewController : MKMapViewDelegate {
         print(placeName!+" "+address)
         
     }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl)
+    {
+        self.performSegue(withIdentifier: "ToDetailView", sender: self)
+    }
+    
     func getMathingItem( name:String) -> MKMapItem {
         for item in self.matchingItems{
             if item.placemark.name == name {
@@ -175,6 +181,9 @@ extension MapViewController : MKMapViewDelegate {
         if (segue.identifier == "ToTableView"){
             let dvc = segue.destination as! TableViewController
             dvc.matchingItems=self.matchingItems
+        }
+        else if (segue.identifier == "ToDetailView"){
+            
         }
     }
 }
