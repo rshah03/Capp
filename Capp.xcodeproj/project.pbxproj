@@ -28,6 +28,7 @@
 		44D827411F8F0D0C00540178 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D827401F8F0D0C00540178 /* Shop.swift */; };
 		44DA18F01F96E8C2001F230E /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DA18EF1F96E8C2001F230E /* UserTests.swift */; };
 		44DA18F11F96E8EE001F230E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A96371F8D75700046D778 /* User.swift */; };
+		4C0350B71FAA7BE900667912 /* shopList.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C0350B61FAA7BE900667912 /* shopList.json */; };
 		643C94DB1FA83922005F279E /* MyAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C94DA1FA83922005F279E /* MyAnnotations.swift */; };
 		643C94DD1FA83E1D005F279E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643C94DC1FA83E16005F279E /* CoreLocation.framework */; };
 		993D90B1D1ACDDF097037B1C /* Pods_Capp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A26194D970E3E124D14926E /* Pods_Capp.framework */; };
@@ -76,6 +77,7 @@
 		44D827401F8F0D0C00540178 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		44DA18EF1F96E8C2001F230E /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		4A26194D970E3E124D14926E /* Pods_Capp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0350B61FAA7BE900667912 /* shopList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shopList.json; sourceTree = "<group>"; };
 		600B63D047858AAE10CA37B6 /* Pods-Capp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capp/Pods-Capp.release.xcconfig"; sourceTree = "<group>"; };
 		643C94DA1FA83922005F279E /* MyAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnnotations.swift; sourceTree = "<group>"; };
 		643C94DC1FA83E16005F279E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -176,6 +178,7 @@
 		44D8273F1F8F0CE500540178 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
+				4C0350B61FAA7BE900667912 /* shopList.json */,
 				44D827401F8F0D0C00540178 /* Shop.swift */,
 				440D7FEE1F8FD8B100C65B7E /* Review.swift */,
 			);
@@ -324,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C0350B71FAA7BE900667912 /* shopList.json in Resources */,
 				4440DC951F86F8FE00751678 /* LaunchScreen.storyboard in Resources */,
 				4416ADF61F940239003B58CA /* GoogleService-Info.plist in Resources */,
 				4440DC921F86F8FE00751678 /* Assets.xcassets in Resources */,
@@ -645,10 +649,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4S58772B2E;
+				DEVELOPMENT_TEAM = 2D56YL3UX5;
 				INFOPLIST_FILE = Capp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.projects.Capp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projects.Capp.ethan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -661,10 +665,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4S58772B2E;
+				DEVELOPMENT_TEAM = 2D56YL3UX5;
 				INFOPLIST_FILE = Capp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.projects.Capp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.projects.Capp.ethan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
