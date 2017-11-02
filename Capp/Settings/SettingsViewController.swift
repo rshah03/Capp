@@ -8,16 +8,6 @@
 
 import UIKit
 
-class SettingsMenuItem {
-    var label : String = ""
-    var hasToggleSwitch : Bool = false
-    
-    init(label : String, hasToggleSwitch : Bool = false) {
-        self.label = label
-        self.hasToggleSwitch = hasToggleSwitch
-    }
-}
-
 class SettingsViewController: UITableViewController {
     
     var settingsMenuItems = [SettingsMenuItem]()
@@ -45,12 +35,10 @@ class SettingsViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return settingsMenuItems.count
     }
 
@@ -65,6 +53,14 @@ class SettingsViewController: UITableViewController {
         cell.toggleSwitch.isHidden = !menuItem.hasToggleSwitch
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let menuItem = self.settingsMenuItems[indexPath.row]
+        
+        if (menuItem.hasSegue) {
+            self.performSegue(withIdentifier: menuItem.segueId, sender: self)
+        }
     }
 
     /*
@@ -115,7 +111,7 @@ class SettingsViewController: UITableViewController {
     
     //MARK: Private functions.
     func setupMenu() -> Void {
-        let accountMenu = SettingsMenuItem(label : "Account")
+        let accountMenu = SettingsMenuItem(label : "Account", segueId : "AccountSegue")
         let profileMenu = SettingsMenuItem(label: "Profile")
         let searchPreferenceMenu = SettingsMenuItem(label: "Search Preferences")
         let notificationsMenu = SettingsMenuItem(label: "Notifications", hasToggleSwitch : true)
