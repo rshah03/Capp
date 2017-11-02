@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		352DD2C91FA975EF0092BFD1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD2C81FA975EF0092BFD1 /* Settings.swift */; };
-		352DD2D01FAAA7390092BFD1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 352DD2CF1FAAA7390092BFD1 /* Settings.bundle */; };
 		352DD2D21FAAAB5B0092BFD1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD2D11FAAAB5B0092BFD1 /* SettingsViewController.swift */; };
+		352DD2D41FAAC0840092BFD1 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD2D31FAAC0840092BFD1 /* SettingsTableViewCell.swift */; };
 		440D7FEF1F8FD8B100C65B7E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440D7FEE1F8FD8B100C65B7E /* Review.swift */; };
 		440DACBD1F9411E900013872 /* CappTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440DACBC1F9411E900013872 /* CappTest.swift */; };
 		4416ADF61F940239003B58CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4416ADF51F940239003B58CA /* GoogleService-Info.plist */; };
@@ -55,8 +55,8 @@
 
 /* Begin PBXFileReference section */
 		352DD2C81FA975EF0092BFD1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		352DD2CF1FAAA7390092BFD1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		352DD2D11FAAAB5B0092BFD1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		352DD2D31FAAC0840092BFD1 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		440D7FEE1F8FD8B100C65B7E /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		440DACBA1F9411E900013872 /* CappTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CappTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		440DACBC1F9411E900013872 /* CappTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CappTest.swift; sourceTree = "<group>"; };
@@ -115,6 +115,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		352DD2D51FAAC4BF0092BFD1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				352DD2D31FAAC0840092BFD1 /* SettingsTableViewCell.swift */,
+				352DD2C81FA975EF0092BFD1 /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		440DACBB1F9411E900013872 /* CappTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +169,7 @@
 		4440DC871F86F8FE00751678 /* Capp */ = {
 			isa = PBXGroup;
 			children = (
+				352DD2D51FAAC4BF0092BFD1 /* Settings */,
 				44D8273F1F8F0CE500540178 /* Shop */,
 				442A96361F8D75500046D778 /* User */,
 				4440DC881F86F8FE00751678 /* AppDelegate.swift */,
@@ -174,10 +184,8 @@
 				44756B501FA9579A00DC54E2 /* MapSearchViewController.swift */,
 				643C94DA1FA83922005F279E /* MyAnnotations.swift */,
 				446655051F91229200FB1C52 /* GoogleService-Info.plist */,
-				44756B4E1FA9575400DC54E2 /* TableViewController.swift */,
-				352DD2C81FA975EF0092BFD1 /* Settings.swift */,
-				352DD2CF1FAAA7390092BFD1 /* Settings.bundle */,
 				352DD2D11FAAAB5B0092BFD1 /* SettingsViewController.swift */,
+				44756B4E1FA9575400DC54E2 /* TableViewController.swift */,
 			);
 			path = Capp;
 			sourceTree = "<group>";
@@ -335,7 +343,6 @@
 			files = (
 				4440DC951F86F8FE00751678 /* LaunchScreen.storyboard in Resources */,
 				4416ADF61F940239003B58CA /* GoogleService-Info.plist in Resources */,
-				352DD2D01FAAA7390092BFD1 /* Settings.bundle in Resources */,
 				4440DC921F86F8FE00751678 /* Assets.xcassets in Resources */,
 				4440DC901F86F8FE00751678 /* Main.storyboard in Resources */,
 			);
@@ -437,6 +444,7 @@
 				440D7FEF1F8FD8B100C65B7E /* Review.swift in Sources */,
 				444E63171F896CB100579B2F /* RegisterViewController.swift in Sources */,
 				44756B511FA9579A00DC54E2 /* MapSearchViewController.swift in Sources */,
+				352DD2D41FAAC0840092BFD1 /* SettingsTableViewCell.swift in Sources */,
 				44756B4F1FA9575400DC54E2 /* TableViewController.swift in Sources */,
 				442A96381F8D75700046D778 /* User.swift in Sources */,
 				352DD2C91FA975EF0092BFD1 /* Settings.swift in Sources */,

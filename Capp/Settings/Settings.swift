@@ -8,6 +8,6 @@
 
 import Foundation
 
-class Settings {
+class Settings : UserDefaults {
     var rememberSearchTags : Bool = false
 }

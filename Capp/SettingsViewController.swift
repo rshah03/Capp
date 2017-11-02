@@ -8,7 +8,19 @@
 
 import UIKit
 
+class SettingsMenuItem {
+    var label : String = ""
+    var hasToggleSwitch : Bool = false
+    
+    init(label : String, hasToggleSwitch : Bool = false) {
+        self.label = label
+        self.hasToggleSwitch = hasToggleSwitch
+    }
+}
+
 class SettingsViewController: UITableViewController {
+    
+    var settingsMenuItems = [SettingsMenuItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +31,10 @@ class SettingsViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
-        UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!)
-        _ = navigationController?.popViewController(animated: false)
+        //UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!)
+        //_ = navigationController?.popViewController(animated: false)
+        
+        setupMenu()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,23 +46,26 @@ class SettingsViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return settingsMenuItems.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "settingsItem", for: indexPath) as? SettingsTableViewCell else {
+            fatalError("The dequeued cell is not an instance of SettingsTableViewCell.")
+        }
 
         // Configure the cell...
+        let menuItem = self.settingsMenuItems[indexPath.row]
+        cell.menuName.text = menuItem.label
+        cell.toggleSwitch.isHidden = !menuItem.hasToggleSwitch
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -94,5 +111,16 @@ class SettingsViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    //MARK: Private functions.
+    func setupMenu() -> Void {
+        let accountMenu = SettingsMenuItem(label : "Account")
+        let profileMenu = SettingsMenuItem(label: "Profile")
+        let searchPreferenceMenu = SettingsMenuItem(label: "Search Preferences")
+        let notificationsMenu = SettingsMenuItem(label: "Notifications", hasToggleSwitch : true)
+        let locaationMenu = SettingsMenuItem(label: "Location", hasToggleSwitch : true)
+        self.settingsMenuItems = [accountMenu, profileMenu, searchPreferenceMenu, notificationsMenu, locaationMenu]
+    }
 
 }
