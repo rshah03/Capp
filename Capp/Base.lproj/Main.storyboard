@@ -640,6 +640,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuc-1N-56T">
                                         <rect key="frame" x="76" y="220" width="123" height="30"/>
                                         <state key="normal" title="Forgot Password?"/>
+                                        <connections>
+                                            <action selector="forgotPAssword:" destination="FGH-4N-shM" eventType="touchUpInside" id="xRC-ag-kzv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.66902792453765869" green="0.73128575086593628" blue="0.94889926910400391" alpha="1" colorSpace="calibratedRGB"/>
