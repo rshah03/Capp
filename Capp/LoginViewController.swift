@@ -33,6 +33,23 @@ class LoginViewController: UIViewController {
         self.performSegue(withIdentifier: "segueToRegister", sender: sender)
     }
     
+    @IBAction func forgotPAssword(_ sender: UIButton) {
+        Auth.auth().sendPasswordReset(withEmail: emailField.text!) {error in
+            if error != nil {
+                let alertController = UIAlertController(title: "Password Reset Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+                
+                self.present(alertController, animated: true, completion: nil)
+            }
+            else {
+                let successMessage = "An email has been sent to you with details on recovering your password."
+                let alertController = UIAlertController(title: "Password Reset Sent", message: successMessage, preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+                
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
