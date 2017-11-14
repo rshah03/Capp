@@ -53,6 +53,14 @@ class AccountTableViewController: UITableViewController {
     }
     
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let menuItem = self.settingsMenuItems[indexPath.row]
+        
+        if (menuItem.hasSegue) {
+            self.performSegue(withIdentifier: menuItem.segueId, sender: self)
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -99,8 +107,8 @@ class AccountTableViewController: UITableViewController {
     */
 
     private func setupMenus() -> Void {
-        let changeUsernameMenu = SettingsMenuItem(label : "Change Username")
-        let changePasswordMenu = SettingsMenuItem(label : "Change Password")
+        let changeUsernameMenu = SettingsMenuItem(label : "Change Username", segueId: "ChangeUsername")
+        let changePasswordMenu = SettingsMenuItem(label : "Change Password", segueId: "ChangePassword")
         self.settingsMenuItems = [changeUsernameMenu, changePasswordMenu]
     }
 }
