@@ -539,7 +539,7 @@
         <!--Change Username-->
         <scene sceneID="UBw-25-Zwc">
             <objects>
-                <viewController title="Change Username" id="ioX-Hg-C6U" sceneMemberID="viewController">
+                <viewController title="Change Username" id="ioX-Hg-C6U" customClass="ChangeUsernameViewController" customModule="Capp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fBV-yw-i9d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -548,13 +548,13 @@
                                 <rect key="frame" x="16" y="92" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-type new username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wMc-d1-jXu">
                                 <rect key="frame" x="16" y="150" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Va-o4-eRo">
                                 <rect key="frame" x="146" y="208" width="82" height="30"/>
@@ -565,6 +565,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="changeButton:" destination="ioX-Hg-C6U" eventType="touchUpInside" id="unZ-sv-4d2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -584,6 +587,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9oJ-vq-bFG"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmUsername" destination="wMc-d1-jXu" id="C0P-pb-NoO"/>
+                        <outlet property="newUsername" destination="5OF-NQ-Lzg" id="yIl-q2-KrM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NFz-dC-XPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -592,7 +599,7 @@
         <!--Change Password-->
         <scene sceneID="OB4-Re-LvA">
             <objects>
-                <viewController title="Change Password" id="YoK-9I-pmM" sceneMemberID="viewController">
+                <viewController title="Change Password" id="YoK-9I-pmM" customClass="ChangePasswordViewController" customModule="Capp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gm4-rC-str">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -601,25 +608,28 @@
                                 <rect key="frame" x="16" y="92" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fca-bR-Iin">
                                 <rect key="frame" x="16" y="150" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-type new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ai7-H7-iBg">
                                 <rect key="frame" x="16" y="208" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiS-l9-HKV">
                                 <rect key="frame" x="146" y="266" width="82" height="30"/>
                                 <color key="backgroundColor" red="0.20399489998817444" green="0.7387998104095459" blue="0.60008388757705688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="changePassword:" destination="YoK-9I-pmM" eventType="touchUpInside" id="D06-L1-5nH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -639,6 +649,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dN1-9Z-QfI"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmPassword" destination="ai7-H7-iBg" id="ARH-7h-AJG"/>
+                        <outlet property="currentPassword" destination="z1E-gg-r4W" id="oFV-de-uSz"/>
+                        <outlet property="newPassword" destination="fca-bR-Iin" id="POm-VU-IID"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7FS-7e-hzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
