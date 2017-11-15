@@ -28,7 +28,6 @@
 		444E63171F896CB100579B2F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444E63161F896CB100579B2F /* RegisterViewController.swift */; };
 		447271331FA3F5F600ECD924 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447271321FA3F5F600ECD924 /* MapViewController.swift */; };
 		44756B4F1FA9575400DC54E2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44756B4E1FA9575400DC54E2 /* TableViewController.swift */; };
-		44756B511FA9579A00DC54E2 /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44756B501FA9579A00DC54E2 /* MapSearchViewController.swift */; };
 		44BB61881F9508E800319AF6 /* ShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BB61871F9508E800319AF6 /* ShopTests.swift */; };
 		44BB61891F95092C00319AF6 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D827401F8F0D0C00540178 /* Shop.swift */; };
 		44D827411F8F0D0C00540178 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D827401F8F0D0C00540178 /* Shop.swift */; };
@@ -84,7 +83,6 @@
 		446655051F91229200FB1C52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		447271321FA3F5F600ECD924 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		44756B4E1FA9575400DC54E2 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		44756B501FA9579A00DC54E2 /* MapSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
 		44BB61871F9508E800319AF6 /* ShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTests.swift; sourceTree = "<group>"; };
 		44D827401F8F0D0C00540178 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		44DA18EF1F96E8C2001F230E /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
@@ -201,7 +199,6 @@
 				4422D0C41F871AC100498248 /* LoginViewController.swift */,
 				444E63161F896CB100579B2F /* RegisterViewController.swift */,
 				447271321FA3F5F600ECD924 /* MapViewController.swift */,
-				44756B501FA9579A00DC54E2 /* MapSearchViewController.swift */,
 				643C94DA1FA83922005F279E /* MyAnnotations.swift */,
 				446655051F91229200FB1C52 /* GoogleService-Info.plist */,
 				44756B4E1FA9575400DC54E2 /* TableViewController.swift */,
@@ -465,7 +462,6 @@
 				440D7FEF1F8FD8B100C65B7E /* Review.swift in Sources */,
 				444E63171F896CB100579B2F /* RegisterViewController.swift in Sources */,
 				352DD2DC1FAACCAF0092BFD1 /* AccountTableViewCell.swift in Sources */,
-				44756B511FA9579A00DC54E2 /* MapSearchViewController.swift in Sources */,
 				352DD2D41FAAC0840092BFD1 /* SettingsTableViewCell.swift in Sources */,
 				44756B4F1FA9575400DC54E2 /* TableViewController.swift in Sources */,
 				352DD2DA1FAAC9800092BFD1 /* SettingsMenuItem.swift in Sources */,
