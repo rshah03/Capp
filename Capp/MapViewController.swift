@@ -1,4 +1,4 @@
-//
+///
 //  MapViewController.swift
 //  Capp
 //
@@ -10,13 +10,19 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController {
+
+protocol MapSearchBarPin {
+    func dropSearchPin(placemark:MKPlacemark)
+}
+
+class MapViewController: UIViewController, MapSearchBarPin {
     var matchingItems:[MKMapItem] = []
     let locationManager = CLLocationManager()
     var location = CLLocation()
     let searchRadius: CLLocationDistance = 2000
     var searchQuery:String?
     let initialLocation = CLLocation(latitude: 52.3740300, longitude: 4.8896900)
+    var resultSearchController:UISearchController? = nil
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -26,11 +32,6 @@ class MapViewController: UIViewController {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         self.mapView.showsUserLocation = true
-        
-        /*
-         let coordinateRegion = MKCoordinateRegionMakeWithDistance((locationManager.location?.coordinate)!, searchRadius * 2.0, searchRadius * 2.0)
-        mapView.setRegion(coordinateRegion, animated: true) */
-   
         
         if let usrloc = locationManager.location {
             let coordinateRegion = MKCoordinateRegionMakeWithDistance((usrloc.coordinate), searchRadius * 2.0, searchRadius * 2.0)
@@ -43,7 +44,26 @@ class MapViewController: UIViewController {
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "List View", style: .plain, target: self, action: #selector (listView))
         
+        
+        //map search bar
+        let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as! LocationSearchTable
+        resultSearchController = UISearchController(searchResultsController: locationSearchTable)
+        resultSearchController?.searchResultsUpdater = locationSearchTable
+        let searchBar = resultSearchController!.searchBar
+        searchBar.sizeToFit()
+        searchBar.placeholder = "Search for places"
+        navigationItem.titleView = resultSearchController?.searchBar
+        resultSearchController?.hidesNavigationBarDuringPresentation = false
+        resultSearchController?.dimsBackgroundDuringPresentation = true
+        definesPresentationContext = true
+        locationSearchTable.mapView = self.mapView
+        locationSearchTable.MapSearchBarDelegate = self
+        
+        
+        
     }
+    
+    
     @objc func listView(){
         self.performSegue(withIdentifier: "ToTableView", sender: self)
     }
@@ -54,8 +74,8 @@ class MapViewController: UIViewController {
     }
     
     @IBAction func searchNearyby(_ sender: Any) {
-        locationManager.startUpdatingLocation()
         mapView.removeAnnotations(mapView.annotations)
+        locationManager.startUpdatingLocation()
         searchInMap()
     }
     
@@ -78,12 +98,31 @@ class MapViewController: UIViewController {
         }
     }
     
+    func dropSearchPin(placemark:MKPlacemark){
+        // clear existing pins
+        mapView.removeAnnotations(mapView.annotations)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = placemark.coordinate
+        annotation.title = placemark.name
+        if let city = placemark.locality,
+            let state = placemark.administrativeArea {
+            annotation.subtitle = "\(city) \(state)"
+        }
+        mapView.addAnnotation(annotation)
+        let span = MKCoordinateSpanMake(0.05, 0.05)
+        let region = MKCoordinateRegionMake(placemark.coordinate, span)
+        mapView.setRegion(region, animated: true)
+    }
+    
+    
+    
     func addPinToMapView(title: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         let annotation = MyAnnotations(coordinate: location, title: title)
         self.mapView.addAnnotation(annotation)
     }
 }
+
 extension MapViewController : CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         self.location = locations.last!
@@ -133,6 +172,12 @@ extension MapViewController : MKMapViewDelegate {
         print(placeName!+" "+address)
         
     }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl)
+    {
+        self.performSegue(withIdentifier: "ToDetailView", sender: self)
+    }
+    
     func getMathingItem( name:String) -> MKMapItem {
         for item in self.matchingItems{
             if item.placemark.name == name {
@@ -175,6 +220,9 @@ extension MapViewController : MKMapViewDelegate {
         if (segue.identifier == "ToTableView"){
             let dvc = segue.destination as! TableViewController
             dvc.matchingItems=self.matchingItems
+        }
+        else if (segue.identifier == "ToDetailView"){
+            
         }
     }
 }
