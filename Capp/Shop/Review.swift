@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Review {
+class Review: Codable {
     
     var starRating: Int
     var reviewSummary: String
