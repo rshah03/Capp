@@ -8,13 +8,13 @@
 
 import Foundation
 
-class Shop {
-    enum Category {
+class Shop: Codable {
+    enum Category{
         case coffeeShop
         case teaShop
         case coffeeAndTeaShop
     }
-    var shopType: Category?
+    var shopType: String
     var shopTypeInit: String
     var shopID: Int
     var shopName: String
@@ -31,21 +31,21 @@ class Shop {
         self.closeTime = closeTime
         self.shopTypeInit = shopTypeInit
         self.shopReviews = [Review]()
-        switch shopTypeInit.lowercased() {
-        case "coffee":
-            shopType = Category.coffeeShop
-        case "tea":
-            shopType = Category.teaShop
-        default:
-            shopType = Category.coffeeAndTeaShop
-        }
+       self.shopType = shopTypeInit.lowercased()
         if (tags != nil) {
             self.tags = tags
         }
     }
 
     func getCategory() -> Category {
-        return shopType!
+        switch shopType {
+        case "coffee":
+            return Category.coffeeShop
+        case "tea":
+            return Category.teaShop
+        default:
+            return Category.coffeeAndTeaShop
+        }
     }
 
     func getShopID() -> Int {
@@ -104,6 +104,21 @@ class Shop {
         return reviewAggregate
     }
     
-    //Delete review function may not be necessary. Cna be removed arbitrarily by admins.
+    func importShopList() -> [Shop]{
+        if let path = Bundle.main.path(forResource: "shopList", ofType: "json"){
+            do{
+                let jsonData = try String(contentsOfFile: path, encoding: .utf8)
+                let decoder = JSONDecoder()
+                let shopList = try! decoder.decode([Shop].self, from: jsonData.data(using: .utf8)!)
+                return shopList
+            }
+            catch {
+                print("\(error)")
+            }
+        }
+        return [Shop]()
+    }
+    
+    //Delete review function may not be necessary. Can be removed arbitrarily by admins.
     
 }
