@@ -56,7 +56,7 @@ class ChangeUsernameViewController: UIViewController {
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 } else {
-                    let alert = UIAlertController(title: "", message: "Username changed.", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "", message: "Username successfully changed.", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }

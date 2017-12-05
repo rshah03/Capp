@@ -15,7 +15,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var pictureImageView: UIImageView!
-    var logo : URL = (URL(string: "www.google.com"))!
+    var logo : URL? = (URL(string: "www.google.com"))!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,19 +43,20 @@ class ProfileViewController: UIViewController {
         let user = Auth.auth().currentUser
         self.emailLabel.text = user?.email
         self.nameLabel.text = user?.displayName
-        logo = (user?.photoURL)!
-        print("The URL is: " + logo.absoluteString)
+        logo = user?.photoURL
         
-        URLSession.shared.dataTask(with: logo, completionHandler: { (data, response, error) in
-            if error != nil {
-                print(error!)
-                return
-            }
-            DispatchQueue.main.async {
-                self.pictureImageView.contentMode = .scaleAspectFit
-                self.pictureImageView.image = UIImage(data: data!)
-            }
-        }).resume()
+        if (logo != nil) {
+            URLSession.shared.dataTask(with: logo!, completionHandler: { (data, response, error) in
+                if error != nil {
+                    print(error!)
+                    return
+                }
+                DispatchQueue.main.async {
+                    self.pictureImageView.contentMode = .scaleAspectFit
+                    self.pictureImageView.image = UIImage(data: data!)
+                }
+            }).resume()
+        }
     }
 
     override func didReceiveMemoryWarning() {

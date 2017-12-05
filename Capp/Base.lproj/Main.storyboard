@@ -671,26 +671,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter current password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z1E-gg-r4W">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fca-bR-Iin">
                                 <rect key="frame" x="16" y="92" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fca-bR-Iin">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-type new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ai7-H7-iBg">
                                 <rect key="frame" x="16" y="150" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-type new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ai7-H7-iBg">
-                                <rect key="frame" x="16" y="208" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiS-l9-HKV">
-                                <rect key="frame" x="146" y="266" width="82" height="30"/>
+                                <rect key="frame" x="146" y="208" width="82" height="30"/>
                                 <color key="backgroundColor" red="0.20399489998817444" green="0.7387998104095459" blue="0.60008388757705688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Change"/>
@@ -702,15 +696,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fca-bR-Iin" firstAttribute="leading" secondItem="dN1-9Z-QfI" secondAttribute="leading" constant="16" id="He3-zL-viZ"/>
-                            <constraint firstItem="z1E-gg-r4W" firstAttribute="top" secondItem="dN1-9Z-QfI" secondAttribute="top" constant="28" id="I8y-hf-LoY"/>
                             <constraint firstItem="hiS-l9-HKV" firstAttribute="top" secondItem="ai7-H7-iBg" secondAttribute="bottom" constant="28" id="LP5-tW-rAx"/>
                             <constraint firstItem="dN1-9Z-QfI" firstAttribute="trailing" secondItem="fca-bR-Iin" secondAttribute="trailing" constant="16" id="MEc-3k-u0u"/>
-                            <constraint firstItem="dN1-9Z-QfI" firstAttribute="trailing" secondItem="z1E-gg-r4W" secondAttribute="trailing" constant="16" id="Nme-5s-OeT"/>
                             <constraint firstItem="dN1-9Z-QfI" firstAttribute="trailing" secondItem="ai7-H7-iBg" secondAttribute="trailing" constant="16" id="ZWb-dg-e8R"/>
                             <constraint firstItem="hiS-l9-HKV" firstAttribute="leading" secondItem="dN1-9Z-QfI" secondAttribute="leading" constant="146" id="bfh-FK-Mnh"/>
-                            <constraint firstItem="z1E-gg-r4W" firstAttribute="leading" secondItem="dN1-9Z-QfI" secondAttribute="leading" constant="16" id="dvK-Xn-V9v"/>
-                            <constraint firstItem="fca-bR-Iin" firstAttribute="top" secondItem="z1E-gg-r4W" secondAttribute="bottom" constant="28" id="em6-Gl-0tf"/>
                             <constraint firstItem="dN1-9Z-QfI" firstAttribute="trailing" secondItem="hiS-l9-HKV" secondAttribute="trailing" constant="147" id="euk-tl-PDa"/>
+                            <constraint firstItem="fca-bR-Iin" firstAttribute="top" secondItem="dN1-9Z-QfI" secondAttribute="top" constant="28" id="koH-Lg-X8c"/>
                             <constraint firstItem="ai7-H7-iBg" firstAttribute="top" secondItem="fca-bR-Iin" secondAttribute="bottom" constant="28" id="pHD-QU-DbJ"/>
                             <constraint firstItem="ai7-H7-iBg" firstAttribute="leading" secondItem="dN1-9Z-QfI" secondAttribute="leading" constant="16" id="rwi-vm-law"/>
                         </constraints>
@@ -718,7 +709,6 @@
                     </view>
                     <connections>
                         <outlet property="confirmPassword" destination="ai7-H7-iBg" id="ARH-7h-AJG"/>
-                        <outlet property="currentPassword" destination="z1E-gg-r4W" id="oFV-de-uSz"/>
                         <outlet property="newPassword" destination="fca-bR-Iin" id="POm-VU-IID"/>
                     </connections>
                 </viewController>
