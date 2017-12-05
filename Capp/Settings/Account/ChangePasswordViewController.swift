@@ -53,7 +53,7 @@ class ChangePasswordViewController: UIViewController {
             let user = Auth.auth().currentUser
             user?.updatePassword(to: newPassword.text!, completion: { (error) in
                 if (error != nil) {
-                    let alert = UIAlertController(title: "", message: "Failed to change password.", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "", message: error?.localizedDescription, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 } else {

@@ -52,7 +52,7 @@ class ChangeUsernameViewController: UIViewController {
             let user = Auth.auth().currentUser
             user?.updateEmail(to: newUsername.text!, completion: { (error) in
                 if (error != nil) {
-                    let alert = UIAlertController(title: "", message: "Failed to change username.", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "", message: error?.localizedDescription, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 } else {
