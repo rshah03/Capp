@@ -7,10 +7,10 @@
 //
 
 import UIKit
+import Firebase
 
 class ChangePasswordViewController: UIViewController {
 
-    @IBOutlet weak var currentPassword: UITextField!
     @IBOutlet weak var newPassword: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
     
@@ -49,6 +49,19 @@ class ChangePasswordViewController: UIViewController {
             let alert = UIAlertController(title: "", message: "Password cannot be empty.", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+        } else {
+            let user = Auth.auth().currentUser
+            user?.updatePassword(to: newPassword.text!, completion: { (error) in
+                if (error != nil) {
+                    let alert = UIAlertController(title: "", message: error?.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                } else {
+                    let alert = UIAlertController(title: "", message: "Password successfully changed.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            })
         }
     }
 }

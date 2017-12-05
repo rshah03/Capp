@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ChangeUsernameViewController: UIViewController {
 
@@ -44,9 +45,22 @@ class ChangeUsernameViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         } else if (confirmUsername.text! == "") {
-            let alert = UIAlertController(title: "", message: "Username do not match", preferredStyle: UIAlertControllerStyle.alert)
+            let alert = UIAlertController(title: "", message: "Username does not match", preferredStyle: UIAlertControllerStyle.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+        } else {
+            let user = Auth.auth().currentUser
+            user?.updateEmail(to: newUsername.text!, completion: { (error) in
+                if (error != nil) {
+                    let alert = UIAlertController(title: "", message: error?.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                } else {
+                    let alert = UIAlertController(title: "", message: "Username successfully changed.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            })
         }
     }
 }
