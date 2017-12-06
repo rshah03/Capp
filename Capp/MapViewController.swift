@@ -11,6 +11,7 @@ import MapKit
 import CoreLocation
 
 
+
 protocol MapSearchBarPin {
     func dropSearchPin(placemark:MKPlacemark)
 }
@@ -23,7 +24,10 @@ class MapViewController: UIViewController, MapSearchBarPin {
     var searchQuery:String?
     let initialLocation = CLLocation(latitude: 52.3740300, longitude: 4.8896900)
     var resultSearchController:UISearchController? = nil
+    var shops = [Shop]()
+    @IBOutlet weak var searchButton: UIButton!
     
+    @IBOutlet weak var myLocationButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
@@ -58,16 +62,18 @@ class MapViewController: UIViewController, MapSearchBarPin {
         definesPresentationContext = true
         locationSearchTable.mapView = self.mapView
         locationSearchTable.MapSearchBarDelegate = self
-        
-        
-        
+        searchButton.isHidden = true
+        myLocationButton.isHidden = true
+        //shops = self.importShopList()
+
     }
+
     
     
     @objc func listView(){
         self.performSegue(withIdentifier: "ToTableView", sender: self)
     }
-    
+  
     @IBAction func search(_ sender: UIBarButtonItem) {
         mapView.removeAnnotations(mapView.annotations)
         searchInMap()
@@ -93,9 +99,17 @@ class MapViewController: UIViewController, MapSearchBarPin {
             (response: MKLocalSearchResponse!, error: Error!) in
             self.matchingItems = response.mapItems
             for item in response.mapItems {
+                print("Shop name: "+item.name!)
                 self.addPinToMapView(title: item.name!, latitude: (item.placemark.location?.coordinate.latitude)!, longitude: (item.placemark.location?.coordinate.longitude)!)
+                
+                """
+                if self.ifonShoplist(name: item.name!){
+                   self.addPinToMapView(title: item.name!, latitude: (item.placemark.location?.coordinate.latitude)!, longitude: (item.placemark.location?.coordinate.longitude)!)
+                }
+"""
             }
         }
+        searchButton.isHidden = true
     }
     
     func dropSearchPin(placemark:MKPlacemark){
@@ -115,11 +129,37 @@ class MapViewController: UIViewController, MapSearchBarPin {
     }
     
     
-    
     func addPinToMapView(title: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         let annotation = MyAnnotations(coordinate: location, title: title)
         self.mapView.addAnnotation(annotation)
+    }
+    
+    func importShopList() -> [Shop]{
+        if let path = Bundle.main.path(forResource: "shopList", ofType: "json"){
+            do{
+                let jsonData = try String(contentsOfFile: path, encoding: .utf8)
+                let decoder = JSONDecoder()
+                let shopList = try! decoder.decode([Shop].self, from: jsonData.data(using: .utf8)!)
+                
+                return shopList
+            }
+            catch {
+                print("\(error)")
+            }
+        }
+        print("import shop list")
+        return [Shop]()
+    }
+    
+    func ifonShoplist(name: String) -> Bool {
+        for shop in shops{
+            if name == shop.shopName{
+                print("match found")
+                return true
+            }
+        }
+        return false
     }
 }
 
@@ -161,6 +201,7 @@ extension MapViewController : MKMapViewDelegate {
         annotationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
         return annotationView
     }
+    
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         var item = MKMapItem()
         var placeName:String?
@@ -172,7 +213,10 @@ extension MapViewController : MKMapViewDelegate {
         print(placeName!+" "+address)
         
     }
-    
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        searchButton.isHidden = false
+        myLocationButton.isHidden = false
+    }
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl)
     {
         self.performSegue(withIdentifier: "ToDetailView", sender: self)

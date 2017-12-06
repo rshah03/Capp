@@ -21,7 +21,7 @@ class FirstViewController: UIViewController {
     var searchQuery : String?
     
     @IBAction func Search(_ sender: UIButton) {
-        self.searchQuery = "coffee and tea"
+        self.searchQuery = "coffee and tea and cafe"
         self.performSegue(withIdentifier: "ToMapView", sender: self)
         
     }
