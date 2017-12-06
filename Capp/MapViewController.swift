@@ -23,11 +23,13 @@ class MapViewController: UIViewController, MapSearchBarPin {
     var searchQuery:String?
     let initialLocation = CLLocation(latitude: 52.3740300, longitude: 4.8896900)
     var resultSearchController:UISearchController? = nil
+    var shops = [Shop]()
     
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        shops = self.importShopList()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -224,5 +226,23 @@ extension MapViewController : MKMapViewDelegate {
         else if (segue.identifier == "ToDetailView"){
             
         }
+    }
+    
+    func importShopList() -> [Shop]{
+        let path = Bundle.main.path(forResource: "shopList", ofType: "json")
+        let url = URL(fileURLWithPath: path!)
+        let jsonData = try! Data(contentsOf: url)
+        do {
+            let shopList = try JSONDecoder().decode([Shop].self, from: jsonData)
+            print("IMPORT SHOPLIST: SUCCESS\n\n")
+            return shopList
+        }
+        catch{
+            print("\(error)")
+        }
+        
+        
+        print("IMPORT SHOPLIST: FAIL\n")
+        return [Shop]()
     }
 }

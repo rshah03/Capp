@@ -45,7 +45,7 @@ class User {
         }
     }
     
-    func removeFromFavorites(shopID: Int) {
+    func removeFromFavorites(shopID: String) {
         for (index,shop) in favoriteShops.enumerated() {
             if shop.shopID == shopID {
                 favoriteShops.remove(at: index)

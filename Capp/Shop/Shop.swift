@@ -15,8 +15,7 @@ class Shop: Codable {
         case coffeeAndTeaShop
     }
     var shopType: String
-    var shopTypeInit: String
-    var shopID: Int
+    var shopID: String
     var shopName: String
     var shopReviews: [Review]
     var openTime: String
@@ -24,14 +23,13 @@ class Shop: Codable {
     var tags: [String]?
     
     
-    init(shopTypeInit: String, shopID: Int, shopName: String, openTime: String, closeTime: String, tags: [String]?) {
+    init(shopType: String, shopID: String, shopName: String, openTime: String, closeTime: String, tags: [String]?) {
         self.shopID = shopID
         self.shopName = shopName
         self.openTime = openTime
         self.closeTime = closeTime
-        self.shopTypeInit = shopTypeInit
         self.shopReviews = [Review]()
-       self.shopType = shopTypeInit.lowercased()
+        self.shopType = shopType.lowercased()
         if (tags != nil) {
             self.tags = tags
         }
@@ -48,7 +46,7 @@ class Shop: Codable {
         }
     }
 
-    func getShopID() -> Int {
+    func getShopID() -> String {
         return shopID
     }
     
@@ -105,17 +103,20 @@ class Shop: Codable {
     }
     
     func importShopList() -> [Shop]{
-        if let path = Bundle.main.path(forResource: "shopList", ofType: "json"){
-            do{
-                let jsonData = try String(contentsOfFile: path, encoding: .utf8)
-                let decoder = JSONDecoder()
-                let shopList = try! decoder.decode([Shop].self, from: jsonData.data(using: .utf8)!)
-                return shopList
-            }
-            catch {
-                print("\(error)")
-            }
+        let path = Bundle.main.path(forResource: "shopList", ofType: "json")
+        let url = URL(fileURLWithPath: path!)
+        let jsonData = try! Data(contentsOf: url)
+        do {
+            let shopList = try JSONDecoder().decode([Shop].self, from: jsonData)
+            print("IMPORT SHOPLIST: SUCCESS\n\n")
+            return shopList
         }
+        catch{
+            print("\(error)")
+        }
+        
+        
+        print("IMPORT SHOPLIST: FAIL\n")
         return [Shop]()
     }
     
