@@ -25,6 +25,8 @@ class MapViewController: UIViewController, MapSearchBarPin {
     var resultSearchController:UISearchController? = nil
     var shops = [Shop]()
     
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var myLocationButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
     
     override func viewDidLoad() {
@@ -36,7 +38,7 @@ class MapViewController: UIViewController, MapSearchBarPin {
         self.mapView.showsUserLocation = true
         
         if let usrloc = locationManager.location {
-            let coordinateRegion = MKCoordinateRegionMakeWithDistance((usrloc.coordinate), searchRadius * 2.0, searchRadius * 2.0)
+            let coordinateRegion = MKCoordinateRegionMakeWithDistance((usrloc.coordinate), searchRadius * 4.0, searchRadius * 4.0)
             mapView.setRegion(coordinateRegion, animated: true)
         }
         
@@ -61,7 +63,9 @@ class MapViewController: UIViewController, MapSearchBarPin {
         locationSearchTable.mapView = self.mapView
         locationSearchTable.MapSearchBarDelegate = self
         
-        
+        //hide search and my location button
+        searchButton.isHidden = true
+        //myLocationButton.isHidden = true
         
     }
     
@@ -93,11 +97,20 @@ class MapViewController: UIViewController, MapSearchBarPin {
         let search = MKLocalSearch(request: request)
         search.start {
             (response: MKLocalSearchResponse!, error: Error!) in
-            self.matchingItems = response.mapItems
+            //self.matchingItems = response.mapItems
             for item in response.mapItems {
+                """
                 self.addPinToMapView(title: item.name!, latitude: (item.placemark.location?.coordinate.latitude)!, longitude: (item.placemark.location?.coordinate.longitude)!)
+                """
+                if self.ifonShoplist(name: item.name!){
+                    self.matchingItems.append(item)
+                    print("Shop name: "+item.name!)
+                    self.addPinToMapView(title: item.name!, latitude: (item.placemark.location?.coordinate.latitude)!, longitude: (item.placemark.location?.coordinate.longitude)!)
+                }
+                
             }
         }
+        searchButton.isHidden = true
     }
     
     func dropSearchPin(placemark:MKPlacemark){
@@ -188,6 +201,10 @@ extension MapViewController : MKMapViewDelegate {
         }
         return MKMapItem()
     }
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        searchButton.isHidden = false
+        //myLocationButton.isHidden = false
+    }
     
     func parseAddress(selectedItem:MKPlacemark) -> String {
         // put a space between "4" and "Melrose Place"
@@ -240,9 +257,23 @@ extension MapViewController : MKMapViewDelegate {
         catch{
             print("\(error)")
         }
-        
-        
         print("IMPORT SHOPLIST: FAIL\n")
         return [Shop]()
     }
+    func ifonShoplist(name: String) -> Bool {
+        for shop in shops{
+            if (name.range(of: shop.shopName) != nil){
+                print("match found")
+                return true
+            }
+            """
+            if name.lowercased() == shop.shopName.lowercased() {
+                print("match found")
+                return true
+            }
+"""
+        }
+        return false
+    }
+
 }
