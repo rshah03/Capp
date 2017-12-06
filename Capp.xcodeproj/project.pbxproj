@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		350B7A8D1FBABA2D0095715F /* ChangeUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350B7A8C1FBABA2D0095715F /* ChangeUsernameViewController.swift */; };
 		350B7A8F1FBABAE60095715F /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350B7A8E1FBABAE60095715F /* ChangePasswordViewController.swift */; };
+		350B7A921FD7118B0095715F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350B7A911FD7118B0095715F /* ProfileViewController.swift */; };
 		352DD2C91FA975EF0092BFD1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD2C81FA975EF0092BFD1 /* Settings.swift */; };
 		352DD2D21FAAAB5B0092BFD1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD2D11FAAAB5B0092BFD1 /* SettingsViewController.swift */; };
 		352DD2D41FAAC0840092BFD1 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD2D31FAAC0840092BFD1 /* SettingsTableViewCell.swift */; };
@@ -62,6 +63,7 @@
 /* Begin PBXFileReference section */
 		350B7A8C1FBABA2D0095715F /* ChangeUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUsernameViewController.swift; sourceTree = "<group>"; };
 		350B7A8E1FBABAE60095715F /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		350B7A911FD7118B0095715F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		352DD2C81FA975EF0092BFD1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		352DD2D11FAAAB5B0092BFD1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		352DD2D31FAAC0840092BFD1 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -127,9 +129,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		350B7A901FD7115D0095715F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				350B7A911FD7118B0095715F /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		352DD2D51FAAC4BF0092BFD1 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				350B7A901FD7115D0095715F /* Profile */,
 				352DD2D61FAAC8D00092BFD1 /* Account */,
 				352DD2D31FAAC0840092BFD1 /* SettingsTableViewCell.swift */,
 				352DD2C81FA975EF0092BFD1 /* Settings.swift */,
@@ -469,9 +480,9 @@
 			files = (
 				4422D0C51F871AC100498248 /* LoginViewController.swift in Sources */,
 				440D7FEF1F8FD8B100C65B7E /* Review.swift in Sources */,
+				350B7A921FD7118B0095715F /* ProfileViewController.swift in Sources */,
 				444E63171F896CB100579B2F /* RegisterViewController.swift in Sources */,
 				352DD2DC1FAACCAF0092BFD1 /* AccountTableViewCell.swift in Sources */,
-				44756B511FA9579A00DC54E2 /* MapSearchViewController.swift in Sources */,
 				350B7A8F1FBABAE60095715F /* ChangePasswordViewController.swift in Sources */,
 				352DD2D41FAAC0840092BFD1 /* SettingsTableViewCell.swift in Sources */,
 				44756B4F1FA9575400DC54E2 /* TableViewController.swift in Sources */,

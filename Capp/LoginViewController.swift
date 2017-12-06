@@ -15,6 +15,7 @@ class LoginViewController: UIViewController {
     var gradientLayer: CAGradientLayer!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var LoginPanel: UIView!
     
     @IBAction func loginButton(_ sender: UIButton) {
         Auth.auth().signIn(withEmail: emailField.text!, password: passwordField.text!) { (user, error) in
@@ -58,6 +59,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createGradient()
+        LoginPanel.backgroundColor = UIColor(white:1, alpha: 0.3)
         // Do any additional setup after loading the view.
     }
 
