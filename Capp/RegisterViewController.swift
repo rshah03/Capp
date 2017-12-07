@@ -11,12 +11,10 @@ import ChameleonFramework
 import Firebase
 
 class RegisterViewController: UIViewController {
-
-    var gradientLayer: CAGradientLayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        createGradient()
+        self.view.backgroundColor = GradientColor(.topToBottom, frame: self.view.frame, colors: [UIColor.flatGreen, UIColor.flatSandDark])
     }
     
     @IBOutlet weak var emailField: UITextField!
@@ -58,12 +56,4 @@ class RegisterViewController: UIViewController {
         super.didReceiveMemoryWarning()
 
     }
-    
-    func createGradient() {
-        gradientLayer = CAGradientLayer()
-        gradientLayer.frame = self.view.bounds
-        gradientLayer.colors = [UIColor.flatSkyBlue.cgColor, UIColor.flatBlue.cgColor]
-        self.view.layer.insertSublayer(gradientLayer, at: 0)
-    }
-
 }
