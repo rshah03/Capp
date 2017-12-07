@@ -58,9 +58,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        createGradient()
         LoginPanel.backgroundColor = UIColor(white:1, alpha: 0.3)
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = GradientColor(.topToBottom, frame: self.view.frame, colors: [UIColor.flatGreen, UIColor.flatSandDark])
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,13 +67,4 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
 
     }
-    
-    func createGradient() {
-        gradientLayer = CAGradientLayer()
-        gradientLayer.frame = self.view.bounds
-        gradientLayer.colors = [UIColor.flatBlue.cgColor, UIColor.flatSkyBlue.cgColor]
-        self.view.layer.insertSublayer(gradientLayer, at: 0)
-    }
-    
-    
 }

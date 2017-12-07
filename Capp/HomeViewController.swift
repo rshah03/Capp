@@ -15,6 +15,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var leadingC: NSLayoutConstraint!
     @IBOutlet weak var trailingC: NSLayoutConstraint!
     @IBOutlet weak var slidingView: UIView!
+    @IBOutlet weak var SearchPanel: UIView!
     
     
     var menuIsVisible = false
@@ -47,6 +48,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         createGradient()
+        SearchPanel.backgroundColor = UIColor(white:1, alpha: 0.3)
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,7 +59,7 @@ class FirstViewController: UIViewController {
     func createGradient() {
         gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.view.bounds
-        gradientLayer.colors = [UIColor.flatBlue.cgColor, UIColor.flatSkyBlue.cgColor]
+        gradientLayer.colors = [UIColor.flatSandDark.cgColor, UIColor.flatGreen.cgColor]
         slidingView.layer.insertSublayer(gradientLayer, at: 0)
     }
     
