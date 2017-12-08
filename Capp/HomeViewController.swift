@@ -18,11 +18,29 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var SearchPanel: UIView!
     
     
+    @IBOutlet weak var Pet: UISwitch!
+    @IBOutlet weak var Ambiance: UISwitch!
+    @IBOutlet weak var Study: UISwitch!
+    @IBOutlet weak var Social: UISwitch!
+    
     var menuIsVisible = false
     var searchQuery : String?
+    var tag = Set<String>()
     
     @IBAction func Search(_ sender: UIButton) {
         self.searchQuery = "coffee and tea"
+        if Pet.isOn {
+            tag.insert("Pet Friendly")
+        }
+        if Ambiance.isOn{
+            tag.insert("Ambiance")
+        }
+        if Study.isOn{
+            tag.insert("Study")
+        }
+        if Social.isOn{
+            tag.insert("Social")
+        }
         self.performSegue(withIdentifier: "ToMapView", sender: self)
         
     }
@@ -69,6 +87,7 @@ class FirstViewController: UIViewController {
         if (segue.identifier == "ToMapView"){
             let dvc = segue.destination as! MapViewController
             dvc.searchQuery = self.searchQuery!
+            dvc.tags = self.tag
         }
     }
 

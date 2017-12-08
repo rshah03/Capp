@@ -331,8 +331,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="Ambiance" destination="L8t-5Y-cZK" id="LXl-Br-z9d"/>
                         <outlet property="LeadingC" destination="nlx-D5-Lfx" id="Nlb-Gd-H68"/>
+                        <outlet property="Pet" destination="Snn-BA-T9I" id="kMD-aU-A61"/>
                         <outlet property="SearchPanel" destination="b1h-EU-B23" id="own-LN-LhD"/>
+                        <outlet property="Social" destination="JU0-xE-i9s" id="85l-ct-wYJ"/>
+                        <outlet property="Study" destination="suE-hL-Uot" id="saB-DH-LpZ"/>
                         <outlet property="leadingC" destination="NZe-8e-pyl" id="DMQ-tW-aMO"/>
                         <outlet property="slidingView" destination="HK5-KK-Jdc" id="1fD-Nn-Ur5"/>
                         <outlet property="trailingC" destination="UEi-BI-rZn" id="9aq-Eo-KMM"/>
@@ -357,7 +361,6 @@
                                 <rect key="frame" x="125" y="83" width="153" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="K46-H1-hNu"/>
-                                    <constraint firstAttribute="width" constant="165" id="OyS-JS-ifI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <state key="normal" title="Search current region"/>
@@ -379,9 +382,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Rdn-zM-ncH" firstAttribute="trailing" secondItem="1xO-1I-V6f" secondAttribute="trailing" constant="124" id="37I-aW-ZHd"/>
                             <constraint firstItem="tMq-46-7jj" firstAttribute="top" secondItem="Rdn-zM-ncH" secondAttribute="top" id="63a-pJ-m9P"/>
-                            <constraint firstItem="1xO-1I-V6f" firstAttribute="leading" secondItem="Rdn-zM-ncH" secondAttribute="leading" constant="125" id="Ddo-yC-wvE"/>
                             <constraint firstItem="tMq-46-7jj" firstAttribute="leading" secondItem="Rdn-zM-ncH" secondAttribute="leading" id="Drn-2m-P72"/>
                             <constraint firstItem="Rdn-zM-ncH" firstAttribute="bottom" secondItem="cRN-cg-jhH" secondAttribute="bottom" constant="44" id="IJa-P9-7r0"/>
                             <constraint firstItem="tMq-46-7jj" firstAttribute="centerX" secondItem="zza-sB-IVH" secondAttribute="centerX" id="SbI-6G-BMO"/>
