@@ -24,6 +24,7 @@ class MapViewController: UIViewController, MapSearchBarPin {
     let initialLocation = CLLocation(latitude: 52.3740300, longitude: 4.8896900)
     var resultSearchController:UISearchController? = nil
     var shops = [Shop]()
+    var tags = Set<String>()
     
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var myLocationButton: UIButton!
@@ -111,6 +112,7 @@ class MapViewController: UIViewController, MapSearchBarPin {
             }
         }
         searchButton.isHidden = true
+        //print(self.tags)
     }
     
     func dropSearchPin(placemark:MKPlacemark){
@@ -185,7 +187,6 @@ extension MapViewController : MKMapViewDelegate {
         }
         let address=parseAddress(selectedItem: item.placemark)
         print(placeName!+" "+address)
-        
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl)
@@ -262,7 +263,10 @@ extension MapViewController : MKMapViewDelegate {
     }
     func ifonShoplist(name: String) -> Bool {
         for shop in shops{
-            if (name.range(of: shop.shopName) != nil){
+            let tagset = Set(shop.tags!)
+            let intersection = self.tags.intersection(tagset)
+            //print(intersection)
+            if (name.range(of: shop.shopName) != nil && intersection.count > 0){
                 print("match found")
                 return true
             }

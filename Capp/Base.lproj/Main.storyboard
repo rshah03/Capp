@@ -329,8 +329,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="Ambiance" destination="L8t-5Y-cZK" id="LXl-Br-z9d"/>
                         <outlet property="LeadingC" destination="nlx-D5-Lfx" id="Nlb-Gd-H68"/>
+                        <outlet property="Pet" destination="Snn-BA-T9I" id="kMD-aU-A61"/>
                         <outlet property="SearchPanel" destination="b1h-EU-B23" id="own-LN-LhD"/>
+                        <outlet property="Social" destination="JU0-xE-i9s" id="85l-ct-wYJ"/>
+                        <outlet property="Study" destination="suE-hL-Uot" id="saB-DH-LpZ"/>
                         <outlet property="leadingC" destination="NZe-8e-pyl" id="DMQ-tW-aMO"/>
                         <outlet property="slidingView" destination="HK5-KK-Jdc" id="1fD-Nn-Ur5"/>
                         <outlet property="trailingC" destination="UEi-BI-rZn" id="9aq-Eo-KMM"/>

@@ -79,7 +79,11 @@ class TableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if (segue.identifier == "ToDetailView"){
-            
+            if let indexPath=tableView.indexPathForSelectedRow{
+                let selectedRow=indexPath.row
+                //let dvc=segue.destination as! DetailView
+                //dvc.matchedItem=self.matchingItems[selectedRow]
+            }
         }
     }
     
