@@ -25,8 +25,7 @@ class DetailViewController: UIViewController {
     @IBAction func navigateButton(_ sender: UIButton) {
         
     }
-    @IBOutlet weak var reviewsScroll: UIScrollView!
-    
+    @IBOutlet weak var reviewTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,10 +35,10 @@ class DetailViewController: UIViewController {
         self.shops = importShopList()
         self.shop = getshopfromlist(name: (self.matchingItem?.name)!)
         self.ShopName.text = self.matchingItem?.name
-        self.addressLabel.text = "Address: " + parseAddress(selectedItem: (self.matchingItem?.placemark)!)
-        self.openTimeLabel.text = "Open Time: " + (self.shop?.openTime)!
-        self.closeTimeLabel.text = "Close Time: " + (self.shop?.closeTime)!
-        self.phoneNumLabel.text = "Phone: " + (self.matchingItem?.phoneNumber)!
+        self.addressLabel.text = parseAddress(selectedItem: (self.matchingItem?.placemark)!)
+        self.openTimeLabel.text = "Opens: " + (self.shop?.openTime)!
+        self.closeTimeLabel.text = "Closes: " + (self.shop?.closeTime)!
+        self.phoneNumLabel.text = (self.matchingItem?.phoneNumber)!
 
         
     }
