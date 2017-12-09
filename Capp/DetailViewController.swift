@@ -49,13 +49,9 @@ class DetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func navigation(_ sender: UIButton) {
-        let urlString = "http://maps.apple.com/?sll=\(matchingItem?.placemark.location?.coordinate.latitude),\(matchingItem?.placemark.location?.coordinate.longitude)"
-        guard let url = URL(string: urlString) else
-        {
-            return
-        }
-        
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        let mapItem = MKMapItem(placemark: (matchingItem?.placemark)!)
+        mapItem.name = matchingItem?.name
+        mapItem.openInMaps(launchOptions: nil)
     }
     
     func parseAddress(selectedItem:MKPlacemark) -> String {

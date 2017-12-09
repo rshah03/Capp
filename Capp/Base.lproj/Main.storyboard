@@ -506,8 +506,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esT-8r-hSP">
-                                <rect key="frame" x="87.5" y="73" width="200.5" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esT-8r-hSP">
+                                <rect key="frame" x="50" y="73" width="275" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -628,11 +628,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fpq-B7-O4X" firstAttribute="bottom" secondItem="bJS-rV-7cH" secondAttribute="bottom" constant="20" id="0ul-CQ-Qcz"/>
+                            <constraint firstItem="fpq-B7-O4X" firstAttribute="trailing" secondItem="esT-8r-hSP" secondAttribute="trailing" constant="50" id="2lC-dH-5fW"/>
                             <constraint firstItem="bJS-rV-7cH" firstAttribute="centerX" secondItem="BSd-WH-5iI" secondAttribute="centerX" id="9hx-ac-uq0"/>
                             <constraint firstItem="bJS-rV-7cH" firstAttribute="leading" secondItem="fpq-B7-O4X" secondAttribute="leading" constant="20" id="LsM-lA-Yo0"/>
                             <constraint firstItem="esT-8r-hSP" firstAttribute="centerX" secondItem="BSd-WH-5iI" secondAttribute="centerX" id="NZr-Fo-yBH"/>
                             <constraint firstItem="bJS-rV-7cH" firstAttribute="top" secondItem="esT-8r-hSP" secondAttribute="bottom" constant="8" symbolic="YES" id="Qyq-B9-2Gg"/>
                             <constraint firstItem="esT-8r-hSP" firstAttribute="top" secondItem="fpq-B7-O4X" secondAttribute="top" constant="9" id="V0k-UH-QKc"/>
+                            <constraint firstItem="esT-8r-hSP" firstAttribute="leading" secondItem="fpq-B7-O4X" secondAttribute="leading" constant="50" id="w9O-Vj-GXO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fpq-B7-O4X"/>
                     </view>
