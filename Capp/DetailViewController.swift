@@ -48,7 +48,16 @@ class DetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func navigation(_ sender: UIButton) {
+        let urlString = "http://maps.apple.com/?sll=\(matchingItem?.placemark.location?.coordinate.latitude),\(matchingItem?.placemark.location?.coordinate.longitude)"
+        guard let url = URL(string: urlString) else
+        {
+            return
+        }
+        
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    
     func parseAddress(selectedItem:MKPlacemark) -> String {
         // put a space between "4" and "Melrose Place"
         let firstSpace = (selectedItem.subThoroughfare != nil && selectedItem.thoroughfare != nil) ? " " : ""
