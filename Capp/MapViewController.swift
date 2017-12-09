@@ -25,6 +25,7 @@ class MapViewController: UIViewController, MapSearchBarPin {
     var resultSearchController:UISearchController? = nil
     var shops = [Shop]()
     var tags = Set<String>()
+    var item = MKMapItem()
     
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var myLocationButton: UIButton!
@@ -179,7 +180,6 @@ extension MapViewController : MKMapViewDelegate {
         return annotationView
     }
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        var item = MKMapItem()
         var placeName:String?
         if let name = view.annotation?.title ?? "empty" {
             placeName=name
@@ -242,7 +242,8 @@ extension MapViewController : MKMapViewDelegate {
             dvc.matchingItems=self.matchingItems
         }
         else if (segue.identifier == "ToDetailView"){
-            
+            let dvc = segue.destination as! DetailViewController
+            dvc.matchingItem = self.item
         }
     }
     
@@ -263,6 +264,12 @@ extension MapViewController : MKMapViewDelegate {
     }
     func ifonShoplist(name: String) -> Bool {
         for shop in shops{
+            if self.tags.count == 0 {
+                if (name.range(of: shop.shopName) != nil ){
+                    print("match found")
+                    return true
+                }
+            }
             let tagset = Set(shop.tags!)
             let intersection = self.tags.intersection(tagset)
             //print(intersection)
