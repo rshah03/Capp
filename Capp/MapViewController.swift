@@ -264,6 +264,12 @@ extension MapViewController : MKMapViewDelegate {
     }
     func ifonShoplist(name: String) -> Bool {
         for shop in shops{
+            if self.tags.count == 0 {
+                if (name.range(of: shop.shopName) != nil ){
+                    print("match found")
+                    return true
+                }
+            }
             let tagset = Set(shop.tags!)
             let intersection = self.tags.intersection(tagset)
             //print(intersection)
