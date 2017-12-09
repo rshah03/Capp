@@ -7,10 +7,15 @@
 //
 
 import UIKit
+import MapKit
 import ChameleonFramework
 
 class DetailViewController: UIViewController {
+    var matchingItem:MKMapItem?
+    var shop:Shop?
+    var shops = [Shop]()
 
+    @IBOutlet weak var ShopName: UILabel!
     @IBOutlet weak var ShopDetails: UIView!
     @IBOutlet weak var Reviews: UIView!
     @IBOutlet weak var addressLabel: UILabel!
@@ -28,12 +33,75 @@ class DetailViewController: UIViewController {
         ShopDetails.backgroundColor = UIColor(white: 1, alpha: 0.3)
         Reviews.backgroundColor = UIColor(white: 1, alpha: 0.3)
         self.view.backgroundColor = GradientColor(.topToBottom, frame: self.view.frame, colors: [UIColor.flatGreen, UIColor.flatSandDark])
+        self.shops = importShopList()
+        self.shop = getshopfromlist(name: (self.matchingItem?.name)!)
+        self.ShopName.text = self.matchingItem?.name
+        self.addressLabel.text = "Address: " + parseAddress(selectedItem: (self.matchingItem?.placemark)!)
+        self.openTimeLabel.text = "Open Time: " + (self.shop?.openTime)!
+        self.closeTimeLabel.text = "Close Time: " + (self.shop?.closeTime)!
+        self.phoneNumLabel.text = "Phone: " + (self.matchingItem?.phoneNumber)!
+
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    func parseAddress(selectedItem:MKPlacemark) -> String {
+        // put a space between "4" and "Melrose Place"
+        let firstSpace = (selectedItem.subThoroughfare != nil && selectedItem.thoroughfare != nil) ? " " : ""
+        // put a comma between street and city/state
+        let comma = (selectedItem.subThoroughfare != nil || selectedItem.thoroughfare != nil) && (selectedItem.subAdministrativeArea != nil || selectedItem.administrativeArea != nil) ? "," : ""
+        // put a space between "Washington" and "DC"
+        let secondSpace = (selectedItem.subAdministrativeArea != nil && selectedItem.administrativeArea != nil) ? " " : ""
+        let thirdSpace = (selectedItem.administrativeArea != nil && selectedItem.postalCode != nil) ? " " : ""
+        let addressLine = String(
+            format:"%@%@%@%@%@%@%@%@%@",
+            // street number
+            selectedItem.subThoroughfare ?? "",
+            firstSpace,
+            // street name
+            selectedItem.thoroughfare ?? "",
+            comma,
+            // city
+            selectedItem.locality ?? "",
+            secondSpace,
+            // state
+            selectedItem.administrativeArea ?? "",
+            thirdSpace,
+            // zip code
+            selectedItem.postalCode ?? ""
+        )
+        return addressLine
+    }
+    func importShopList() -> [Shop]{
+        let path = Bundle.main.path(forResource: "shopList", ofType: "json")
+        let url = URL(fileURLWithPath: path!)
+        let jsonData = try! Data(contentsOf: url)
+        do {
+            let shopList = try JSONDecoder().decode([Shop].self, from: jsonData)
+            print("IMPORT SHOPLIST: SUCCESS\n\n")
+            return shopList
+        }
+        catch{
+            print("\(error)")
+        }
+        print("IMPORT SHOPLIST: FAIL\n")
+        return [Shop]()
+    }
+    func getshopfromlist(name: String) -> Shop? {
+        for shop in shops{
+            //print(intersection)
+            if (name.range(of: shop.shopName) != nil ){
+                print("match found")
+                return shop
+            }
+        }
+        return nil
+    }
+
     
 
     /*

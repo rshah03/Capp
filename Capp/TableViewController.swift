@@ -81,8 +81,8 @@ class TableViewController: UITableViewController {
         if (segue.identifier == "ToDetailView"){
             if let indexPath=tableView.indexPathForSelectedRow{
                 let selectedRow=indexPath.row
-                //let dvc=segue.destination as! DetailView
-                //dvc.matchedItem=self.matchingItems[selectedRow]
+                let dvc=segue.destination as! DetailViewController
+                dvc.matchingItem = self.matchingItems[selectedRow]
             }
         }
     }

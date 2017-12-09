@@ -28,6 +28,7 @@ class FirstViewController: UIViewController {
     var tag = Set<String>()
     
     @IBAction func Search(_ sender: UIButton) {
+        self.tag.removeAll()
         self.searchQuery = "coffee and tea"
         if Pet.isOn {
             tag.insert("Pet Friendly")
