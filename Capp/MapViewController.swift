@@ -93,6 +93,7 @@ class MapViewController: UIViewController, MapSearchBarPin {
         // Dispose of any resources that can be recreated.
     }
     func searchInMap(){
+        self.matchingItems.removeAll()
         let request = MKLocalSearchRequest()
         request.naturalLanguageQuery = self.searchQuery
         request.region = mapView.region
