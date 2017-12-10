@@ -1,236 +1,236 @@
- [
-  {
-  "shopType": "both",
-  "shopID": "01",
-  "shopName": "Blacksmith Coffee",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "17:00",
-  "tags": ["Pet Friendly", "Social"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "02",
-  "shopName": "Greenway Coffee & Tea",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "15:00",
-  "tags": ["Social"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "03",
-  "shopName": "Siphon Coffee",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "21:00",
-  "tags": ["Social", "Study", "Ambiance"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "04",
-  "shopName": "Southside Espresso",
-  "shopReviews": [],
-  "openTime": "06:30",
-  "closeTime": "19:00",
-  "tags": ["Pet Friendly", "Social", "Study"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "05",
-  "shopName": "Morningstar",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "15:00",
-  "tags": ["Social", "Study", "Pet Friendly", "Ambiance"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "06",
-  "shopName": "Boomtown Coffee",
-  "shopReviews": [],
-  "openTime": "06:30",
-  "closeTime": "19:00",
-  "tags": ["Social", "Study", "Ambiance"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "07",
-  "shopName": "Prelude Coffee & Tea",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "15:00",
-  "tags": ["Social", "Ambiance"]
-  },
-  {
-  "shopType": "coffee",
-  "shopID": "08",
-  "shopName": "Fix Coffeebar",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "20:00",
-  "tags": ["Study"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "09",
-  "shopName": "Tout Suite",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "24:00",
-  "tags": ["Study", "Ambiance", "Social"]
-  },
-  {
-  "shopType": "coffee",
-  "shopID": "10",
-  "shopName": "The Honeymoon Cafe & Bar",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "22:00",
-  "tags": ["Social", "Ambiance"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "11",
-  "shopName": "Throughgood Coffee",
-  "shopReviews": [],
-  "openTime": "06:30",
-  "closeTime": "16:30",
-  "tags": ["Social", "Ambiance", "Study", "Pet Friendly"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "12",
-  "shopName": "Inversion Coffee & Art",
-  "shopReviews": [],
-  "openTime": "06:30",
-  "closeTime": "18:30",
-  "tags": ["Study", "Ambiance", "Social", "Pet Friendly"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "13",
-  "shopName": "Catalina Coffee",
-  "shopReviews": [],
-  "openTime": "06:30",
-  "closeTime": "19:00",
-  "tags": ["Study", "Ambiance", "Social"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "14",
-  "shopName": "Cafeza",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "22:00",
-  "tags": ["Social", "Ambiance", "Study"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "15",
-  "shopName": "A 2nd Cup",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "22:00",
-  "tags": ["Study", "Social"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "16",
-  "shopName": "AHH, Coffee!",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "19:00",
-  "tags": ["Study", "Social", "Pet Friendly"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "17",
-  "shopName": "Dandelion Cafe",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "18:00",
-  "tags": ["Study", "Social"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "18",
-  "shopName": "Momentum Coffee",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "16:00",
-  "tags": ["Study", "Social"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "19",
-  "shopName": "Black Hole Coffee House",
-  "shopReviews": [],
-  "openTime": "06:30",
-  "closeTime": "24:00",
-  "tags": ["Study", "Social"]
-  },
-  {
-  "shopType": "both",
-  "shopID": "20",
-  "shopName": "Antidote",
-  "shopReviews": [],
-  "openTime": "06:30",
-  "closeTime": "24:00",
-  "tags": ["Study", "Social"]
-  },
-  {
-  "shopType": "tea",
-  "shopID": "21",
-  "shopName": "Path of Tea",
-  "shopReviews": [],
-  "openTime": "10:00",
-  "closeTime": "21:00",
-  "tags": ["Study", "Social"]
-  },
-  {
-  "shopType": "tea",
-  "shopID": "22",
-  "shopName": "Kung Fu Tea",
-  "shopReviews": [],
-  "openTime": "12:00",
-  "closeTime": "22:00",
-  "tags": ["Study", "Social"]
-  },
-  {
-  "shopType": "tea",
-  "shopID": "23",
-  "shopName": "Ten Yen Tea & Herbs",
-  "shopReviews": [],
-  "openTime": "11:00",
-  "closeTime": "18:30",
-  "tags": ["Study", "Social"]
-  },
-  {
-  "shopType": "tea",
-  "shopID": "24",
-  "shopName": "The Teahouse",
-  "shopReviews": [],
-  "openTime": "07:00",
-  "closeTime": "24:00",
-  "tags": ["Study", "Social"]
-  },
-  {
-  "shopType": "tea",
-  "shopID": "25",
-  "shopName": "Tea Bar and Organics (Chinatown)",
-  "shopReviews": [],
-  "openTime": "11:00",
-  "closeTime": "24:00",
-  "tags": ["Study", "Social"]
-  },
-  {
-  "shopType": "tea",
-  "shopID": "26",
-  "shopName": "Golden Oolong Tea",
-  "shopReviews": [],
-  "openTime": "10:30",
-  "closeTime": "21:00",
-  "tags": ["Study", "Social"]
-  }
-  ]
+[
+ {
+ "shopType": "both",
+ "shopID": "01",
+ "shopName": "Blacksmith",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "17:00",
+ "tags": ["Pet Friendly", "Social"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "02",
+ "shopName": "Greenway Coffee & Tea",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "15:00",
+ "tags": ["Social"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "03",
+ "shopName": "Siphon Coffee",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "21:00",
+ "tags": ["Social", "Study", "Ambiance"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "04",
+ "shopName": "Southside Espresso",
+ "shopReviews": [],
+ "openTime": "06:30",
+ "closeTime": "19:00",
+ "tags": ["Pet Friendly", "Social", "Study"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "05",
+ "shopName": "Morningstar",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "15:00",
+ "tags": ["Social", "Study", "Pet Friendly", "Ambiance"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "06",
+ "shopName": "Boomtown Coffee",
+ "shopReviews": [],
+ "openTime": "06:30",
+ "closeTime": "19:00",
+ "tags": ["Social", "Study", "Ambiance"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "07",
+ "shopName": "Prelude Coffee & Tea",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "15:00",
+ "tags": ["Social", "Ambiance"]
+ },
+ {
+ "shopType": "coffee",
+ "shopID": "08",
+ "shopName": "Fix Coffeebar",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "20:00",
+ "tags": ["Study"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "09",
+ "shopName": "Tout Suite",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "24:00",
+ "tags": ["Study", "Ambiance", "Social"]
+ },
+ {
+ "shopType": "coffee",
+ "shopID": "10",
+ "shopName": "The Honeymoon Cafe & Bar",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "22:00",
+ "tags": ["Social", "Ambiance"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "11",
+ "shopName": "Throughgood Coffee",
+ "shopReviews": [],
+ "openTime": "06:30",
+ "closeTime": "16:30",
+ "tags": ["Social", "Ambiance", "Study", "Pet Friendly"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "12",
+ "shopName": "Inversion Coffee House",
+ "shopReviews": [],
+ "openTime": "06:30",
+ "closeTime": "18:30",
+ "tags": ["Study", "Ambiance", "Social", "Pet Friendly"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "13",
+ "shopName": "Catalina Coffee",
+ "shopReviews": [],
+ "openTime": "06:30",
+ "closeTime": "19:00",
+ "tags": ["Study", "Ambiance", "Social"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "14",
+ "shopName": "Cafeza",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "22:00",
+ "tags": ["Social", "Ambiance", "Study"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "15",
+ "shopName": "A 2nd Cup",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "22:00",
+ "tags": ["Study", "Social"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "16",
+ "shopName": "AHH, Coffee!",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "19:00",
+ "tags": ["Study", "Social", "Pet Friendly"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "17",
+ "shopName": "Dandelion Cafe",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "18:00",
+ "tags": ["Study", "Social"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "18",
+ "shopName": "Momentum Coffee",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "16:00",
+ "tags": ["Study", "Social"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "19",
+ "shopName": "Black Hole Coffee House",
+ "shopReviews": [],
+ "openTime": "06:30",
+ "closeTime": "24:00",
+ "tags": ["Study", "Social"]
+ },
+ {
+ "shopType": "both",
+ "shopID": "20",
+ "shopName": "Antidote",
+ "shopReviews": [],
+ "openTime": "06:30",
+ "closeTime": "24:00",
+ "tags": ["Study", "Social"]
+ },
+ {
+ "shopType": "tea",
+ "shopID": "21",
+ "shopName": "Path of Tea",
+ "shopReviews": [],
+ "openTime": "10:00",
+ "closeTime": "21:00",
+ "tags": ["Study", "Social"]
+ },
+ {
+ "shopType": "tea",
+ "shopID": "22",
+ "shopName": "Kung Fu Tea",
+ "shopReviews": [],
+ "openTime": "12:00",
+ "closeTime": "22:00",
+ "tags": ["Study", "Social"]
+ },
+ {
+ "shopType": "tea",
+ "shopID": "23",
+ "shopName": "Ten Yen Tea & Herbs",
+ "shopReviews": [],
+ "openTime": "11:00",
+ "closeTime": "18:30",
+ "tags": ["Study", "Social"]
+ },
+ {
+ "shopType": "tea",
+ "shopID": "24",
+ "shopName": "The Teahouse",
+ "shopReviews": [],
+ "openTime": "07:00",
+ "closeTime": "24:00",
+ "tags": ["Study", "Social"]
+ },
+ {
+ "shopType": "tea",
+ "shopID": "25",
+ "shopName": "Tea Bar & Organics",
+ "shopReviews": [],
+ "openTime": "11:00",
+ "closeTime": "24:00",
+ "tags": ["Study", "Social"]
+ },
+ {
+ "shopType": "tea",
+ "shopID": "26",
+ "shopName": "Golden Oolong Tea",
+ "shopReviews": [],
+ "openTime": "10:30",
+ "closeTime": "21:00",
+ "tags": ["Study", "Social"]
+ }
+ ]
