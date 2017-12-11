@@ -3,7 +3,7 @@
 //  CappTest
 //
 //  Created by Ronak Shah on 10/16/17.
-//  Copyright © 2017 Team6. All rights reserved.
+//  Copyright ©  "35"7 Team6. All rights reserved.
 //
 
 import XCTest
@@ -22,25 +22,23 @@ class ShopTests: XCTestCase {
     }
     
     func testToSetShopCategoryToTeaShop() {
-        shop = Shop(shopTypeInit: "TEA", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
+        shop = Shop(shopType: "TEA", shopID: "35", shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
         XCTAssertEqual(String(describing: shop.getCategory()), "teaShop")
     }
     
     func testToSetShopCategoryToCoffeeShop() {
-        shop = Shop(shopTypeInit: "COFFEE", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
+        shop = Shop(shopType: "COFFEE", shopID: "35", shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
         XCTAssertEqual(String(describing: shop.getCategory()), "coffeeShop")
     }
     
     func testToSetShopCategoryToDefault() {
-        shop = Shop(shopTypeInit: "", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
+        shop = Shop(shopType: "", shopID: "35", shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
         XCTAssertEqual(String(describing: shop.getCategory()), "coffeeAndTeaShop")
     }
     
     func testAddReviewAddsOneReview() {
-        shop = Shop(shopTypeInit: "", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
-        let review_1 = Review()
-        review_1.setRating(rating: 4)
-        review_1.setReviewSummary(summary: "It was good!")
+        shop = Shop(shopType: "", shopID: "35", shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
+        let review_1 = Review(r: "It was good!", rating: 4)
         
         shop.addReview(review: review_1)
         
@@ -49,15 +47,11 @@ class ShopTests: XCTestCase {
     }
     
     func testAddReviewAddsTwoReviews() {
-        shop = Shop(shopTypeInit: "", shopID: 01, shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
-        let review_1 = Review()
-        review_1.setRating(rating: 3)
-        review_1.setReviewSummary(summary: "It was okay")
+        shop = Shop(shopType: "", shopID: "35", shopName: "John's Tea", openTime: "09:30", closeTime: "22:00", tags: [])
+        let review_1 = Review(r: "It was okay", rating: 3)
         shop.addReview(review: review_1)
         
-        let review_2 = Review()
-        review_2.setRating(rating: 2)
-        review_2.setReviewSummary(summary: "Could be beter")
+        let review_2 = Review(r: "Could be better", rating: 2)
         shop.addReview(review: review_2)
         
         XCTAssertEqual(shop.getReviews().count, 2)
