@@ -38,6 +38,7 @@
 		44DA18F01F96E8C2001F230E /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DA18EF1F96E8C2001F230E /* UserTests.swift */; };
 		44DA18F11F96E8EE001F230E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A96371F8D75700046D778 /* User.swift */; };
 		4C0350B71FAA7BE900667912 /* shopList.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C0350B61FAA7BE900667912 /* shopList.json */; };
+		64270DB01FDE52030021A286 /* ReviewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64270DAF1FDE52030021A286 /* ReviewTableController.swift */; };
 		643C94DB1FA83922005F279E /* MyAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C94DA1FA83922005F279E /* MyAnnotations.swift */; };
 		643C94DD1FA83E1D005F279E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643C94DC1FA83E16005F279E /* CoreLocation.framework */; };
 		64AAA5941FBCD70400B08E55 /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AAA5931FBCD70400B08E55 /* LocationSearchTable.swift */; };
@@ -98,6 +99,7 @@
 		4A26194D970E3E124D14926E /* Pods_Capp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0350B61FAA7BE900667912 /* shopList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shopList.json; sourceTree = "<group>"; };
 		600B63D047858AAE10CA37B6 /* Pods-Capp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capp/Pods-Capp.release.xcconfig"; sourceTree = "<group>"; };
+		64270DAF1FDE52030021A286 /* ReviewTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableController.swift; sourceTree = "<group>"; };
 		643C94DA1FA83922005F279E /* MyAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnnotations.swift; sourceTree = "<group>"; };
 		643C94DC1FA83E16005F279E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		64AAA5931FBCD70400B08E55 /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				446655051F91229200FB1C52 /* GoogleService-Info.plist */,
 				44756B4E1FA9575400DC54E2 /* TableViewController.swift */,
 				449E36D71FDB40B1006F113C /* DetailViewController.swift */,
+				64270DAF1FDE52030021A286 /* ReviewTableController.swift */,
 			);
 			path = Capp;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 				352DD2D81FAAC92B0092BFD1 /* AccountTableViewController.swift in Sources */,
 				352DD2D21FAAAB5B0092BFD1 /* SettingsViewController.swift in Sources */,
 				64AAA5941FBCD70400B08E55 /* LocationSearchTable.swift in Sources */,
+				64270DB01FDE52030021A286 /* ReviewTableController.swift in Sources */,
 				643C94DB1FA83922005F279E /* MyAnnotations.swift in Sources */,
 				350B7A8D1FBABA2D0095715F /* ChangeUsernameViewController.swift in Sources */,
 				447271331FA3F5F600ECD924 /* MapViewController.swift in Sources */,
