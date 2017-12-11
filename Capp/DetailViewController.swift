@@ -9,12 +9,15 @@
 import UIKit
 import MapKit
 import ChameleonFramework
+import GooglePlaces
 
 class DetailViewController: UIViewController {
     var matchingItem:MKMapItem?
     var shop:Shop?
     var shops = [Shop]()
-
+    
+    let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
+    
     @IBOutlet weak var ShopName: UILabel!
     @IBOutlet weak var ShopDetails: UIView!
     @IBOutlet weak var Reviews: UIView!
@@ -22,13 +25,12 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var openTimeLabel: UILabel!
     @IBOutlet weak var closeTimeLabel: UILabel!
     @IBOutlet weak var phoneNumLabel: UILabel!
-    @IBAction func navigateButton(_ sender: UIButton) {
-        
-    }
-    @IBOutlet weak var reviewTable: UITableView!
+   
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         ShopDetails.backgroundColor = UIColor(white: 1, alpha: 0.3)
         Reviews.backgroundColor = UIColor(white: 1, alpha: 0.3)
         self.view.backgroundColor = GradientColor(.topToBottom, frame: self.view.frame, colors: [UIColor.flatGreen, UIColor.flatSandDark])
@@ -39,8 +41,53 @@ class DetailViewController: UIViewController {
         self.openTimeLabel.text = "Opens: " + (self.shop?.openTime)!
         self.closeTimeLabel.text = "Closes: " + (self.shop?.closeTime)!
         self.phoneNumLabel.text = (self.matchingItem?.phoneNumber)!
+        self.shop?.addReview(review: Review(r: "Lorem", rating: 3))
 
         
+
+        
+//        for review in (self.shop?.getReviews())! {
+//
+//        }
+//        print(self.shop?.getReviews())
+        
+
+        
+    }
+    @IBAction func Reviews(_ sender: Any) {
+        self.performSegue(withIdentifier: "ToReviwTable", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if (segue.identifier == "ToReviwTable"){
+            let dvc=segue.destination as! ReviewTableController
+            dvc.shop = self.shop
+            
+        }
+    }
+    
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //return (self.shop?.getReviews().count)!
+        return self.animals.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("@#@#YT@*&#(^@#*&@^#&*^@#&*@&#*(^@#&*@(^#@&#*()))")
+        """
+        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath)
+        cell.textLabel?.text = self.shop?.getReviews()[0]
+        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~", cell.textLabel!)
+        return cell
+"""
+        let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath) as UITableViewCell!
+        
+        // set the text from the data model
+        cell.textLabel?.text = self.animals[indexPath.row]
+        
+        return cell
     }
 
     override func didReceiveMemoryWarning() {
