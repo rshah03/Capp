@@ -9,12 +9,13 @@
 import UIKit
 import MapKit
 import ChameleonFramework
+import GooglePlaces
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var matchingItem:MKMapItem?
     var shop:Shop?
     var shops = [Shop]()
-
+    
     @IBOutlet weak var ShopName: UILabel!
     @IBOutlet weak var ShopDetails: UIView!
     @IBOutlet weak var Reviews: UIView!
@@ -25,7 +26,7 @@ class DetailViewController: UIViewController {
     @IBAction func navigateButton(_ sender: UIButton) {
         
     }
-    @IBOutlet weak var reviewTable: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +40,29 @@ class DetailViewController: UIViewController {
         self.openTimeLabel.text = "Opens: " + (self.shop?.openTime)!
         self.closeTimeLabel.text = "Closes: " + (self.shop?.closeTime)!
         self.phoneNumLabel.text = (self.matchingItem?.phoneNumber)!
+        self.shop?.addReview(review: Review(r: "Lorem", rating: 3))
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+//        for review in (self.shop?.getReviews())! {
+//
+//        }
+//        print(self.shop?.getReviews())
+        
 
         
+    }
+
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (self.shop?.getReviews().count)!
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("@#@#YT@*&#(^@#*&@^#&*^@#&*@&#*(^@#&*@(^#@&#*()))")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath)
+        cell.textLabel?.text = self.shop?.getReviews()[0]
+        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~", cell.textLabel!)
+        return cell
     }
 
     override func didReceiveMemoryWarning() {

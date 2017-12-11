@@ -93,10 +93,10 @@ class Shop: Codable {
         //Maybe associate a reviwe with a unique user ID to prevent duplicates
     }
     
-    func getReviews() -> [Review] {
-        var reviewAggregate = [Review]()
+    func getReviews() -> [String] {
+        var reviewAggregate: [String] = []
         for review in shopReviews {
-            reviewAggregate.append(review)
+            reviewAggregate.append(review.getReviewSummary())
         }
         
         return reviewAggregate

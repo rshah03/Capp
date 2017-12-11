@@ -13,9 +13,9 @@ class Review: Codable {
     var starRating: Int
     var reviewSummary: String
     
-    init() {
-        starRating = 0
-        reviewSummary = ""
+    init(r: String, rating: Int) {
+        starRating = rating
+        reviewSummary = r
     }
     
     func setRating(rating: Int) {
