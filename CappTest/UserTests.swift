@@ -24,21 +24,21 @@ class UserTests: XCTestCase {
     }
     
     func testAddToFavoritesAddsOneShop() {
-        let shop = Shop(shopTypeInit: "tea", shopID: 01, shopName: "Appleseed Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
+        let shop = Shop(shopType: "tea", shopID: "35", shopName: "Appleseed Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
         user.addToFavorites(shopToAdd: shop)
         XCTAssertEqual(user.getFavorites().count, 1)
     }
     
     func testAddToFavoritesAddsMultipleShops() {
-        let shop_1 = Shop(shopTypeInit: "tea", shopID: 01, shopName: "Appleseed Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
-        let shop_2 = Shop(shopTypeInit: "coffee", shopID: 02, shopName: "Jane's Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
+        let shop_1 = Shop(shopType: "tea", shopID: "35", shopName: "Appleseed Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
+        let shop_2 = Shop(shopType: "coffee", shopID: "36", shopName: "Jane's Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
         user.addToFavorites(shopToAdd: shop_1)
         user.addToFavorites(shopToAdd: shop_2)
         XCTAssertEqual(user.getFavorites().count, 2)
     }
     
     func testAddToFavoritesDoesNotAddDuplicates() {
-        let shop_1 = Shop(shopTypeInit: "tea", shopID: 01, shopName: "Appleseed Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
+        let shop_1 = Shop(shopType: "tea", shopID: "35", shopName: "Appleseed Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
         let shop_2 = shop_1
         user.addToFavorites(shopToAdd: shop_1)
         user.addToFavorites(shopToAdd: shop_2)
@@ -46,23 +46,23 @@ class UserTests: XCTestCase {
     }
     
     func testRemoveOneShopFromFavorites() {
-        let shop_1 = Shop(shopTypeInit: "tea", shopID: 01, shopName: "Appleseed Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
-        let shop_2 = Shop(shopTypeInit: "coffee", shopID: 02, shopName: "Jane's Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
+        let shop_1 = Shop(shopType: "tea", shopID: "35", shopName: "Appleseed Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
+        let shop_2 = Shop(shopType: "coffee", shopID: "36", shopName: "Jane's Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
         user.addToFavorites(shopToAdd: shop_1)
         user.addToFavorites(shopToAdd: shop_2)
         
-        user.removeFromFavorites(shopID: 01)
+        user.removeFromFavorites(shopID: "35")
         XCTAssertEqual(user.getFavorites().count, 1)
     }
     
     func testRemoveMultipleShopsFromFavorites() {
-        let shop_1 = Shop(shopTypeInit: "tea", shopID: 01, shopName: "Appleseed Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
-        let shop_2 = Shop(shopTypeInit: "coffee", shopID: 02, shopName: "Jane's Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
+        let shop_1 = Shop(shopType: "tea", shopID: "35", shopName: "Appleseed Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
+        let shop_2 = Shop(shopType: "coffee", shopID: "36", shopName: "Jane's Coffee", openTime: "08:00", closeTime: "20:00", tags: [])
         user.addToFavorites(shopToAdd: shop_1)
         user.addToFavorites(shopToAdd: shop_2)
         
-        user.removeFromFavorites(shopID: 01)
-        user.removeFromFavorites(shopID: 02)
+        user.removeFromFavorites(shopID: "35")
+        user.removeFromFavorites(shopID: "36")
         
         XCTAssertEqual(user.getFavorites().count, 0)
     }
