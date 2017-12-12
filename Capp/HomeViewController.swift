@@ -17,6 +17,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var slidingView: UIView!
     @IBOutlet weak var SearchPanel: UIView!
     @IBAction func settingsButton(_ sender: Any) {
+        self.view.backgroundColor = UIColor(white: 1, alpha: 0.3)
         performSegue(withIdentifier: "ToSettingsView", sender: self)
     }
     
