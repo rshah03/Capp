@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
     var matchingItem:MKMapItem?
     var oneshop:Shop?
     var shops = [Shop]()
-    var tags:String = ""
+    var tags:String = "["
     
     
     @IBOutlet weak var ShopName: UILabel!
@@ -43,6 +43,15 @@ class DetailViewController: UIViewController {
             self.phoneNumLabel.text = (self.matchingItem?.phoneNumber)!
             shop.addReview(review: Review(r: "Lorem", rating: 3))
             self.oneshop=shop
+            for tag in shop.getTags() {
+                if tag == shop.getTags()[shop.getTags().count-1] {
+                    tags += tag + "]"
+                }
+                else {
+                    tags += tag + ", "
+                }
+            }
+            self.tagsLabel.text = tags
         }
         
 
