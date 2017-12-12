@@ -13,11 +13,10 @@ import GooglePlaces
 
 class DetailViewController: UIViewController {
     var matchingItem:MKMapItem?
-    var shop:Shop?
+    var oneshop:Shop?
     var shops = [Shop]()
     var tags:String = ""
     
-    let animals: [String] = ["Horse", "Cow", "Camel", "Sheep", "Goat"]
     
     @IBOutlet weak var ShopName: UILabel!
     @IBOutlet weak var ShopDetails: UIView!
@@ -36,17 +35,15 @@ class DetailViewController: UIViewController {
         ShopDetails.backgroundColor = UIColor(white: 1, alpha: 0.3)
         self.view.backgroundColor = GradientColor(.topToBottom, frame: self.view.frame, colors: [UIColor.flatGreen, UIColor.flatSandDark])
         self.shops = importShopList()
-        self.shop = getshopfromlist(name: (self.matchingItem?.name)!)
         self.ShopName.text = self.matchingItem?.name
-        self.addressLabel.text = parseAddress(selectedItem: (self.matchingItem?.placemark)!)
-        self.openTimeLabel.text = "Opens: " + (self.shop?.openTime)!
-        self.closeTimeLabel.text = "Closes: " + (self.shop?.closeTime)!
-        self.phoneNumLabel.text = (self.matchingItem?.phoneNumber)!
-        self.shop?.addReview(review: Review(r: "Lorem", rating: 3))
-        for tag in (self.shop?.getTags())! {
-            tags += tag + " "
+        if let shop = getshopfromlist(name: (self.matchingItem?.name)!){
+            self.addressLabel.text = parseAddress(selectedItem: (self.matchingItem?.placemark)!)
+            self.openTimeLabel.text = "Opens: " + (shop.openTime)
+            self.closeTimeLabel.text = "Closes: " + (shop.closeTime)
+            self.phoneNumLabel.text = (self.matchingItem?.phoneNumber)!
+            shop.addReview(review: Review(r: "Lorem", rating: 3))
+            self.oneshop=shop
         }
-        self.tagsLabel.text = tags
         
 
         
@@ -59,40 +56,23 @@ class DetailViewController: UIViewController {
         
     }
     @IBAction func Reviews(_ sender: Any) {
-        self.performSegue(withIdentifier: "ToReviwTable", sender: self)
+        if self.oneshop != nil {
+            self.performSegue(withIdentifier: "ToReviwTable", sender: self)
+        }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if (segue.identifier == "ToReviwTable"){
             let dvc=segue.destination as! ReviewTableController
-            dvc.shop = self.shop
+            dvc.shop = self.oneshop
             
         }
     }
     
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return (self.shop?.getReviews().count)!
-        return self.animals.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("@#@#YT@*&#(^@#*&@^#&*^@#&*@&#*(^@#&*@(^#@&#*()))")
-        """
-        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath)
-        cell.textLabel?.text = self.shop?.getReviews()[0]
-        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~", cell.textLabel!)
-        return cell
-"""
-        let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath) as UITableViewCell!
-        
-        // set the text from the data model
-        cell.textLabel?.text = self.animals[indexPath.row]
-        
-        return cell
-    }
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

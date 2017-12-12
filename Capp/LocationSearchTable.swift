@@ -77,8 +77,9 @@ extension LocationSearchTable {
 
 extension LocationSearchTable {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedItem = matchingItems[indexPath.row].placemark
-        MapSearchBarDelegate?.dropSearchPin(placemark: selectedItem)
+        let selectedItem = matchingItems[indexPath.row]
+        MapSearchBarDelegate?.dropSearchPin(placemark: selectedItem.placemark)
+        MapSearchBarDelegate?.parseItems(place: self.matchingItems)
         dismiss(animated: true, completion: nil)
     }
 }
