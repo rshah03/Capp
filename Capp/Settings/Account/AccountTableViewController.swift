@@ -109,6 +109,7 @@ class AccountTableViewController: UITableViewController {
     private func setupMenus() -> Void {
         let changeUsernameMenu = SettingsMenuItem(label : "Change Username", segueId: "ChangeUsername")
         let changePasswordMenu = SettingsMenuItem(label : "Change Password", segueId: "ChangePassword")
-        self.settingsMenuItems = [changeUsernameMenu, changePasswordMenu]
+        let changeNameMenu = SettingsMenuItem(label : "Change Name", segueId : "ChangeName")
+        self.settingsMenuItems = [changeUsernameMenu, changePasswordMenu, changeNameMenu]
     }
 }

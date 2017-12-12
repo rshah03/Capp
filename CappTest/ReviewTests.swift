@@ -10,7 +10,7 @@ import XCTest
 
 class ReviewTests: XCTestCase {
     
-    var review = Review()
+    var review = Review(r: "", rating: 0)
     
     override func setUp() {
         super.setUp()
