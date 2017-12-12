@@ -118,5 +118,9 @@ class SettingsViewController: UITableViewController {
         //let locaationMenu = SettingsMenuItem(label: "Location", hasToggleSwitch : true)
         self.settingsMenuItems = [accountMenu, profileMenu, searchPreferenceMenu]
     }
-
+    
+    @IBAction func backToHome(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
