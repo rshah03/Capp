@@ -54,6 +54,7 @@ class AddReviewController: UIViewController, UITextViewDelegate {
             review.setReviewSummary(summary: reviewText.text)
             shop!.addReview(review: review)
             _ = navigationController?.popViewController(animated: true)
+            _ = navigationController?.popViewController(animated: true)
         }
     }
     /*
