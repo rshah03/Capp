@@ -23,12 +23,12 @@ class Shop: Codable {
     var tags: [String]?
     
     
-    init(shopType: String, shopID: String, shopReviews: [Review], shopName: String, openTime: String, closeTime: String, tags: [String]?) {
+    init(shopType: String, shopID: String, shopName: String, openTime: String, closeTime: String, tags: [String]?) {
         self.shopID = shopID
         self.shopName = shopName
         self.openTime = openTime
         self.closeTime = closeTime
-        self.shopReviews = shopReviews
+        self.shopReviews = [Review]()
         self.shopType = shopType.lowercased()
         if (tags != nil) {
             self.tags = tags
