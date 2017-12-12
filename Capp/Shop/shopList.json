@@ -3,7 +3,11 @@
  "shopType": "both",
  "shopID": "01",
  "shopName": "Blacksmith",
- "shopReviews": [],
+ "shopReviews": [
+    {"reviewSummary": "Cool place with excellent service.  Sugar cane latte is very smooth, and sausage biscuit great.  Only thing I noticed to improve on is the coffee doesn’t come hot.  It’s not cold or anything, but you got to drink it faster than normal to not have a lukewarm brew.", "starRating": 4},
+    {"reviewSummary": "Cool space with great coffee! It is a bit small on the inside so when it’s busy it could get crowded, but their cane sugar late is especially worth it. There’s plenty of parking, so if you get there during one of their busier times you can still enjoy a coffee and a meal with their outdoor seating on a breezy day.", "starRating": 4},
+    {"reviewSummary": "One of my favorite coffee stops in Houston. They offer some of the best roasts in the area and the service is usually on point. Get a pourover. You will love it.", "starRating": 5}
+ ],
  "openTime": "07:00",
  "closeTime": "17:00",
  "tags": ["Pet Friendly", "Social"]
@@ -12,7 +16,12 @@
  "shopType": "both",
  "shopID": "02",
  "shopName": "Greenway Coffee & Tea",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "07:00",
  "closeTime": "15:00",
  "tags": ["Social"]
@@ -21,7 +30,12 @@
  "shopType": "both",
  "shopID": "03",
  "shopName": "Siphon Coffee",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "07:00",
  "closeTime": "21:00",
  "tags": ["Social", "Study", "Ambiance"]
@@ -30,7 +44,12 @@
  "shopType": "both",
  "shopID": "04",
  "shopName": "Southside Espresso",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "06:30",
  "closeTime": "19:00",
  "tags": ["Pet Friendly", "Social", "Study"]
@@ -39,7 +58,12 @@
  "shopType": "both",
  "shopID": "05",
  "shopName": "Morningstar",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "07:00",
  "closeTime": "15:00",
  "tags": ["Social", "Study", "Pet Friendly", "Ambiance"]
@@ -48,7 +72,12 @@
  "shopType": "both",
  "shopID": "06",
  "shopName": "Boomtown Coffee",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "06:30",
  "closeTime": "19:00",
  "tags": ["Social", "Study", "Ambiance"]
@@ -57,7 +86,12 @@
  "shopType": "both",
  "shopID": "07",
  "shopName": "Prelude Coffee & Tea",
- "shopReviews": [],
+ "shopReviews": [
+                 {"reviewSummary": "The atmosphere is very high end, with a large, white marble counter and ample seating. The space itself opens up into a reception area for the building that makes the place seem very comfortable and large. The cortado had a bit too much foamed milk, which diluted the coffee a bit and left me wanting something a bit stronger. The coffee itself was pretty neutral, with some chocolatey notes. They are affiliated with Blacksmith and  Morningstar if you like those places. It was a pleasant experience and I would come here again to relax and talk or work. I didn't see any outlets while I was there if that is important to your studying and working.", "starRating": 4},
+                 {"reviewSummary": "", "starRating": 4},
+                 {"reviewSummary": "", "starRating": 5},
+                 {"reviewSummary": "", "starRating": 5}
+ ],
  "openTime": "07:00",
  "closeTime": "15:00",
  "tags": ["Social", "Ambiance"]
@@ -66,7 +100,12 @@
  "shopType": "coffee",
  "shopID": "08",
  "shopName": "Fix Coffeebar",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "07:00",
  "closeTime": "20:00",
  "tags": ["Study"]
@@ -75,7 +114,12 @@
  "shopType": "both",
  "shopID": "09",
  "shopName": "Tout Suite",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "07:00",
  "closeTime": "24:00",
  "tags": ["Study", "Ambiance", "Social"]
@@ -84,7 +128,12 @@
  "shopType": "coffee",
  "shopID": "10",
  "shopName": "The Honeymoon Cafe & Bar",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "07:00",
  "closeTime": "22:00",
  "tags": ["Social", "Ambiance"]
@@ -93,7 +142,12 @@
  "shopType": "both",
  "shopID": "11",
  "shopName": "Throughgood Coffee",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "06:30",
  "closeTime": "16:30",
  "tags": ["Social", "Ambiance", "Study", "Pet Friendly"]
@@ -102,7 +156,12 @@
  "shopType": "both",
  "shopID": "12",
  "shopName": "Inversion Coffee House",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "06:30",
  "closeTime": "18:30",
  "tags": ["Study", "Ambiance", "Social", "Pet Friendly"]
@@ -111,7 +170,12 @@
  "shopType": "both",
  "shopID": "13",
  "shopName": "Catalina Coffee",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "06:30",
  "closeTime": "19:00",
  "tags": ["Study", "Ambiance", "Social"]
@@ -120,7 +184,12 @@
  "shopType": "both",
  "shopID": "14",
  "shopName": "Cafeza",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "07:00",
  "closeTime": "22:00",
  "tags": ["Social", "Ambiance", "Study"]
@@ -129,7 +198,12 @@
  "shopType": "both",
  "shopID": "15",
  "shopName": "A 2nd Cup",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "07:00",
  "closeTime": "22:00",
  "tags": ["Study", "Social"]
@@ -138,7 +212,12 @@
  "shopType": "both",
  "shopID": "16",
  "shopName": "AHH, Coffee!",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "07:00",
  "closeTime": "19:00",
  "tags": ["Study", "Social", "Pet Friendly"]
@@ -147,7 +226,12 @@
  "shopType": "both",
  "shopID": "17",
  "shopName": "Dandelion Cafe",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "07:00",
  "closeTime": "18:00",
  "tags": ["Study", "Social"]
@@ -156,7 +240,12 @@
  "shopType": "both",
  "shopID": "18",
  "shopName": "Momentum Coffee",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "07:00",
  "closeTime": "16:00",
  "tags": ["Study", "Social"]
@@ -165,7 +254,12 @@
  "shopType": "both",
  "shopID": "19",
  "shopName": "Black Hole Coffee House",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "06:30",
  "closeTime": "24:00",
  "tags": ["Study", "Social"]
@@ -174,7 +268,12 @@
  "shopType": "both",
  "shopID": "20",
  "shopName": "Antidote",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "06:30",
  "closeTime": "24:00",
  "tags": ["Study", "Social"]
@@ -183,7 +282,12 @@
  "shopType": "tea",
  "shopID": "21",
  "shopName": "Path of Tea",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "10:00",
  "closeTime": "21:00",
  "tags": ["Study", "Social"]
@@ -192,7 +296,12 @@
  "shopType": "tea",
  "shopID": "22",
  "shopName": "Kung Fu Tea",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "12:00",
  "closeTime": "22:00",
  "tags": ["Study", "Social"]
@@ -201,7 +310,12 @@
  "shopType": "tea",
  "shopID": "23",
  "shopName": "Ten Yen Tea & Herbs",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "11:00",
  "closeTime": "18:30",
  "tags": ["Study", "Social"]
@@ -210,7 +324,12 @@
  "shopType": "tea",
  "shopID": "24",
  "shopName": "The Teahouse",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "07:00",
  "closeTime": "24:00",
  "tags": ["Study", "Social"]
@@ -219,7 +338,12 @@
  "shopType": "tea",
  "shopID": "25",
  "shopName": "Tea Bar & Organics",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "11:00",
  "closeTime": "24:00",
  "tags": ["Study", "Social"]
@@ -228,9 +352,14 @@
  "shopType": "tea",
  "shopID": "26",
  "shopName": "Golden Oolong Tea",
- "shopReviews": [],
+ "shopReviews": [
+ 	{"reviewSummary": "", "starRating": 4},
+    {"reviewSummary": "", "starRating": 5},
+    {"reviewSummary": "", "starRating": 5}
+
+ ],
  "openTime": "10:30",
  "closeTime": "21:00",
  "tags": ["Study", "Social"]
  }
- ]
+]

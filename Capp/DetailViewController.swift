@@ -36,26 +36,10 @@ class DetailViewController: UIViewController {
         self.view.backgroundColor = GradientColor(.topToBottom, frame: self.view.frame, colors: [UIColor.flatGreen, UIColor.flatSandDark])
         self.shops = importShopList()
         self.ShopName.text = self.matchingItem?.name
-        if let shop = getshopfromlist(name: (self.matchingItem?.name)!){
-            self.addressLabel.text = parseAddress(selectedItem: (self.matchingItem?.placemark)!)
-            self.openTimeLabel.text = "Opens: " + (shop.openTime)
-            self.closeTimeLabel.text = "Closes: " + (shop.closeTime)
-            self.phoneNumLabel.text = (self.matchingItem?.phoneNumber)!
-            shop.addReview(review: Review(r: "Lorem", rating: 3))
-            self.oneshop=shop
-            for tag in shop.getTags() {
-                if tag == shop.getTags()[shop.getTags().count-1] {
-                    tags += tag + "]"
-                }
-                else {
-                    tags += tag + ", "
-                }
-            }
-            self.tagsLabel.text = tags
-        }
-        
-
-        
+        self.addressLabel.text = parseAddress(selectedItem: (self.matchingItem?.placemark)!)
+        self.openTimeLabel.text = "Opens: " + (self.shop?.openTime)!
+        self.closeTimeLabel.text = "Closes: " + (self.shop?.closeTime)!
+        self.phoneNumLabel.text = (self.matchingItem?.phoneNumber)!               
 //        for review in (self.shop?.getReviews())! {
 //
 //        }
