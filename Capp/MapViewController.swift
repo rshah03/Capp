@@ -13,6 +13,7 @@ import CoreLocation
 
 protocol MapSearchBarPin {
     func dropSearchPin(placemark:MKPlacemark)
+    func parseItems(place:[MKMapItem])
 }
 
 class MapViewController: UIViewController, MapSearchBarPin {
@@ -30,6 +31,7 @@ class MapViewController: UIViewController, MapSearchBarPin {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var myLocationButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,6 +118,9 @@ class MapViewController: UIViewController, MapSearchBarPin {
         searchButton.isHidden = true
         //print(self.tags)
     }
+    func parseItems(place:[MKMapItem]){
+        self.matchingItems = place
+    }
     
     func dropSearchPin(placemark:MKPlacemark){
         // clear existing pins
@@ -185,6 +190,7 @@ extension MapViewController : MKMapViewDelegate {
         if let name = view.annotation?.title ?? "empty" {
             placeName=name
             item=getMathingItem(name: name)
+ 
         }
         let address=parseAddress(selectedItem: item.placemark)
         print(placeName!+" "+address)
@@ -192,6 +198,7 @@ extension MapViewController : MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl)
     {
+        
         self.performSegue(withIdentifier: "ToDetailView", sender: self)
     }
     
