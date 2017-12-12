@@ -40,9 +40,7 @@ class ReviewTableController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print("@#@#YT@*&#(^@#*&@^#&*^@#&*@&#*(^@#&*@(^#@&#*()))")
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = self.shop?.getReviews()[indexPath.row]
-        cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.lineBreakMode = .byWordWrapping
+        cell.textLabel?.text = self.shop?.getReviews()[0]
         print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~", cell.textLabel!)
         return cell
     }
