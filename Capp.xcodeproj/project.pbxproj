@@ -10,6 +10,7 @@
 		350B7A8D1FBABA2D0095715F /* ChangeUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350B7A8C1FBABA2D0095715F /* ChangeUsernameViewController.swift */; };
 		350B7A8F1FBABAE60095715F /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350B7A8E1FBABAE60095715F /* ChangePasswordViewController.swift */; };
 		350B7A921FD7118B0095715F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350B7A911FD7118B0095715F /* ProfileViewController.swift */; };
+		350B7A941FDF4E200095715F /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350B7A931FDF4E200095715F /* ChangeNameViewController.swift */; };
 		352DD2C91FA975EF0092BFD1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD2C81FA975EF0092BFD1 /* Settings.swift */; };
 		352DD2D21FAAAB5B0092BFD1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD2D11FAAAB5B0092BFD1 /* SettingsViewController.swift */; };
 		352DD2D41FAAC0840092BFD1 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DD2D31FAAC0840092BFD1 /* SettingsTableViewCell.swift */; };
@@ -66,6 +67,7 @@
 		350B7A8C1FBABA2D0095715F /* ChangeUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUsernameViewController.swift; sourceTree = "<group>"; };
 		350B7A8E1FBABAE60095715F /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		350B7A911FD7118B0095715F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		350B7A931FDF4E200095715F /* ChangeNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
 		352DD2C81FA975EF0092BFD1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		352DD2D11FAAAB5B0092BFD1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		352DD2D31FAAC0840092BFD1 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				352DD2DB1FAACCAF0092BFD1 /* AccountTableViewCell.swift */,
 				350B7A8C1FBABA2D0095715F /* ChangeUsernameViewController.swift */,
 				350B7A8E1FBABAE60095715F /* ChangePasswordViewController.swift */,
+				350B7A931FDF4E200095715F /* ChangeNameViewController.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				4440DC8B1F86F8FE00751678 /* HomeViewController.swift in Sources */,
 				352DD2D81FAAC92B0092BFD1 /* AccountTableViewController.swift in Sources */,
 				352DD2D21FAAAB5B0092BFD1 /* SettingsViewController.swift in Sources */,
+				350B7A941FDF4E200095715F /* ChangeNameViewController.swift in Sources */,
 				64AAA5941FBCD70400B08E55 /* LocationSearchTable.swift in Sources */,
 				64270DB01FDE52030021A286 /* ReviewTableController.swift in Sources */,
 				643C94DB1FA83922005F279E /* MyAnnotations.swift in Sources */,

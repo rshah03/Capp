@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FGH-4N-shM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FGH-4N-shM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Baseline standard spacing" minToolsVersion="9.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -471,7 +471,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awu-1q-vrp">
-                                            <rect key="frame" x="16" y="57" width="332" height="15.5"/>
+                                            <rect key="frame" x="8" y="54" width="348" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -803,6 +803,7 @@
                     <connections>
                         <segue destination="ioX-Hg-C6U" kind="show" identifier="ChangeUsername" id="Fp2-pR-uCH"/>
                         <segue destination="YoK-9I-pmM" kind="show" identifier="ChangePassword" id="V2t-il-qQV"/>
+                        <segue destination="pdx-au-AgY" kind="show" identifier="ChangeName" id="10f-Qn-jcX"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pF8-wN-SHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -922,6 +923,50 @@
             </objects>
             <point key="canvasLocation" x="3312.8000000000002" y="1043.9280359820091"/>
         </scene>
+        <!--Change Name-->
+        <scene sceneID="iUH-h2-cJe">
+            <objects>
+                <viewController title="Change Name" id="pdx-au-AgY" customClass="ChangeNameViewController" customModule="Capp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tdL-5C-ZLV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type new name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tTF-66-vYj">
+                                <rect key="frame" x="16" y="92" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG4-2L-GBW">
+                                <rect key="frame" x="146" y="150" width="82" height="30"/>
+                                <color key="backgroundColor" red="0.20399490000000001" green="0.73879981039999998" blue="0.60008388759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="changeName:" destination="pdx-au-AgY" eventType="touchUpInside" id="v5H-q6-Oji"/>
+                                    <action selector="changePassword:" destination="YoK-9I-pmM" eventType="touchUpInside" id="83X-KA-fQ0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tTF-66-vYj" firstAttribute="leading" secondItem="IwO-XK-da7" secondAttribute="leading" constant="16" id="P42-Sk-QKM"/>
+                            <constraint firstItem="IwO-XK-da7" firstAttribute="trailing" secondItem="tTF-66-vYj" secondAttribute="trailing" constant="16" id="QfF-Wn-qas"/>
+                            <constraint firstItem="xG4-2L-GBW" firstAttribute="top" secondItem="tTF-66-vYj" secondAttribute="bottom" constant="28" id="Y2h-yQ-UMk"/>
+                            <constraint firstItem="xG4-2L-GBW" firstAttribute="leading" secondItem="IwO-XK-da7" secondAttribute="leading" constant="146" id="iHw-Ke-HwC"/>
+                            <constraint firstItem="tTF-66-vYj" firstAttribute="top" secondItem="IwO-XK-da7" secondAttribute="top" constant="28" id="kms-cb-Y1z"/>
+                            <constraint firstItem="IwO-XK-da7" firstAttribute="trailing" secondItem="xG4-2L-GBW" secondAttribute="trailing" constant="147" id="nbl-at-oVr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IwO-XK-da7"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="tTF-66-vYj" id="TM5-Gs-a8N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8SM-S4-gg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4242.3999999999996" y="1043.9280359820091"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="Hx4-re-ZtF">
             <objects>
@@ -962,10 +1007,10 @@
                                 <rect key="frame" x="67" y="84" width="240" height="402"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c4L-JV-iHX">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="182"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="132"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3f-ht-ic9">
-                                        <rect key="frame" x="10" y="242" width="220" height="0.0"/>
+                                        <rect key="frame" x="10" y="192" width="220" height="50"/>
                                         <accessibility key="accessibilityConfiguration" identifier="name" label="Name"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
