@@ -40,10 +40,7 @@ class DetailViewController: UIViewController {
         self.addressLabel.text = parseAddress(selectedItem: (self.matchingItem?.placemark)!)
         self.openTimeLabel.text = "Opens: " + (self.shop?.openTime)!
         self.closeTimeLabel.text = "Closes: " + (self.shop?.closeTime)!
-        self.phoneNumLabel.text = (self.matchingItem?.phoneNumber)!
-        self.shop?.addReview(review: Review(r: "Lorem", rating: 3))
-
-        
+        self.phoneNumLabel.text = (self.matchingItem?.phoneNumber)!        
 
         
 //        for review in (self.shop?.getReviews())! {
