@@ -22,7 +22,7 @@ class ProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        // <Q> Test code...
+        // <Q> Pre-fill missing profile fields with defaults...
         let checkUser = Auth.auth().currentUser
         
         if (checkUser?.displayName == nil) {
@@ -36,7 +36,7 @@ class ProfileViewController: UIViewController {
         changeRequest?.commitChanges(completion: nil)
         
         
-        // </Q> End of test code...
+        // </Q>...
 }
     
     override func viewDidAppear(_ animated: Bool) {

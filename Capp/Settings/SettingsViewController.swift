@@ -112,11 +112,11 @@ class SettingsViewController: UITableViewController {
     //MARK: Private functions.
     func setupMenu() -> Void {
         let accountMenu = SettingsMenuItem(label : "Account", segueId : "AccountSegue")
-        let profileMenu = SettingsMenuItem(label: "Profile", segueId: "ProfileSegue")
-        let searchPreferenceMenu = SettingsMenuItem(label: "Search Preferences")
+        let profileMenu = SettingsMenuItem(label: "View Profile", segueId: "ProfileSegue")
+        //let searchPreferenceMenu = SettingsMenuItem(label: "Search Preferences")
         //let notificationsMenu = SettingsMenuItem(label: "Notifications", hasToggleSwitch : true)
         //let locaationMenu = SettingsMenuItem(label: "Location", hasToggleSwitch : true)
-        self.settingsMenuItems = [accountMenu, profileMenu, searchPreferenceMenu]
+        self.settingsMenuItems = [accountMenu, profileMenu]
     }
     
     @IBAction func backToHome(_ sender: Any) {
