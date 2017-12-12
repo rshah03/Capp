@@ -41,7 +41,6 @@ class DetailViewController: UIViewController {
             self.openTimeLabel.text = "Opens: " + (shop.openTime)
             self.closeTimeLabel.text = "Closes: " + (shop.closeTime)
             self.phoneNumLabel.text = (self.matchingItem?.phoneNumber)!
-            shop.addReview(review: Review(r: "Lorem", rating: 3))
             self.oneshop=shop
             for tag in shop.getTags() {
                 if tag == shop.getTags()[shop.getTags().count-1] {
