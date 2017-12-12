@@ -39,6 +39,7 @@
 		44DA18F01F96E8C2001F230E /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DA18EF1F96E8C2001F230E /* UserTests.swift */; };
 		44DA18F11F96E8EE001F230E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442A96371F8D75700046D778 /* User.swift */; };
 		4C0350B71FAA7BE900667912 /* shopList.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C0350B61FAA7BE900667912 /* shopList.json */; };
+		4C3033B41FDF6CD3002406C2 /* AddReviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3033B31FDF6CD3002406C2 /* AddReviewController.swift */; };
 		64270DB01FDE52030021A286 /* ReviewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64270DAF1FDE52030021A286 /* ReviewTableController.swift */; };
 		643C94DB1FA83922005F279E /* MyAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643C94DA1FA83922005F279E /* MyAnnotations.swift */; };
 		643C94DD1FA83E1D005F279E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643C94DC1FA83E16005F279E /* CoreLocation.framework */; };
@@ -100,6 +101,7 @@
 		44DA18EF1F96E8C2001F230E /* UserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		4A26194D970E3E124D14926E /* Pods_Capp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0350B61FAA7BE900667912 /* shopList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shopList.json; sourceTree = "<group>"; };
+		4C3033B31FDF6CD3002406C2 /* AddReviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReviewController.swift; sourceTree = "<group>"; };
 		600B63D047858AAE10CA37B6 /* Pods-Capp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Capp/Pods-Capp.release.xcconfig"; sourceTree = "<group>"; };
 		64270DAF1FDE52030021A286 /* ReviewTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableController.swift; sourceTree = "<group>"; };
 		643C94DA1FA83922005F279E /* MyAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAnnotations.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				44756B4E1FA9575400DC54E2 /* TableViewController.swift */,
 				449E36D71FDB40B1006F113C /* DetailViewController.swift */,
 				64270DAF1FDE52030021A286 /* ReviewTableController.swift */,
+				4C3033B31FDF6CD3002406C2 /* AddReviewController.swift */,
 			);
 			path = Capp;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				44756B4F1FA9575400DC54E2 /* TableViewController.swift in Sources */,
 				352DD2DA1FAAC9800092BFD1 /* SettingsMenuItem.swift in Sources */,
 				442A96381F8D75700046D778 /* User.swift in Sources */,
+				4C3033B41FDF6CD3002406C2 /* AddReviewController.swift in Sources */,
 				352DD2C91FA975EF0092BFD1 /* Settings.swift in Sources */,
 				44D827411F8F0D0C00540178 /* Shop.swift in Sources */,
 				4440DC891F86F8FE00751678 /* AppDelegate.swift in Sources */,
