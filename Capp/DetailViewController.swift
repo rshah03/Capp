@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     var matchingItem:MKMapItem?
     var oneshop:Shop?
     var shops = [Shop]()
+    var tags:String = ""
     
     
     @IBOutlet weak var ShopName: UILabel!
@@ -24,14 +25,14 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var openTimeLabel: UILabel!
     @IBOutlet weak var closeTimeLabel: UILabel!
     @IBOutlet weak var phoneNumLabel: UILabel!
-   
+    @IBOutlet weak var tagsLabel: UILabel!
+    
   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         ShopDetails.backgroundColor = UIColor(white: 1, alpha: 0.3)
-        Reviews.backgroundColor = UIColor(white: 1, alpha: 0.3)
         self.view.backgroundColor = GradientColor(.topToBottom, frame: self.view.frame, colors: [UIColor.flatGreen, UIColor.flatSandDark])
         self.shops = importShopList()
         self.ShopName.text = self.matchingItem?.name
@@ -43,7 +44,6 @@ class DetailViewController: UIViewController {
             shop.addReview(review: Review(r: "Lorem", rating: 3))
             self.oneshop=shop
         }
-
         
 
         

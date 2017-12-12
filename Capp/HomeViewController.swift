@@ -16,6 +16,9 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var trailingC: NSLayoutConstraint!
     @IBOutlet weak var slidingView: UIView!
     @IBOutlet weak var SearchPanel: UIView!
+    @IBAction func settingsButton(_ sender: Any) {
+        performSegue(withIdentifier: "ToSettingsView", sender: self)
+    }
     
     
     @IBOutlet weak var Pet: UISwitch!
@@ -23,6 +26,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var Study: UISwitch!
     @IBOutlet weak var Social: UISwitch!
     
+
     var menuIsVisible = false
     var searchQuery : String?
     var tag = Set<String>()
@@ -64,6 +68,7 @@ class FirstViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var settings: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         createGradient()
