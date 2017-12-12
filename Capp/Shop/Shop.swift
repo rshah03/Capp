@@ -23,18 +23,18 @@ class Shop: Codable {
     var tags: [String]?
     
     
-    init(shopType: String, shopID: String, shopName: String, openTime: String, closeTime: String, tags: [String]?) {
+    init(shopType: String, shopID: String, shopReviews: [Review], shopName: String, openTime: String, closeTime: String, tags: [String]?) {
         self.shopID = shopID
         self.shopName = shopName
         self.openTime = openTime
         self.closeTime = closeTime
-        self.shopReviews = [Review]()
+        self.shopReviews = shopReviews
         self.shopType = shopType.lowercased()
         if (tags != nil) {
             self.tags = tags
         }
     }
-
+    
     func getCategory() -> Category {
         switch shopType {
         case "coffee":
@@ -45,7 +45,7 @@ class Shop: Codable {
             return Category.coffeeAndTeaShop
         }
     }
-
+    
     func getShopID() -> String {
         return shopID
     }
@@ -53,7 +53,7 @@ class Shop: Codable {
     func getShopName() -> String {
         return shopName
     }
-
+    
     //    input will be in format: "xx:xx-yy:yy
     func getBusinessHours(open: String, close: String) -> String {
         let formatter = DateFormatter()
@@ -88,7 +88,7 @@ class Shop: Codable {
     
     
     func addReview(review: Review) {
-//        shopReviews.append(review)
+        //        shopReviews.append(review)
         shopReviews.insert(review, at: shopReviews.startIndex)
         //Maybe associate a reviwe with a unique user ID to prevent duplicates
     }
@@ -123,3 +123,4 @@ class Shop: Codable {
     //Delete review function may not be necessary. Can be removed arbitrarily by admins.
     
 }
+

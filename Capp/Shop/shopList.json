@@ -1,236 +1,364 @@
-[
- {
- "shopType": "both",
- "shopID": "01",
- "shopName": "Blacksmith",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "17:00",
- "tags": ["Pet Friendly", "Social"]
- },
- {
- "shopType": "both",
- "shopID": "02",
- "shopName": "Greenway Coffee & Tea",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "15:00",
- "tags": ["Social"]
- },
- {
- "shopType": "both",
- "shopID": "03",
- "shopName": "Siphon Coffee",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "21:00",
- "tags": ["Social", "Study", "Ambiance"]
- },
- {
- "shopType": "both",
- "shopID": "04",
- "shopName": "Southside Espresso",
- "shopReviews": [],
- "openTime": "06:30",
- "closeTime": "19:00",
- "tags": ["Pet Friendly", "Social", "Study"]
- },
- {
- "shopType": "both",
- "shopID": "05",
- "shopName": "Morningstar",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "15:00",
- "tags": ["Social", "Study", "Pet Friendly", "Ambiance"]
- },
- {
- "shopType": "both",
- "shopID": "06",
- "shopName": "Boomtown Coffee",
- "shopReviews": [],
- "openTime": "06:30",
- "closeTime": "19:00",
- "tags": ["Social", "Study", "Ambiance"]
- },
- {
- "shopType": "both",
- "shopID": "07",
- "shopName": "Prelude Coffee & Tea",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "15:00",
- "tags": ["Social", "Ambiance"]
- },
- {
- "shopType": "coffee",
- "shopID": "08",
- "shopName": "Fix Coffeebar",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "20:00",
- "tags": ["Study"]
- },
- {
- "shopType": "both",
- "shopID": "09",
- "shopName": "Tout Suite",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "24:00",
- "tags": ["Study", "Ambiance", "Social"]
- },
- {
- "shopType": "coffee",
- "shopID": "10",
- "shopName": "The Honeymoon Cafe & Bar",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "22:00",
- "tags": ["Social", "Ambiance"]
- },
- {
- "shopType": "both",
- "shopID": "11",
- "shopName": "Throughgood Coffee",
- "shopReviews": [],
- "openTime": "06:30",
- "closeTime": "16:30",
- "tags": ["Social", "Ambiance", "Study", "Pet Friendly"]
- },
- {
- "shopType": "both",
- "shopID": "12",
- "shopName": "Inversion Coffee House",
- "shopReviews": [],
- "openTime": "06:30",
- "closeTime": "18:30",
- "tags": ["Study", "Ambiance", "Social", "Pet Friendly"]
- },
- {
- "shopType": "both",
- "shopID": "13",
- "shopName": "Catalina Coffee",
- "shopReviews": [],
- "openTime": "06:30",
- "closeTime": "19:00",
- "tags": ["Study", "Ambiance", "Social"]
- },
- {
- "shopType": "both",
- "shopID": "14",
- "shopName": "Cafeza",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "22:00",
- "tags": ["Social", "Ambiance", "Study"]
- },
- {
- "shopType": "both",
- "shopID": "15",
- "shopName": "A 2nd Cup",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "22:00",
- "tags": ["Study", "Social"]
- },
- {
- "shopType": "both",
- "shopID": "16",
- "shopName": "AHH, Coffee!",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "19:00",
- "tags": ["Study", "Social", "Pet Friendly"]
- },
- {
- "shopType": "both",
- "shopID": "17",
- "shopName": "Dandelion Cafe",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "18:00",
- "tags": ["Study", "Social"]
- },
- {
- "shopType": "both",
- "shopID": "18",
- "shopName": "Momentum Coffee",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "16:00",
- "tags": ["Study", "Social"]
- },
- {
- "shopType": "both",
- "shopID": "19",
- "shopName": "Black Hole Coffee House",
- "shopReviews": [],
- "openTime": "06:30",
- "closeTime": "24:00",
- "tags": ["Study", "Social"]
- },
- {
- "shopType": "both",
- "shopID": "20",
- "shopName": "Antidote",
- "shopReviews": [],
- "openTime": "06:30",
- "closeTime": "24:00",
- "tags": ["Study", "Social"]
- },
- {
- "shopType": "tea",
- "shopID": "21",
- "shopName": "Path of Tea",
- "shopReviews": [],
- "openTime": "10:00",
- "closeTime": "21:00",
- "tags": ["Study", "Social"]
- },
- {
- "shopType": "tea",
- "shopID": "22",
- "shopName": "Kung Fu Tea",
- "shopReviews": [],
- "openTime": "12:00",
- "closeTime": "22:00",
- "tags": ["Study", "Social"]
- },
- {
- "shopType": "tea",
- "shopID": "23",
- "shopName": "Ten Yen Tea & Herbs",
- "shopReviews": [],
- "openTime": "11:00",
- "closeTime": "18:30",
- "tags": ["Study", "Social"]
- },
- {
- "shopType": "tea",
- "shopID": "24",
- "shopName": "The Teahouse",
- "shopReviews": [],
- "openTime": "07:00",
- "closeTime": "24:00",
- "tags": ["Study", "Social"]
- },
- {
- "shopType": "tea",
- "shopID": "25",
- "shopName": "Tea Bar & Organics",
- "shopReviews": [],
- "openTime": "11:00",
- "closeTime": "24:00",
- "tags": ["Study", "Social"]
- },
- {
- "shopType": "tea",
- "shopID": "26",
- "shopName": "Golden Oolong Tea",
- "shopReviews": [],
- "openTime": "10:30",
- "closeTime": "21:00",
- "tags": ["Study", "Social"]
- }
- ]
+ [
+  {
+  "shopType": "both",
+  "shopID": "01",
+  "shopName": "Blacksmith",
+  "shopReviews": [
+                  {"reviewSummary": "Cool place with excellent service.  Sugar cane latte is very smooth, and sausage biscuit great.  Only thing I noticed to improve on is the coffee doesn’t come hot.  It’s not cold or anything, but you got to drink it faster than normal to not have a lukewarm brew.", "starRating": 4},
+                  {"reviewSummary": "Cool space with great coffee! It is a bit small on the inside so when it’s busy it could get crowded, but their cane sugar late is especially worth it. There’s plenty of parking, so if you get there during one of their busier times you can still enjoy a coffee and a meal with their outdoor seating on a breezy day.", "starRating": 4},
+                  {"reviewSummary": "One of my favorite coffee stops in Houston. They offer some of the best roasts in the area and the service is usually on point. Get a pourover. You will love it.", "starRating": 5}
+                  ],
+  "openTime": "07:00",
+  "closeTime": "17:00",
+  "tags": ["Pet Friendly", "Social"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "02",
+  "shopName": "Greenway Coffee & Tea",
+  "shopReviews": [
+                  {"reviewSummary": "THIS IS THE PLACE!! I drank at least on coffee from here EVERYDAY! Loved their service - they get to know their customers and memorize their orders - felt like home. Very unsuspectingly placed in the basement of a corporate high rises this little hipster counter serve coffee shop is where my team went every afternoon to revel in the superb coffee and discuss the day. I MISS THIS PLACE SOO MUCH!", "starRating": 5},
+                  {"reviewSummary": "I love finding cute local coffee shops and Greenway was perfect! The lattes & bakegoods were so good! I definitely recommend stopping by and spending time there.", "starRating": 4},
+                  {"reviewSummary": "Some of the best coffee in Houston. Baristas are efficient and friendly. The donuts are overpriced garbage, but I won't knock a star off for that because the coffee is so dang good. Overall, I think this is easily a 5 star coffee shop. The milk has a smooth creamy consistency that most coffee shops could only dream of achieving.", "starRating": 5}
+                  
+                  ],
+  "openTime": "07:00",
+  "closeTime": "15:00",
+  "tags": ["Social"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "03",
+  "shopName": "Siphon Coffee",
+  "shopReviews": [
+                  {"reviewSummary": "Siphon has great options for espressos and coffees, the only problem (if you can call it that) is that it’s always busy! This is one of my favorite coffee shops in Houston!", "starRating": 5},
+                  {"reviewSummary": "Cozy coffee shop. Great for a quick coffee or to sit and chat or do some work. Has a cute patio area.", "starRating": 5},
+                  {"reviewSummary": "One of my favorite coffee places in Houston. Inside is a open concept with a modern/hipster vibe that sells really good coffee. The siphon coffee is an interesting menu item as it uses a unique brewing technique which is pretty pricy but worth the experience. The food here is also on point. If you're looking for a place to study/work give this place a try!", "starRating": 4}
+                  
+                  ],
+  "openTime": "07:00",
+  "closeTime": "21:00",
+  "tags": ["Social", "Study", "Ambiance"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "04",
+  "shopName": "Southside Espresso",
+  "shopReviews": [
+                  {"reviewSummary": "Great coffee, Experienced baristas", "starRating": 4},
+                  {"reviewSummary": "Wonderful coffee experience. Odd right? Experience? Well that just what they serve up here, beyond delicious master-craft blended and brewed espresso. Everytime I go I always feel special. They seem to go above and beyond to ensure that your coffee 'experience' is nothing short of exceptional.", "starRating": 5},
+                  {"reviewSummary": "Small and relaxing coffee spot. Indoor/outdoor seating. Coffee tastes great, and they have some in-house seasonal flavors. Right now they have maple butter and sweet potato, in addition to the classics. Coffee is priced inline with other coffee spots. If you’re in the area and craving coffee, this is where I would stop.", "starRating": 5}
+                  
+                  ],
+  "openTime": "06:30",
+  "closeTime": "19:00",
+  "tags": ["Pet Friendly", "Social", "Study"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "05",
+  "shopName": "Morningstar",
+  "shopReviews": [
+                  {"reviewSummary": "Nice little coffee shop with small tables to do work at. The best part is the coffee is quality and there are free refills. The food is good too.", "starRating": 4},
+                  {"reviewSummary": "This place has such a great environment for relaxing and talking over a drink and good food. We ordered a mocha and golden monkey tea which were both delicious. The donuts were really good too. They have a donut with chocolate, caramel and coconut and taste like the Girl Scout cookie! Their biscuits are amazing with perfect amount of fluff and texture on the outside. I definitely recommend tying their honey butter biscuit!", "starRating": 5},
+                  {"reviewSummary": "I liked the donuts, the coffee is a bit bitter but I'm not exactly a coffee connoisseur, so my opinion isn't really important. I didn't like their potato and egg dish, but again, I can see other people enjoying it. I think this place is great for people who have a more diverse palate. If you are looking for a simple breakfast place you are probably better off somewhere else. If you want something different and more cultured this place is better suited for you.", "starRating": 4}
+                  
+                  ],
+  "openTime": "07:00",
+  "closeTime": "15:00",
+  "tags": ["Social", "Study", "Pet Friendly", "Ambiance"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "06",
+  "shopName": "Boomtown Coffee",
+  "shopReviews": [
+                  {"reviewSummary": "Creative coffee and espresso drinks, craft service and a thoughtful menu presentation make for a solid coffee house. I like the location although parking can b challenging as w all shops on this street. Atmosphere is crisp and modern w plenty of seating just wish some of it was more comfy coffee house laid back style. The outdoor cafe seating makes for a great Heights experience. Will come back to try more offerings.", "starRating": 4},
+                  {"reviewSummary": "The cortado here is delicious! It's creamy, slightly sweet, and has hints of chocolate. The art rotates, which constantly keeps the place fresh and new, and they redid the interior with new furniture and repainted the walls white, making the place seem larger and more inviting. There is an outdoor seating area that is shaded and covered from the elements, and there are plenty of outlets inside. Before the changes, Boomtown was already one of my favorite coffee shops in Houston, and it has only furthered solidified its position up there. I would highly recommend coming here to work, study, meet, or hang out and enjoy the atmosphere.", "starRating": 5},
+                  {"reviewSummary": "Toddy mocha, I love you. You were complex and cold and delicious. I definitely want to come back when I have more time. I loved the laid back vibe of this place despite it's busy location.", "starRating": 5}
+                  
+                  ],
+  "openTime": "06:30",
+  "closeTime": "19:00",
+  "tags": ["Social", "Study", "Ambiance"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "07",
+  "shopName": "Prelude Coffee & Tea",
+  "shopReviews": [
+                  {"reviewSummary": "The atmosphere is very high end, with a large, white marble counter and ample seating. The space itself opens up into a reception area for the building that makes the place seem very comfortable and large. The cortado had a bit too much foamed milk, which diluted the coffee a bit and left me wanting something a bit stronger. The coffee itself was pretty neutral, with some chocolatey notes. They are affiliated with Blacksmith and  Morningstar if you like those places. It was a pleasant experience and I would come here again to relax and talk or work. I didn't see any outlets while I was there if that is important to your studying and working.", "starRating": 4},
+                  {"reviewSummary": "I had my first mint mojito ice coffee today. It's refreshing and absolutely delicious. Coffee isn't bitter nor leave a strong aftertaste. Love, love, love...now I understand why everyone is raving about the mint mojito ice coffee. Can't wait to get my next cup.", "starRating": 4},
+                  {"reviewSummary": "Best coffee downtown!", "starRating": 5}
+                  ],
+  "openTime": "07:00",
+  "closeTime": "15:00",
+  "tags": ["Social", "Ambiance"]
+  },
+  {
+  "shopType": "coffee",
+  "shopID": "08",
+  "shopName": "Fix Coffeebar",
+  "shopReviews": [
+                  {"reviewSummary": "The cortado was chocolatey, bitter, and had a strong roasted smell and taste. I almost felt like I was eating something roasted. It was pretty good, but a bit pricey for what I got ($4 for a cortado, which was the same price as the latte which is even weirder). The inside has a good amount of seating, but it gets a little cramped. There also isn't much space outside. It'd be a nice place to get some work done.", "starRating": 4},
+                  {"reviewSummary": "The barista was very helpful and friendly. You can tell they have a passion for the coffee they sell. It was delicious.", "starRating": 5},
+                  {"reviewSummary": "I have been trying to a find a low key coffee shop ever since I moved to Houston. Fix is quiet enough to get homework done but still has a lively atmosphere. They also make the best Chai Latte I've ever tasted, and I have tried a LOT. There is a decent amount of parking, and there is inside and outside seating. I'm definitely making this my go to destination.", "starRating": 5}
+                  
+                  ],
+  "openTime": "07:00",
+  "closeTime": "20:00",
+  "tags": ["Study"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "09",
+  "shopName": "Tout Suite",
+  "shopReviews": [
+                  {"reviewSummary": "Top notch food! The decor is great. Service on Saturday is slow. Prepare to wait.  Once you get served, they are excellent! The owner is out and about bringing you exactly what you need.  The Kronut holes are fantastic as are the hash browns with bell peppers, the fresh in-house ketchup and fresh made garlic herb cream cheese. I was frustrated after the wait but the food and service experience made up for it.", "starRating": 4},
+                  {"reviewSummary": "What an amazing find. First of all, it's huge. There was a small line, but plenty of seating and space and enough employees to take care of everyone. The decor is incredibly aesthetically pleasing on the inside. The pastries are amazing, and the selection of Macroones was exquisite. Don't be afraid of the location, it's in an area that can come off as a bit sketchy, but they have taken care of their employees and building and offer an amazing brunch!", "starRating": 5},
+                  {"reviewSummary": "Very nice staff. Well kept. A bit expensive but the quality of their dishes and the presentation are A+. Great study spot with lots of outlets and places for one or two people to sit. Also great for groups.", "starRating": 5}
+                  
+                  ],
+  "openTime": "07:00",
+  "closeTime": "24:00",
+  "tags": ["Study", "Ambiance", "Social"]
+  },
+  {
+  "shopType": "coffee",
+  "shopID": "10",
+  "shopName": "The Honeymoon Café & Bar",
+  "shopReviews": [
+                  {"reviewSummary": "Funky cafe with limited food menu and long enough coffee types. You order at the register and food server hunts down your number posted like a sign. I ordered the BLT breakfast sandwich which was quite good. Bonus is the young woman at the register. Exquisitely beautiful in an old Hollywood way. She needs an agent. Other support staff with purple hair and an attitude to go with it will not disappoint the hip-hop crowd.", "starRating": 4},
+                  {"reviewSummary": "My wife and I originally stopped by to get coffee to go, but I saw the Irish coffee and we decided to sit down. It's hard for me to find alcohol I like and I've had Irish coffee in Ireland, so I had high expectations. It was decent, but not what I expected. My wife liked her flat white, the muffin was delicious, and the croissant was absolutely perfect. Their prices are typical, but their drink servings are small. The staff is nice, service is quick, and the place is cozy.", "starRating": 4},
+                  {"reviewSummary": "Good cocktails and neat atmosphere. It’s open as a bar late not just for daytime coffee. Usually not overly busy. Also once inside you can walk into Little Dipper in the back without going outside.", "starRating": 4}
+                  
+                  ],
+  "openTime": "07:00",
+  "closeTime": "22:00",
+  "tags": ["Social", "Ambiance"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "11",
+  "shopName": "Throughgood Coffee",
+  "shopReviews": [
+                  {"reviewSummary": "The cortado here was rich, a bit chocolatey, and hit with some higher notes. It was a little bit bready, but I enjoyed the roasted flavor. There were definitely points for presentation. Additionally, the staff was very friendly and talkative. The building itself is spacious and comfortable, but there is also ample outdoor seating which has a nice vibe. I wouldn't say this was the best coffee I've had, but it gets five stars for the overall experience! I will definitely be coming back to hang out and relax with friends.", "starRating": 4},
+                  {"reviewSummary": "Throughgood coffee has some fantastic coffee! Been there thrice and their cappuccino never failed to impress! Love their ambiance too! It's very casual and yet endearing. The staff there are also really good. The Barista is a very friendly guy and makes some yummy coffees! Would highly recommend to all the coffee lovers", "starRating": 5},
+                  {"reviewSummary": "Throughgood coffee was fantastic, but better than the place was the staff. I told them what I like and they gave me the perfect recommendation. Protip if you like your sugar with a little bit coffee of coffee, tell them and their suggestion (forgot what it was called) will be on point!", "starRating": 5}
+                  
+                  ],
+  "openTime": "06:30",
+  "closeTime": "16:30",
+  "tags": ["Social", "Ambiance", "Study", "Pet Friendly"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "12",
+  "shopName": "Inversion Coffee House",
+  "shopReviews": [
+                  {"reviewSummary": "Great atmosphere. I love studying in places with huge windows and it's quiet enough here. Almost everyone is plugged in to a laptop or tablet, working on their own grind so this place is probably one of the best places to get your productivity on. As for the drinks, I had a lavender latte and it was pretty good--wished it was a little sweeter but then again, I have a sweet tooth. The staff seems pretty accommodating so I'm sure they wouldn't mind fine-tuning your drinks if need be.", "starRating": 4},
+                  {"reviewSummary": "Its a cute cafe with nice open windows. I was only there for a short while. I had their lavender latte. It tasted great. I just wished it was given to me in a mug instead of their to go cup (wasn't asked if it was for here or togo). Only thing I didn't really like was that their order desk faces the entrance which doesn't give a lot of room for more than 2 people, so it caused a couple of awkward moments of shifting around when people entered the cafe and joined the line.", "starRating": 4},
+                  {"reviewSummary": "If you are searching a quiet, delicate place for studying or working? Here it is! Besides, here is not as cold as other places! \nDrink is delicious, WiFi is also fast enough. Enjoy here and definitely would be back.", "starRating": 5}
+                  
+                  ],
+  "openTime": "06:30",
+  "closeTime": "18:30",
+  "tags": ["Study", "Ambiance", "Social", "Pet Friendly"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "13",
+  "shopName": "Catalina Coffee",
+  "shopReviews": [
+                  {"reviewSummary": "This is one of my favorite places for coffee in Houston. It's very small but the coffee is fantastic. The people who work there really want to show you what good coffee tastes like and they do and it is. They don't offer WiFi, I believe they don't want it to be a loitering spot for people who typically would attend a Starbucks or other corporate coffee chains but regardless it's still one of the best places in the city.", "starRating": 5},
+                  {"reviewSummary": "I’ve been to many coffee shops around Houston but Catalina truly stands out. The coffee is excellent and its presentation is above the rest. The decor will make you feel like you’re in a different city, but the exceptional service makes you feel right at home.", "starRating": 5},
+                  {"reviewSummary": "This is one of the best cafes I've ever been in Houston. Attention to detail in the decor truly make you feel in a modern yet comfy place to drink your cup of coffee. The pastries area must, fresh and in the correct portion. The main sitting area is made of long tables, which favors conversations, if you are into meeting people!", "starRating": 5}
+                  
+                  ],
+  "openTime": "06:30",
+  "closeTime": "19:00",
+  "tags": ["Study", "Ambiance", "Social"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "14",
+  "shopName": "Cafeza",
+  "shopReviews": [
+                  {"reviewSummary": "So far, very good food and vibe. I think they can make the ordering process more organic and intuitive which at this point is not. \nOn the other hand, beautiful place, nice service and...did I say I enjoyed the food? OK", "starRating": 4},
+                  {"reviewSummary": "This place is awesome. The atmosphere is great. The coffee is good quality. They also serve alcohol. It's also a good place for date night with your significant other. You can literally sit there and conversate while enjoying coffee or wine. ", "starRating": 5},
+                  {"reviewSummary": "This is it!! Didn't know exactly what I was missing till I found what I was inherently looking for! Writers, poets, singers, dancers, journalists, coffee, tea, wine and some of the cleanest water I've ever tasted. If you don't know what you're missing then Cafeza will be glad to show you!", "starRating": 5}
+                  
+                  ],
+  "openTime": "07:00",
+  "closeTime": "22:00",
+  "tags": ["Social", "Ambiance", "Study"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "15",
+  "shopName": "A 2nd Cup",
+  "shopReviews": [
+                  {"reviewSummary": "Come for great coffee...COME BACK for the mission this place serves.  Erica has done an amazing job making people aware of the stain of modern day slavery. As the pic says, it didn’t end it went underground.  She spoke at St. Agnes and my daughter was blown away by the problem, the efforts to address it and by Erica’s passion to serve the victims of Human Trafficking.  The Secret Squirrel is a perfectly sweet blend that allows the rich flavorful coffee to be the star.  #TilEveryoneIsFree", "starRating": 4},
+                  {"reviewSummary": "I've been coming to work at A 2nd Cup for a few months now and cannot think of anywhere better in Houston to enjoy great coffee and friendly people! Granted, it's 90% packed full of like-minded individuals enjoying coffee, company, and studying/ working so that's the only downside. I tell everyone I know to come here to support a worth cause. Love this place!", "starRating": 5},
+                  {"reviewSummary": "This is the best place to get coffee in the Heights. I love the branding at this place and their mission is admirable as well. The spacing in between the tables is highly preferable over what you’d normally get going to Starbucks where you’re right on top of each other.", "starRating": 5}
+                  
+                  ],
+  "openTime": "07:00",
+  "closeTime": "22:00",
+  "tags": ["Study", "Social"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "16",
+  "shopName": "AHH, Coffee!",
+  "shopReviews": [
+                  {"reviewSummary": "Chill atmosphere in East downtown. Solid coffee. The flavor doesn't overpower the bitterness. Small serving sizes. I recommend drinking with a spoon to enjoy for longer periods. Good happy hour with 2.50 Texas beers. Reasonable priced artwork for sale. Never too busy and a lot of comfortable couches to sit on. Good pastries and kolaches.", "starRating": 4},
+                  {"reviewSummary": "Great atmosphere and a really chill spot, lots of interesting artwork on the walls. The staff is also super friendly. With a location right next to minute maid you can go hang out get a coffee and relax before walking over to the stadium for a game.", "starRating": 5},
+                  {"reviewSummary": "Great house coffee. Low nose level. Nice place", "starRating": 5}
+                  
+                  ],
+  "openTime": "07:00",
+  "closeTime": "19:00",
+  "tags": ["Study", "Social", "Pet Friendly"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "17",
+  "shopName": "Dandelion Cafe",
+  "shopReviews": [
+                  {"reviewSummary": "As soon as we walked in we were Greeted instantly. The staff was amazing. Food came out quickly and was delicious. The home made syrups were awesome and I rarely drink coffee. Love this place!!!", "starRating": 4},
+                  {"reviewSummary": "I love the friendly and humble staff of the cafe! As a regular guest for my study sessions they ask and remembered my name. The juices are top quality and fresh the coffee's are aromatic and flavorful. This is a true coffee shop gem!", "starRating": 5},
+                  {"reviewSummary": "I love this place because it seems super cool and I want to support small businesses in Bellaire. Great: hours, parking, bright atmosphere, service. Concerns: Coffee is super strong. Tea options are limited. Loud when people move chairs and tables.", "starRating": 5}
+                  
+                  ],
+  "openTime": "07:00",
+  "closeTime": "18:00",
+  "tags": ["Study", "Social"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "18",
+  "shopName": "Momentum Coffee",
+  "shopReviews": [
+                  {"reviewSummary": "This place is great! Great atmosphere and a good place to study, work, or just hangout. The wait staff was nice and timely with the drinks. Also the coffee is pretty dang good too.", "starRating": 5},
+                  {"reviewSummary": "SO delicious! Their lattes are wonderful, and I tried the breakfast bowl yesterday from their new food menu, and it was so fresh and wonderful. It’s located dangerously close to my house, so it may put a damper on my budget!", "starRating": 5},
+                  {"reviewSummary": "Coffee is good. Atmosphere is nice. Pastry selection was minimal, but tasty. Also, I guess out of the 5 people behind the counter nobody can bus tables, since they went out of their way to make cute signs that say 'please bus your own table'...at least they state it politely. ", "starRating": 3}
+                  
+                  ],
+  "openTime": "07:00",
+  "closeTime": "16:00",
+  "tags": ["Study", "Social"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "19",
+  "shopName": "Black Hole Coffee House",
+  "shopReviews": [
+                  {"reviewSummary": "Black hole makes good coffee. I like that you can buy large bottles of their cold brew coffee to take home. The cafe itself gets very crowded with people and their laptops. If you are in a hurry don't come after 9AM. Can be a laid back spot to hang out with friends if you don't like bars, though they do sell some beer and maybe wine.", "starRating": 4},
+                  {"reviewSummary": "Has nice seating. Employees were nice. I had known one of them and I never realized he worked there. He gave me a cookie without me asking. Also very good for studying", "starRating": 5},
+                  {"reviewSummary": "furniture is awful.  sofa's are uncomfortable and like something they pulled out of the garbage. Its generally quiet and there is a nice outside part.  Employees are immature esp the goth woman.  Internet cuts in and out.  They need a serious renovation.  Go to Siphon about a mile away.", "starRating": 2}
+                  
+                  ],
+  "openTime": "06:30",
+  "closeTime": "24:00",
+  "tags": ["Study", "Social"]
+  },
+  {
+  "shopType": "both",
+  "shopID": "20",
+  "shopName": "Antidote",
+  "shopReviews": [
+                  {"reviewSummary": "Absolutely one of the staples of the Houston experience! The patio is a great place to sip a cajeta latte! There are occasionally food trucks in the parking lot, and I am happier every time I visit!", "starRating": 4},
+                  {"reviewSummary": "Granted, I only got a cappuccino, but the server was friendly and the ambience of the place was unique, quaint and fanstatic. I loved how it was a cozy setup. Another plus is, if you like beer, there is a place next door as well. Overall, great little spot for coffee and tea.", "starRating": 5},
+                  {"reviewSummary": "Excellent coffee, baked goods and patio. Also best kept secret for happy hour beers - good selection and great price.", "starRating": 5}
+                  
+                  ],
+  "openTime": "06:30",
+  "closeTime": "24:00",
+  "tags": ["Study", "Social"]
+  },
+  {
+  "shopType": "tea",
+  "shopID": "21",
+  "shopName": "Path of Tea",
+  "shopReviews": [
+                  {"reviewSummary": "Very pleasant experience. There are over 100 tea varieties to choose from. You can see and smell all that they have to offer. The atmosphere is very calm and soothing with relaxing music playing. I love that you get to pick your own tea cup from the shelves on the wall as well.\nMy husband and I tried a coconut oolong tea and it was fabulous. You could smell the coconut as soon as the tea pot was brought to the table. The presentation is wonderful as well. The large tea pots are clear glass with a tea light candle underneath to keep it hot...and it does keep it hot! I will definitely come back to try more!", "starRating": 4},
+                  {"reviewSummary": "Excellent place. Best Earl Grey I've ever had. My husband and I shared a small pot and it was only $6. Will definitely be going back. Best part is that you get to pick your own tea cup.", "starRating": 5},
+                  {"reviewSummary": "A gem in the city for Zen, peace, tranquility, and wonderful organic tea. It is truly an experience. You also get to pick out your own cup to drink from! \nI also feel as though the energy of the people that work there adds to the experience.  They are very kind, compassionate and do not hound you to buy their products or leave as soon as you are done. This place is a must visit!", "starRating": 5}
+                  
+                  ],
+  "openTime": "10:00",
+  "closeTime": "21:00",
+  "tags": ["Study", "Social"]
+  },
+  {
+  "shopType": "tea",
+  "shopID": "22",
+  "shopName": "Kung Fu Tea",
+  "shopReviews": [
+                  {"reviewSummary": "A nice place for tea and relaxing. The atmosphere and music are both really chill.  We were waking around and exploring the city, so this place was a really good stop. For your own convince carry cash, and ask questions about the toppings so you can get a drink that suits you. Deciding what to get can be a bit overwhelming of you aren't used to bubble tea, but it is totally worth it.", "starRating": 4},
+                  {"reviewSummary": "They had fast and easy ordering. They also have an app that can help you save on your first purchase! Kung Fu Tea has unique flavors! Definitely worth the stop", "starRating": 5},
+                  {"reviewSummary": "Great tea. So many different flavors to try they are bound to have one you will like.", "starRating": 5}
+                  
+                  ],
+  "openTime": "12:00",
+  "closeTime": "22:00",
+  "tags": ["Study", "Social"]
+  },
+  {
+  "shopType": "tea",
+  "shopID": "23",
+  "shopName": "Ten Yen Tea & Herbs",
+  "shopReviews": [
+                  {"reviewSummary": "Ten Ren Ginsing is not the only place in Houston to get loose-leaf tea, but it is the only one I have found that knows how to prepare it in the Taiwanese style. The staff is very knowledgeable and very eager to help newcomers to Taiwanese tea navigate what can be a daunting experience. The quality and variety of loose-leaf tea sourced in Taiwan is outstanding, and all the equipment you will need to get an authentic cup of tea is on hand and quite affordable. I go there quite often, and there is always a new tea on hand to be sampled.", "starRating": 4},
+                  {"reviewSummary": "Called in to get a tea had a great experince.", "starRating": 5},
+                  {"reviewSummary": "Wow! Such a beautiful serene atmosphere hosted by such beautiful souls. Richard is such an amazing humble man. This 6600 address is NOT correct though. The address  is 10804 bellaire blvd 77072!", "starRating": 5}
+                  
+                  ],
+  "openTime": "11:00",
+  "closeTime": "18:30",
+  "tags": ["Study", "Social"]
+  },
+  {
+  "shopType": "tea",
+  "shopID": "24",
+  "shopName": "The Teahouse",
+  "shopReviews": [
+                  {"reviewSummary": "Service was fine, the workers were nice. The drinks were pretty awful though, and much poorer in quality compared to other teahouse places. I've tried around four drinks now and have only found one that was passable. Would absolutely avoid getting drinks here, which is unfortunate as the choices around this area is slim.", "starRating": 2},
+                  {"reviewSummary": "Fantastic Customer Service at this location. Perfect atmosphere. Perfect for hanging out or even business meetings! \nPlus, can't beat the quality of the drinks, double blended!", "starRating": 5},
+                  {"reviewSummary": "Good customer service. Comfortable place to hangout for a break.", "starRating": 5}
+                  
+                  ],
+  "openTime": "07:00",
+  "closeTime": "24:00",
+  "tags": ["Study", "Social"]
+  },
+  {
+  "shopType": "tea",
+  "shopID": "25",
+  "shopName": "Tea Bar & Organics",
+  "shopReviews": [
+                  {"reviewSummary": "I love it there and I've only been there once, I loved the service and the food and drinks, I highly recommend teabar. Definitely going again.", "starRating": 4},
+                  {"reviewSummary": "As always this place had good food and beverages and is a good place to hang out with friends.  It was crowded and unfortunately no available tables to be had but that's also to be expected, on a Friday night even at 10pm.  We waited about 25 minutes until one opened up and watched and chatted as the staff was working to get out orders for those inside and to go as quickly as they could.", "starRating": 5},
+                  {"reviewSummary": "Great place to get something to eat or drink, study or do home work.", "starRating": 5}
+                  
+                  ],
+  "openTime": "11:00",
+  "closeTime": "24:00",
+  "tags": ["Study", "Social"]
+  },
+  {
+  "shopType": "tea",
+  "shopID": "26",
+  "shopName": "Golden Oolong Tea",
+  "shopReviews": [
+                  {"reviewSummary": "Favorite spot for Boba tea. They also have a few Asian quick bites, smoothies, milk tea, and all natural juices!", "starRating": 4},
+                  {"reviewSummary": "Great selection of food, but you will wait longer than any other teahouse, no matter what you order. ", "starRating": 5},
+                  {"reviewSummary": "Great place to get your tapioca and jelly fix. A little pricier than other places, but definitely worth it.", "starRating": 5}
+                  
+                  ],
+  "openTime": "10:30",
+  "closeTime": "21:00",
+  "tags": ["Study", "Social"]
+  }
+  ]
